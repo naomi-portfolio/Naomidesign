@@ -48,7 +48,7 @@ const WORKS_DATA = {
       { src: 'https://picsum.photos/seed/work1-4/1600/900', size: 'wide', caption: { 'zh-TW': 'UI 介面展示', 'en': 'UI Interface Showcase' } },
       { src: 'https://picsum.photos/seed/work1-5/1600/900', size: 'narrow', caption: { 'zh-TW': '行銷素材', 'en': 'Marketing Materials' } }
     ],
-    next: 'tamsui-pumpkin'
+    next: 'tpp-app-redesign'
   },
 
   'tamsui-pumpkin': {
@@ -206,7 +206,7 @@ const WORKS_DATA = {
     info: {
       client: { 'zh-TW': '私人委託', 'en': 'Private Commission' },
       year: '2024',
-      role: { 'zh-TW': '攝影師', 'en': 'Photographer' },
+      role: { 'zh-TW': '平面攝影師', 'en': 'Photographer' },
       tools: 'Sony α7 IV'
     },
     description: {
@@ -242,90 +242,54 @@ const WORKS_DATA = {
     next: 'photo-street'
   },
 
-  'photo-product': {
-    id: 'photo-product',
-    category: 'product-photo',
-    categoryLabel: { 'zh-TW': '商品攝影', 'en': 'Product Photo' },
-    title: { 'zh-TW': '商品形象攝影', 'en': 'Product Branding Photography' },
+  'photo-masada': {
+    id: 'photo-masada',
+    category: 'event-photo',
+    categoryLabel: { 'zh-TW': '活動攝影', 'en': 'Event Photo' },
+    title: { 'zh-TW': 'Masada永佳捷智能電梯x林書豪', 'en': 'Masada × Jeremy Lin Press Conference' },
     tagline: {
-      'zh-TW': '為品牌商品打造視覺一致的形象照，呈現產品質感與品牌調性',
-      'en': 'Crafting visually consistent product imagery that showcases quality and brand tone.'
+      'zh-TW': '記者會攝影',
+      'en': 'Press Conference Photography'
     },
-    featureImage: 'https://picsum.photos/seed/photo3-feature/1600/900',
+    featureImage: 'images/masada-01.jpg',
     galleryStyle: 'masonry',
     info: {
-      client: { 'zh-TW': '永佳捷', 'en': 'YongJiaJie' },
+      client: { 'zh-TW': 'Masada永佳捷智能電梯', 'en': 'Masada Intelligent Elevator' },
       year: '2024',
-      role: { 'zh-TW': '商品攝影師', 'en': 'Product Photographer' },
-      tools: 'Sony α7 IV, 棚拍燈組'
+      role: { 'zh-TW': '平面攝影師', 'en': 'Photographer' },
+      tools: 'Sony α7 IV'
     },
     description: {
       heading: {
-        'zh-TW': '讓商品<em>說自己的故事</em>',
-        'en': 'Letting products <em>tell their own story</em>'
+        'zh-TW': '品牌代言人記者會的<em>視覺見證</em>',
+        'en': 'The <em>visual witness</em> of a brand ambassador press conference'
       },
       paragraphs: {
         'zh-TW': [
-          '商品攝影講求精準的色彩與光影掌握。本次為永佳捷品牌進行商品形象拍攝',
-          '採用棚拍方式，搭配多角度補光與反光板，強調商品材質細節',
-          '完整交付 30 張高解析度商品照，可用於電商平台、廣告與社群媒體'
+          ''
         ],
         'en': [
-          'Product photography demands precise control over color and lighting. This shoot was for YongJiaJie brand product imagery.',
-          'Studio photography with multi-angle fill lighting and reflectors emphasized product material details.',
-          'Delivered 30 high-resolution product photos for e-commerce, advertising, and social media.'
+          ''
         ]
       }
     },
     gallery: [
-      { src: 'https://picsum.photos/seed/photo3-1/1600/900', caption: { 'zh-TW': '商品主視覺', 'en': 'Product Hero Shot' } },
-      { src: 'https://picsum.photos/seed/photo3-2/1600/900', caption: { 'zh-TW': '細節特寫', 'en': 'Detail Closeup' } },
-      { src: 'https://picsum.photos/seed/photo3-3/1600/900', caption: { 'zh-TW': '情境照', 'en': 'Lifestyle Shot' } }
+      { src: 'images/masada-01.jpg', caption: { 'zh-TW': '主視覺', 'en': 'Key Visual' } },
+      { src: 'images/masada-02.jpg', caption: { 'zh-TW': '記者會現場', 'en': 'Press Conference' } },
+      { src: 'images/masada-03.jpg', caption: { 'zh-TW': '記者會現場', 'en': 'Press Conference' } },
+      { src: 'images/masada-04.jpg', caption: { 'zh-TW': '記者會現場', 'en': 'Press Conference' } },
+      { src: 'images/masada-05.jpg', caption: { 'zh-TW': '記者會現場', 'en': 'Press Conference' } },
+      { src: 'images/masada-06.jpg', caption: { 'zh-TW': '記者會現場', 'en': 'Press Conference' } },
+      { src: 'images/masada-07.jpg', caption: { 'zh-TW': '記者會現場', 'en': 'Press Conference' } },
+      { src: 'images/masada-08.jpg', caption: { 'zh-TW': '記者會現場', 'en': 'Press Conference' } },
+      { src: 'images/masada-09.jpg', caption: { 'zh-TW': '記者會現場', 'en': 'Press Conference' } },
+      { src: 'images/masada-10.jpg', caption: { 'zh-TW': '記者會現場', 'en': 'Press Conference' } },
+      { src: 'images/masada-11.jpg', caption: { 'zh-TW': '記者會現場', 'en': 'Press Conference' } },
+      { src: 'images/masada-12.jpg', caption: { 'zh-TW': '記者會現場', 'en': 'Press Conference' } },
+      { src: 'images/masada-13.jpg', caption: { 'zh-TW': '記者會現場', 'en': 'Press Conference' } },
+      { src: 'images/masada-14.jpg', caption: { 'zh-TW': '記者會現場', 'en': 'Press Conference' } }
     ],
-    next: 'video-luncheon'
-  },
-
-  'video-luncheon': {
-    id: 'video-luncheon',
-    category: 'video',
-    categoryLabel: { 'zh-TW': '影片', 'en': 'Video' },
-    title: { 'zh-TW': '午宴動態攝影', 'en': 'Luncheon Motion Photography' },
-    tagline: {
-      'zh-TW': '結合動態攝影與快剪，記錄商務午宴的精彩瞬間與氛圍',
-      'en': 'Combining motion photography and fast cuts to document the highlights and atmosphere of a business luncheon.'
-    },
-    featureImage: 'https://picsum.photos/seed/photo4-feature/1600/900',
-    galleryStyle: 'masonry',
-    info: {
-      client: { 'zh-TW': '私人活動', 'en': 'Private Event' },
-      year: '2024',
-      role: { 'zh-TW': '攝影、剪輯', 'en': 'Photography, Editing' },
-      tools: 'Sony α7 IV, DaVinci Resolve'
-    },
-    description: {
-      heading: {
-        'zh-TW': '用畫面<em>述說一場午宴</em>',
-        'en': 'Telling the story of a luncheon <em>through visuals</em>'
-      },
-      paragraphs: {
-        'zh-TW': [
-          '此次任務以動態攝影為主，捕捉午宴中的人物互動、餐點細節與整體氛圍',
-          '後製階段採用快剪手法，搭配節奏明快的配樂，呈現活力感',
-          '最終交付 90 秒成片以及 30 張現場精修照片'
-        ],
-        'en': [
-          'This project focused on motion photography, capturing personal interactions, food details, and overall atmosphere.',
-          'Post-production used fast-cut techniques with upbeat music to convey energy.',
-          'Delivered a 90-second finished video and 30 polished on-site photos.'
-        ]
-      }
-    },
-    gallery: [
-      { src: 'https://picsum.photos/seed/photo4-1/1600/900', caption: { 'zh-TW': '午宴開場', 'en': 'Opening' } },
-      { src: 'https://picsum.photos/seed/photo4-2/1600/900', caption: { 'zh-TW': '餐點特寫', 'en': 'Food Closeup' } },
-      { src: 'https://picsum.photos/seed/photo4-3/1600/900', caption: { 'zh-TW': '賓客互動', 'en': 'Guest Interaction' } }
-    ],
-    next: 'photo-rotary-2324'
+    next: 'video-keelung-police'
   },
 
   'photo-street': {
@@ -337,7 +301,7 @@ const WORKS_DATA = {
       'zh-TW': '與 MD.陳婉琳 合作，拍攝於華江整宅',
       'en': 'Collaboration with MD. Wan-Leng Chen, shot at Huajiang Housing Complex'
     },
-    featureImage: 'images/street-feature.jpg',
+    featureImage: 'images/street-main.jpg',
     galleryStyle: 'masonry',
     info: {
       client: { 'zh-TW': '陳婉琳', 'en': 'Wan-Leng Chen' },
@@ -360,13 +324,12 @@ const WORKS_DATA = {
       }
     },
     gallery: [
-      { src: 'images/street-feature.jpg', caption: { 'zh-TW': '主視覺', 'en': 'Key Visual' } },
-      { src: 'images/street-cover.jpg',   caption: { 'zh-TW': '街拍', 'en': 'Street Portrait' } },
-      { src: 'images/street-01.jpg',      caption: { 'zh-TW': '街拍', 'en': 'Street Portrait' } },
-      { src: 'images/street-02.jpg',      caption: { 'zh-TW': '街拍', 'en': 'Street Portrait' } },
-      { src: 'images/street-03.jpg',      caption: { 'zh-TW': '街拍', 'en': 'Street Portrait' } },
-      { src: 'images/street-04.jpg',      caption: { 'zh-TW': '街拍', 'en': 'Street Portrait' } },
-      { src: 'images/street-05.jpg',      caption: { 'zh-TW': '街拍', 'en': 'Street Portrait' } }
+      { src: 'images/street-cover.jpg',    caption: { 'zh-TW': '主視覺', 'en': 'Key Visual' } },
+      { src: 'images/street-01.jpg',       caption: { 'zh-TW': '街拍', 'en': 'Street Portrait' } },
+      { src: 'images/street-02.jpg',       caption: { 'zh-TW': '街拍', 'en': 'Street Portrait' } },
+      { src: 'images/street-03.jpg',       caption: { 'zh-TW': '街拍', 'en': 'Street Portrait' } },
+      { src: 'images/street-04.jpg',       caption: { 'zh-TW': '街拍', 'en': 'Street Portrait' } },
+      { src: 'images/street-05.jpg',       caption: { 'zh-TW': '街拍', 'en': 'Street Portrait' } }
     ],
     next: 'photo-rotary15'
   },
@@ -425,7 +388,64 @@ const WORKS_DATA = {
       { src: 'images/rotary15-17.jpg',     caption: { 'zh-TW': '授證典禮', 'en': 'Charter Ceremony' } },
       { src: 'images/rotary15-18.jpg',     caption: { 'zh-TW': '授證典禮', 'en': 'Charter Ceremony' } }
     ],
-    next: 'photo-couple'
+    next: 'photo-coophub'
+  },
+
+  'photo-coophub': {
+    id: 'photo-coophub',
+    category: 'event-photo',
+    categoryLabel: { 'zh-TW': '活動攝影', 'en': 'Event Photo' },
+    title: { 'zh-TW': 'CoopHub 合作事業青年培力暨創業構想競賽', 'en': 'CoopHub Youth Empowerment & Startup Competition' },
+    tagline: {
+      'zh-TW': '競賽活動頒獎典禮平面攝影',
+      'en': 'Official photography for the CoopHub award ceremony'
+    },
+    featureImage: 'images/coophub-cover.jpg',
+    galleryStyle: 'masonry',
+    info: {
+      client: { 'zh-TW': '有限責任新北市原住民電腦資訊勞動合作社', 'en': 'ACIC New Taipei Indigenous IT Cooperative' },
+      year: '2025',
+      role: { 'zh-TW': '平面攝影師', 'en': 'Photographer' },
+      tools: 'Sony α7 IV'
+    },
+    description: {
+      heading: {
+        'zh-TW': '青年創業構想的<em>高光時刻</em>',
+        'en': 'The <em>spotlight moment</em> for youth entrepreneurship'
+      },
+      paragraphs: {
+        'zh-TW': [
+          '競賽活動頒獎典禮平面攝影紀錄',
+          '活動完整報導：<a href="https://www.acic.tw/coophub%E9%9D%92%E5%B9%B4%E5%9F%B9%E5%8A%9B%E6%9A%A8%E5%89%B5%E6%A5%AD%E6%A7%8B%E6%83%B3%E7%AB%B6%E8%B3%BD" target="_blank" rel="noopener" style="color:var(--color-accent);text-decoration:underline">acic.tw CoopHub</a>'
+        ],
+        'en': [
+          'Official photography documentation of the CoopHub award ceremony.',
+          'View full event coverage: <a href="https://www.acic.tw/coophub%E9%9D%92%E5%B9%B4%E5%9F%B9%E5%8A%9B%E6%9A%A8%E5%89%B5%E6%A5%AD%E6%A7%8B%E6%83%B3%E7%AB%B6%E8%B3%BD" target="_blank" rel="noopener" style="color:var(--color-accent);text-decoration:underline">acic.tw CoopHub</a>'
+        ]
+      }
+    },
+    gallery: [
+      { src: 'images/coophub-cover.jpg', caption: { 'zh-TW': '主視覺', 'en': 'Key Visual' } },
+      { src: 'images/coophub-01.jpg',    caption: { 'zh-TW': '活動紀錄', 'en': 'Event Documentation' } },
+      { src: 'images/coophub-02.jpg',    caption: { 'zh-TW': '活動紀錄', 'en': 'Event Documentation' } },
+      { src: 'images/coophub-03.jpg',    caption: { 'zh-TW': '活動紀錄', 'en': 'Event Documentation' } },
+      { src: 'images/coophub-04.jpg',    caption: { 'zh-TW': '活動紀錄', 'en': 'Event Documentation' } },
+      { src: 'images/coophub-05.jpg',    caption: { 'zh-TW': '活動紀錄', 'en': 'Event Documentation' } },
+      { src: 'images/coophub-06.jpg',    caption: { 'zh-TW': '活動紀錄', 'en': 'Event Documentation' } },
+      { src: 'images/coophub-07.jpg',    caption: { 'zh-TW': '活動紀錄', 'en': 'Event Documentation' } },
+      { src: 'images/coophub-08.jpg',    caption: { 'zh-TW': '活動紀錄', 'en': 'Event Documentation' } },
+      { src: 'images/coophub-09.jpg',    caption: { 'zh-TW': '活動紀錄', 'en': 'Event Documentation' } },
+      { src: 'images/coophub-10.jpg',    caption: { 'zh-TW': '活動紀錄', 'en': 'Event Documentation' } },
+      { src: 'images/coophub-11.jpg',    caption: { 'zh-TW': '活動紀錄', 'en': 'Event Documentation' } },
+      { src: 'images/coophub-12.jpg',    caption: { 'zh-TW': '活動紀錄', 'en': 'Event Documentation' } },
+      { src: 'images/coophub-13.jpg',    caption: { 'zh-TW': '活動紀錄', 'en': 'Event Documentation' } },
+      { src: 'images/coophub-14.jpg',    caption: { 'zh-TW': '活動紀錄', 'en': 'Event Documentation' } },
+      { src: 'images/coophub-15.jpg',    caption: { 'zh-TW': '活動紀錄', 'en': 'Event Documentation' } },
+      { src: 'images/coophub-16.jpg',    caption: { 'zh-TW': '活動紀錄', 'en': 'Event Documentation' } },
+      { src: 'images/coophub-17.jpg',    caption: { 'zh-TW': '活動紀錄', 'en': 'Event Documentation' } },
+      { src: 'images/coophub-18.jpg',    caption: { 'zh-TW': '活動紀錄', 'en': 'Event Documentation' } }
+    ],
+    next: 'photo-rotary-2324'
   },
 
   /* ============ 插畫類作品（galleryStyle: 'spaced'）============ */
@@ -986,271 +1006,24 @@ const WORKS_DATA = {
         ]
       }
     },
-    gallery: [
-      { src: 'images/swap_01-01.jpg', caption: { 'zh-TW': '主視覺', 'en': 'Key Visual' } },
-      { src: 'images/swap_01-02.jpg', caption: { 'zh-TW': '設計展示', 'en': 'Design Showcase' } },
-      { src: 'images/swap_01-03.jpg', caption: { 'zh-TW': '設計展示', 'en': 'Design Showcase' } },
-      { src: 'images/swap_01-04.jpg', caption: { 'zh-TW': '設計展示', 'en': 'Design Showcase' } },
-      { src: 'images/swap_01-05.jpg', caption: { 'zh-TW': '設計展示', 'en': 'Design Showcase' } },
-      { src: 'images/swap_01-06.jpg', caption: { 'zh-TW': '設計展示', 'en': 'Design Showcase' } },
-      { src: 'images/swap_01-07.jpg', caption: { 'zh-TW': '設計展示', 'en': 'Design Showcase' } },
-      { src: 'images/swap_01-08.jpg', caption: { 'zh-TW': '設計展示', 'en': 'Design Showcase' } },
-      { src: 'images/swap_01-09.jpg', caption: { 'zh-TW': '設計展示', 'en': 'Design Showcase' } },
-      { src: 'images/swap_01-10.jpg', caption: { 'zh-TW': '設計展示', 'en': 'Design Showcase' } },
-      { src: 'images/swap_01-11.jpg', caption: { 'zh-TW': '設計展示', 'en': 'Design Showcase' } },
-      { src: 'images/swap_01-12.jpg', caption: { 'zh-TW': '設計展示', 'en': 'Design Showcase' } },
-      { src: 'images/swap_01-13.jpg', caption: { 'zh-TW': '設計展示', 'en': 'Design Showcase' } }
-    ],
-    next: 'defi'
-  },
-
-  'defi': {
-    id: 'defi',
-    category: 'branding',
-    categoryLabel: { 'zh-TW': '品牌設計', 'en': 'Branding' },
-    title: { 'zh-TW': 'DeFi', 'en': 'DeFi' },
-    tagline: {
-      'zh-TW': 'DeFi 金融產品 LOGO 設計',
-      'en': 'DeFi financial product LOGO design'
-    },
-    featureImage: 'images/defi-01.jpg',
-    // 設計類預設滿版無間距，不寫 galleryStyle
-    info: {
-      client: { 'zh-TW': 'DeFi 金融客戶', 'en': 'DeFi Client' },
-      year: '2024',
-      role: { 'zh-TW': 'LOGO 設計師', 'en': 'LOGO Designer' },
-      tools: 'Illustrator'
-    },
-    description: {
-      heading: {
-        'zh-TW': '此作品<em>內容待補</em>',
-        'en': 'Content <em>coming soon</em>'
-      },
-      paragraphs: {
-        'zh-TW': [
-          '此作品的詳細內容尚在整理中，後續會補上完整的專案敘述',
-          '若您對此作品感興趣，歡迎透過聯繫方式與我交流，我會分享更多細節'
-        ],
-        'en': [
-          'Detailed content for this project is being organized and will be added soon.',
-          'If you are interested, please reach out via the contact page for more details.'
-        ]
-      }
-    },
-    gallery: [
-      { src: 'images/defi-01.jpg', caption: { 'zh-TW': '主視覺', 'en': 'Key Visual' } },
-      { src: 'images/defi-02.jpg', caption: { 'zh-TW': '設計展示', 'en': 'Design Showcase' } },
-      { src: 'images/defi-03.jpg', caption: { 'zh-TW': '設計展示', 'en': 'Design Showcase' } },
-      { src: 'images/defi-04.jpg', caption: { 'zh-TW': '設計展示', 'en': 'Design Showcase' } },
-      { src: 'images/defi-05.jpg', caption: { 'zh-TW': '設計展示', 'en': 'Design Showcase' } },
-      { src: 'images/defi-06.jpg', caption: { 'zh-TW': '設計展示', 'en': 'Design Showcase' } },
-      { src: 'images/defi-07.jpg', caption: { 'zh-TW': '設計展示', 'en': 'Design Showcase' } },
-      { src: 'images/defi-08.jpg', caption: { 'zh-TW': '設計展示', 'en': 'Design Showcase' } },
-      { src: 'images/defi-09.jpg', caption: { 'zh-TW': '設計展示', 'en': 'Design Showcase' } },
-      { src: 'images/defi-10.jpg', caption: { 'zh-TW': '設計展示', 'en': 'Design Showcase' } },
-      { src: 'images/defi-11.jpg', caption: { 'zh-TW': '設計展示', 'en': 'Design Showcase' } },
-      { src: 'images/defi-12.jpg', caption: { 'zh-TW': '設計展示', 'en': 'Design Showcase' } }
-    ],
-    next: 'logo-collection'
-  },
-
-  'logo-collection': {
-    id: 'logo-collection',
-    category: 'branding',
-    categoryLabel: { 'zh-TW': '品牌設計', 'en': 'Branding' },
-    title: { 'zh-TW': 'LOGO Collection', 'en': 'LOGO Collection' },
-    tagline: {
-      'zh-TW': '多元 LOGO 設計作品合集',
-      'en': 'A collection of diverse LOGO design works.'
-    },
-    featureImage: 'images/lc-01.jpg',
-    // 設計類預設滿版無間距，不寫 galleryStyle
-    info: {
-      client: { 'zh-TW': '多位客戶', 'en': 'Multiple Clients' },
-      year: '—',
-      role: { 'zh-TW': '品牌設計師', 'en': 'Brand Designer' },
-      tools: 'Illustrator'
-    },
-    description: {
-      heading: {
-        'zh-TW': '多元風格的 <em>LOGO 創作</em>',
-        'en': 'A diverse collection of <em>LOGO works</em>'
-      },
-      paragraphs: {
-        'zh-TW': [
-          ''
-        ],
-        'en': [
-          ''
-        ]
-      }
-    },
-    gallery: [
-      { src: 'images/lc-01.jpg', caption: { 'zh-TW': '主視覺', 'en': 'Key Visual' } },
-      { src: 'images/lc-02.jpg', caption: { 'zh-TW': 'LOGO 作品', 'en': 'LOGO Work' } },
-      { src: 'images/lc-03.jpg', caption: { 'zh-TW': 'LOGO 作品', 'en': 'LOGO Work' } },
-      { src: 'images/lc-04.jpg', caption: { 'zh-TW': 'LOGO 作品', 'en': 'LOGO Work' } },
-      { src: 'images/lc-05.jpg', caption: { 'zh-TW': 'LOGO 作品', 'en': 'LOGO Work' } },
-      { src: 'images/lc-06.jpg', caption: { 'zh-TW': 'LOGO 作品', 'en': 'LOGO Work' } },
-      { src: 'images/lc-07.jpg', caption: { 'zh-TW': 'LOGO 作品', 'en': 'LOGO Work' } },
-      { src: 'images/lc-08.jpg', caption: { 'zh-TW': 'LOGO 作品', 'en': 'LOGO Work' } },
-      { src: 'images/lc-09.jpg', caption: { 'zh-TW': 'LOGO 作品', 'en': 'LOGO Work' } },
-      { src: 'images/lc-10.jpg', caption: { 'zh-TW': 'LOGO 作品', 'en': 'LOGO Work' } }
-    ],
-    next: 'election'
-  },
-
-  'election': {
-    id: 'election',
-    category: 'event',
-    categoryLabel: { 'zh-TW': '活動設計', 'en': 'Event Design' },
-    title: { 'zh-TW': '縣市議員選舉文宣設計', 'en': 'County Council Election Campaign' },
-    tagline: {
-      'zh-TW': '新北市議員候選人選舉設計物',
-      'en': 'Electoral campaign design materials for New Taipei City council candidates'
-    },
-    featureImage: 'images/el-03.jpg',
-    // 設計類預設滿版無間距，不寫 galleryStyle
-    info: {
-      client: { 'zh-TW': '11 位候選人', 'en': '11 Candidates' },
-      year: '2022 — 2023',
-      role: { 'zh-TW': '專案設計師', 'en': 'Project Designer' },
-      tools: 'Illustrator, Photoshop'
-    },
-    description: {
-      heading: {
-        'zh-TW': '在選戰中扮演<em>視覺整合者</em>的角色',
-        'en': 'The <em>visual integrator</em> behind the campaign'
-      },
-      paragraphs: {
-        'zh-TW': [
-          '以地方黨部設計師的身分，統籌多位縣市議員候選人的選舉文宣設計，從選舉看板、文宣手冊到社群素材，整合一致的視覺語言，在高壓的選戰期間確保品牌識別的統一性與效率'
-        ],
-        'en': [
-          'As a designer representing the regional party office, coordinated election campaign materials for multiple county and city council candidates — from billboards and campaign booklets to social media assets, maintaining consistent visual language throughout the high-pressure campaign period.'
-        ]
-      }
-    },
-    gallery: [
-      { src: 'images/el-03.jpg', caption: { 'zh-TW': '主視覺', 'en': 'Key Visual' } },
-      { src: 'images/el-01.jpg', caption: { 'zh-TW': '文宣設計', 'en': 'Campaign Material' } },
-      { src: 'images/el-02.jpg', caption: { 'zh-TW': '文宣設計', 'en': 'Campaign Material' } },
-      { src: 'images/el-04.jpg', caption: { 'zh-TW': '文宣設計', 'en': 'Campaign Material' } },
-      { src: 'images/el-05.jpg', caption: { 'zh-TW': '文宣設計', 'en': 'Campaign Material' } },
-      { src: 'images/el-06.jpg', caption: { 'zh-TW': '文宣設計', 'en': 'Campaign Material' } },
-      { src: 'images/el-07.jpg', caption: { 'zh-TW': '文宣設計', 'en': 'Campaign Material' } },
-      { src: 'images/el-08.jpg', caption: { 'zh-TW': '文宣設計', 'en': 'Campaign Material' } },
-      { src: 'images/el-09.jpg', caption: { 'zh-TW': '文宣設計', 'en': 'Campaign Material' } },
-      { src: 'images/el-10.jpg', caption: { 'zh-TW': '文宣設計', 'en': 'Campaign Material' } },
-      { src: 'images/el-11.jpg', caption: { 'zh-TW': '文宣設計', 'en': 'Campaign Material' } },
-      { src: 'images/el-12.jpg', caption: { 'zh-TW': '文宣設計', 'en': 'Campaign Material' } },
-      { src: 'images/el-13.jpg', caption: { 'zh-TW': '文宣設計', 'en': 'Campaign Material' } },
-      { src: 'images/el-14.jpg', caption: { 'zh-TW': '文宣設計', 'en': 'Campaign Material' } },
-      { src: 'images/el-15.jpg', caption: { 'zh-TW': '文宣設計', 'en': 'Campaign Material' } },
-      { src: 'images/el-16.jpg', caption: { 'zh-TW': '文宣設計', 'en': 'Campaign Material' } },
-      { src: 'images/el-17.jpg', caption: { 'zh-TW': '文宣設計', 'en': 'Campaign Material' } },
-      { src: 'images/el-18.jpg', caption: { 'zh-TW': '文宣設計', 'en': 'Campaign Material' } },
-      { src: 'images/el-19.jpg', caption: { 'zh-TW': '文宣設計', 'en': 'Campaign Material' } },
-      { src: 'images/el-20.jpg', caption: { 'zh-TW': '文宣設計', 'en': 'Campaign Material' } },
-      { src: 'images/el-21.jpg', caption: { 'zh-TW': '文宣設計', 'en': 'Campaign Material' } },
-      { src: 'images/el-22.jpg', caption: { 'zh-TW': '文宣設計', 'en': 'Campaign Material' } },
-      { src: 'images/el-23.jpg', caption: { 'zh-TW': '文宣設計', 'en': 'Campaign Material' } },
-      { src: 'images/el-24.jpg', caption: { 'zh-TW': '文宣設計', 'en': 'Campaign Material' } },
-      { src: 'images/el-25.jpg', caption: { 'zh-TW': '文宣設計', 'en': 'Campaign Material' } },
-      { src: 'images/el-26.jpg', caption: { 'zh-TW': '文宣設計', 'en': 'Campaign Material' } }
-    ],
-    next: 'xinsheng'
-  },
-
-  'sm-collection': {
-    id: 'sm-collection',
-    category: 'branding',
-    categoryLabel: { 'zh-TW': '品牌設計', 'en': 'Branding' },
-    title: { 'zh-TW': 'Social Media Post', 'en': 'Social Media Post' },
-    tagline: {
-      'zh-TW': '社群媒體貼文系列設計合集',
-      'en': 'A collection of social media post designs.'
-    },
-    featureImage: 'https://picsum.photos/seed/sm-coll-feature/1600/900',
-    // 設計類預設滿版無間距，不寫 galleryStyle
-    info: {
-      client: { 'zh-TW': '多位品牌客戶', 'en': 'Multiple Brand Clients' },
-      year: '2023 — 2024',
-      role: { 'zh-TW': '社群視覺設計師', 'en': 'Social Media Designer' },
-      tools: 'Photoshop, Illustrator'
-    },
-    description: {
-      heading: {
-        'zh-TW': '此作品<em>內容待補</em>',
-        'en': 'Content <em>coming soon</em>'
-      },
-      paragraphs: {
-        'zh-TW': [
-          '此作品的詳細內容尚在整理中，後續會補上完整的專案敘述',
-          '若您對此作品感興趣，歡迎透過聯繫方式與我交流，我會分享更多細節'
-        ],
-        'en': [
-          'Detailed content for this project is being organized and will be added soon.',
-          'If you are interested, please reach out via the contact page for more details.'
-        ]
-      }
-    },
-    gallery: [
-      { src: 'https://picsum.photos/seed/sm-coll-1/1600/900', caption: { 'zh-TW': '主視覺', 'en': 'Key Visual' } },
-      { src: 'https://picsum.photos/seed/sm-coll-2/1600/900', caption: { 'zh-TW': '延伸應用', 'en': 'Applications' } },
-      { src: 'https://picsum.photos/seed/sm-coll-3/1600/900', caption: { 'zh-TW': '細節展示', 'en': 'Details' } }
-    ],
-    next: 'yexun-logo'
-  },
-
-  'zhongqing': {
-    id: 'zhongqing',
-    category: 'event',
-    categoryLabel: { 'zh-TW': '活動設計', 'en': 'Event Design' },
-    title: { 'zh-TW': '眾青雲集造浪營', 'en': 'Zhongqing Wave Camp' },
-    tagline: {
-      'zh-TW': '民眾黨青年委員會青年營隊規劃設計',
-      'en': 'TPP Youth Committee Camp Visual & Event Design'
-    },
-    featureImage: 'images/zq-01.jpg',
-    info: {
-      client: { 'zh-TW': '民眾黨青年委員會', 'en': 'TPP Youth Committee' },
-      year: '2023',
-      role: { 'zh-TW': '活動視覺設計 / 主持人', 'en': 'Event Visual Designer / Host' },
-      tools: 'Illustrator, Photoshop'
-    },
-    description: {
-      heading: {
-        'zh-TW': '風掀浪起，眾青<em>雲集</em>',
-        'en': 'Waves Rising, Youth <em>Gathering</em>'
-      },
-      paragraphs: {
-        'zh-TW': [
-          '風掀浪起，眾青雲集！參與營隊，帶你認識政治選戰工作。模擬選戰 × 議題辯論 × 政治幕僚，不隨波逐流，學青？社青？來展現實力一同較勁！'
-        ],
-        'en': [
-          "Waves rising, youth gathering! Join the camp and explore the world of political campaign work. Simulated elections x issue debates x political strategist experience. Not going with the flow - show what you're made of!"
-        ]
-      }
-    },
-    gallery: [
+    gallery:     [
       { src: 'images/zq-01.jpg', caption: { 'zh-TW': '主視覺', 'en': 'Key Visual' } },
-      { src: 'images/zq-02.jpg', caption: { 'zh-TW': '設計展示', 'en': 'Design Showcase' } },
-      { src: 'images/zq-03.jpg', caption: { 'zh-TW': '設計展示', 'en': 'Design Showcase' } },
-      { src: 'images/zq-04.jpg', caption: { 'zh-TW': '設計展示', 'en': 'Design Showcase' } },
-      { src: 'images/zq-05.jpg', caption: { 'zh-TW': '設計展示', 'en': 'Design Showcase' } },
-      { src: 'images/zq-06.jpg', caption: { 'zh-TW': '設計展示', 'en': 'Design Showcase' } },
-      { src: 'images/zq-07.jpg', caption: { 'zh-TW': '設計展示', 'en': 'Design Showcase' } },
-      { src: 'images/zq-08.jpg', caption: { 'zh-TW': '設計展示', 'en': 'Design Showcase' } },
-      { src: 'images/zq-09.jpg', caption: { 'zh-TW': '設計展示', 'en': 'Design Showcase' } },
-      { src: 'images/zq-10.jpg', caption: { 'zh-TW': '設計展示', 'en': 'Design Showcase' } },
-      { src: 'images/zq-11.jpg', caption: { 'zh-TW': '設計展示', 'en': 'Design Showcase' } },
-      { src: 'images/zq-12.jpg', caption: { 'zh-TW': '設計展示', 'en': 'Design Showcase' } },
-      { src: 'images/zq-13.jpg', caption: { 'zh-TW': '設計展示', 'en': 'Design Showcase' } },
-      { src: 'images/zq-14.jpg', caption: { 'zh-TW': '設計展示', 'en': 'Design Showcase' } },
-      { src: 'images/zq-15.jpg', caption: { 'zh-TW': '設計展示', 'en': 'Design Showcase' } },
-      { src: 'images/zq-16.jpg', caption: { 'zh-TW': '設計展示', 'en': 'Design Showcase' } },
-      { src: 'images/zq-17.jpg', caption: { 'zh-TW': '設計展示', 'en': 'Design Showcase' } }
+      { src: 'images/zq-02.jpg', caption: { 'zh-TW': '活動紀錄', 'en': 'Event' } },
+      { src: 'images/zq-03.jpg', caption: { 'zh-TW': '活動紀錄', 'en': 'Event' } },
+      { src: 'images/zq-04.jpg', caption: { 'zh-TW': '活動紀錄', 'en': 'Event' } },
+      { src: 'images/zq-05.jpg', caption: { 'zh-TW': '活動紀錄', 'en': 'Event' } },
+      { src: 'images/zq-06.jpg', caption: { 'zh-TW': '活動紀錄', 'en': 'Event' } },
+      { src: 'images/zq-07.jpg', caption: { 'zh-TW': '活動紀錄', 'en': 'Event' } },
+      { src: 'images/zq-08.jpg', caption: { 'zh-TW': '活動紀錄', 'en': 'Event' } },
+      { src: 'images/zq-09.jpg', caption: { 'zh-TW': '活動紀錄', 'en': 'Event' } },
+      { src: 'images/zq-10.jpg', caption: { 'zh-TW': '活動紀錄', 'en': 'Event' } },
+      { src: 'images/zq-11.jpg', caption: { 'zh-TW': '活動紀錄', 'en': 'Event' } },
+      { src: 'images/zq-12.jpg', caption: { 'zh-TW': '活動紀錄', 'en': 'Event' } },
+      { src: 'images/zq-13.jpg', caption: { 'zh-TW': '活動紀錄', 'en': 'Event' } },
+      { src: 'images/zq-14.jpg', caption: { 'zh-TW': '活動紀錄', 'en': 'Event' } },
+      { src: 'images/zq-15.jpg', caption: { 'zh-TW': '活動紀錄', 'en': 'Event' } },
+      { src: 'images/zq-16.jpg', caption: { 'zh-TW': '活動紀錄', 'en': 'Event' } },
+      { src: 'images/zq-17.jpg', caption: { 'zh-TW': '活動紀錄', 'en': 'Event' } }
     ],
     next: 'tpp-app-redesign'
   },
@@ -1259,39 +1032,46 @@ const WORKS_DATA = {
     id: 'video-keelung-police',
     category: 'video',
     categoryLabel: { 'zh-TW': '影片', 'en': 'Video' },
-    title: { 'zh-TW': 'VIDEO_基隆市警察局反詐影片', 'en': 'VIDEO_Keelung Police Anti-Fraud' },
+    title: { 'zh-TW': '基隆市警察局反詐宣導影片', 'en': 'Keelung Police Anti-Fraud Campaign Video' },
     tagline: {
-      'zh-TW': '基隆市警察局反詐宣導影片拍攝與剪輯',
-      'en': 'Anti-fraud awareness video filming and editing for Keelung Police.'
+      'zh-TW': '與基隆市警察局、吳怡霈合作，拍攝反詐宣導影片',
+      'en': 'Anti-fraud awareness video produced in collaboration with Keelung Police Department and artist Wu Yi-Pei'
     },
-    featureImage: 'https://picsum.photos/seed/video-police-feature/1600/900',
-    galleryStyle: 'spaced',
+    featureImage: 'images/antiscam-01.png',
+    galleryStyle: 'masonry',
     info: {
       client: { 'zh-TW': '基隆市警察局', 'en': 'Keelung Police Department' },
       year: '2024',
-      role: { 'zh-TW': '影片拍攝、剪輯', 'en': 'Cinematographer, Editor' },
+      role: { 'zh-TW': '攝影助理 / 剪輯', 'en': 'Camera Assistant / Editor' },
       tools: 'Sony α7 IV, DaVinci Resolve'
     },
     description: {
       heading: {
-        'zh-TW': '此作品<em>內容待補</em>',
-        'en': 'Content <em>coming soon</em>'
+        'zh-TW': '讓反詐意識<em>深入人心</em>',
+        'en': 'Making anti-fraud awareness <em>resonate</em>'
       },
       paragraphs: {
         'zh-TW': [
-          '此作品的詳細內容尚在整理中，後續會補上完整的專案敘述',
-          '若您對此作品感興趣，歡迎透過聯繫方式與我交流，我會分享更多細節'
+          ''
         ],
         'en': [
-          'Detailed content for this project is being organized and will be added soon.',
-          'If you are interested, please reach out via the contact page for more details.'
+          ''
         ]
       }
     },
     gallery: [
-      { src: 'https://picsum.photos/seed/video-police-1/1600/900', caption: { 'zh-TW': '主視覺', 'en': 'Key Visual' } },
-      { src: 'https://picsum.photos/seed/video-police-2/1600/900', caption: { 'zh-TW': '延伸應用', 'en': 'Applications' } },
-      { src: 'https://picsum.photos/seed/video-police-3/1600/900', caption: { 'zh-TW': '細節展示', 'en': 'Details' } }
+      { src: 'images/antiscam-01.png', caption: { 'zh-TW': '主視覺', 'en': 'Key Visual' } },
+      { src: 'images/antiscam-02.png', caption: { 'zh-TW': '影片截圖', 'en': 'Video Screenshot' } },
+      { src: 'images/antiscam-03.png', caption: { 'zh-TW': '影片截圖', 'en': 'Video Screenshot' } },
+      { src: 'images/antiscam-04.png', caption: { 'zh-TW': '影片截圖', 'en': 'Video Screenshot' } },
+      { src: 'images/antiscam-05.png', caption: { 'zh-TW': '影片截圖', 'en': 'Video Screenshot' } },
+      { src: 'images/antiscam-06.png', caption: { 'zh-TW': '影片截圖', 'en': 'Video Screenshot' } },
+      { src: 'images/antiscam-07.png', caption: { 'zh-TW': '影片截圖', 'en': 'Video Screenshot' } },
+      { src: 'images/antiscam-08.png', caption: { 'zh-TW': '影片截圖', 'en': 'Video Screenshot' } },
+      { src: 'images/antiscam-09.png', caption: { 'zh-TW': '影片截圖', 'en': 'Video Screenshot' } },
+      { src: 'images/antiscam-10.png', caption: { 'zh-TW': '影片截圖', 'en': 'Video Screenshot' } },
+      { src: 'images/antiscam-11.png', caption: { 'zh-TW': '影片截圖', 'en': 'Video Screenshot' } },
+      { src: 'images/antiscam-12.png', caption: { 'zh-TW': '影片截圖', 'en': 'Video Screenshot' } }
     ],
     next: 'clip-zhongqing'
   },
@@ -1300,41 +1080,43 @@ const WORKS_DATA = {
     id: 'clip-zhongqing',
     category: 'video',
     categoryLabel: { 'zh-TW': '影片', 'en': 'Video' },
-    title: { 'zh-TW': 'CLIP_眾青雲集造浪營', 'en': 'CLIP_Zhongqing Wave Camp Video' },
+    title: { 'zh-TW': '眾青雲集造浪營', 'en': 'Zhongqing Wave Camp' },
     tagline: {
-      'zh-TW': '活動影片剪輯與後製',
-      'en': 'Event video editing and post-production.'
+      'zh-TW': '眾青雲集造浪營活動短影片剪輯',
+      'en': 'Short video editing for the Zhongqing Wave Camp event'
     },
-    featureImage: 'https://picsum.photos/seed/clip-zhongqing-feature/1600/900',
-    galleryStyle: 'spaced',
+    featureImage: 'images/wave-cover.png',
+    galleryStyle: 'masonry',
     info: {
-      client: { 'zh-TW': '眾青雲集', 'en': 'Zhongqing Cloud Group' },
+      client: { 'zh-TW': '民眾黨青年委員會', 'en': 'TPP Youth Committee' },
       year: '2023',
-      role: { 'zh-TW': '剪輯師', 'en': 'Video Editor' },
+      role: { 'zh-TW': '活動視覺設計 / 主持人 / 剪輯', 'en': 'Visual Designer / Host / Editor' },
       tools: 'DaVinci Resolve'
     },
     description: {
       heading: {
-        'zh-TW': '此作品<em>內容待補</em>',
-        'en': 'Content <em>coming soon</em>'
+        'zh-TW': '風掀浪起，眾青<em>雲集</em>',
+        'en': 'Waves rising, youth <em>gathering</em>'
       },
       paragraphs: {
         'zh-TW': [
-          '此作品的詳細內容尚在整理中，後續會補上完整的專案敘述',
-          '若您對此作品感興趣，歡迎透過聯繫方式與我交流，我會分享更多細節'
+          '風掀浪起，眾青雲集！參與營隊，帶你認識政治選戰工作。模擬選戰 × 議題辯論 × 政治幕僚，不隨波逐流，學青？社青？來展現實力一同較勁！'
         ],
         'en': [
-          'Detailed content for this project is being organized and will be added soon.',
-          'If you are interested, please reach out via the contact page for more details.'
+          "Waves rising, youth gathering! Join the camp and explore the world of political campaigns. Simulated elections x issue debates x political strategy — not going with the flow. Come and show what you're made of!"
         ]
       }
     },
     gallery: [
-      { src: 'https://picsum.photos/seed/clip-zhongqing-1/1600/900', caption: { 'zh-TW': '主視覺', 'en': 'Key Visual' } },
-      { src: 'https://picsum.photos/seed/clip-zhongqing-2/1600/900', caption: { 'zh-TW': '延伸應用', 'en': 'Applications' } },
-      { src: 'https://picsum.photos/seed/clip-zhongqing-3/1600/900', caption: { 'zh-TW': '細節展示', 'en': 'Details' } }
+      { src: 'images/wave-cover.png', caption: { 'zh-TW': '主視覺', 'en': 'Key Visual' } },
+      { src: 'images/wave-01.png', caption: { 'zh-TW': '影片截圖', 'en': 'Video Screenshot' } },
+      { src: 'images/wave-02.png', caption: { 'zh-TW': '影片截圖', 'en': 'Video Screenshot' } },
+      { src: 'images/wave-03.png', caption: { 'zh-TW': '影片截圖', 'en': 'Video Screenshot' } },
+      { src: 'images/wave-04.png', caption: { 'zh-TW': '影片截圖', 'en': 'Video Screenshot' } },
+      { src: 'images/wave-05.png', caption: { 'zh-TW': '影片截圖', 'en': 'Video Screenshot' } },
+      { src: 'images/wave-06.png', caption: { 'zh-TW': '影片截圖', 'en': 'Video Screenshot' } }
     ],
-    next: 'video-luncheon'
+    next: 'video-keelung-police'
   },
 };
 

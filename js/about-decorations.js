@@ -1,219 +1,244 @@
 /* ============================================
-   全站飄浮裝飾元素系統（深海氣泡上升感）
-   ============================================
-   設計原則：
-   - 元素持續向上飄移（即使頁面靜止）
-   - 加上視差滾動，深度感更強
-   - 配比：圓點 + 線條變多、方框變小
-   - 寧靜、低調、不干擾閱讀
-*/
+   全站飄浮裝飾元素系統
+   - 所有元素持續自動往上飄
+   - 滑鼠靠近時閃躲到安全距離外，再繼續往上飄
+   - 滑鼠拖尾綠點效果
+   ============================================ */
 
 class FloatingDecorations {
   constructor() {
-    this.container = null;
-    this.elements = [];
-    this.scrollY = 0;
     this.isTouchDevice = window.matchMedia('(hover: none), (pointer: coarse)').matches;
+    this.elements = [];
+    this.mouseX = -9999;
+    this.mouseY = -9999;
+    this.REPEL_RADIUS = 120;    // 閃躲感應半徑（px）
+    this.REPEL_DIST   = 160;    // 閃躲後最小距離（px）
 
-    this.init();
+    if (!this.isTouchDevice) {
+      this.initStyles();
+      this.initContainer();
+      this.initMouseTrail();
+      document.addEventListener('mousemove', e => {
+        this.mouseX = e.clientX;
+        this.mouseY = e.clientY;
+      });
+      requestAnimationFrame(() => this.tick());
+    }
   }
 
-  init() {
-    if (this.isTouchDevice) return;
+  /* === CSS 動畫注入 === */
+  initStyles() {
+    if (document.getElementById('fd-style')) return;
+    const s = document.createElement('style');
+    s.id = 'fd-style';
+    s.textContent = `
+      @keyframes fdRise {
+        0%   { transform: translateY(0); }
+        100% { transform: translateY(calc(-100vh - 200px)); }
+      }
+    `;
+    document.head.appendChild(s);
+  }
 
+  /* === 容器 === */
+  initContainer() {
     this.container = document.createElement('div');
     this.container.id = 'floating-decorations';
     this.container.style.cssText = `
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-      overflow: hidden;
-      z-index: 0;
+      position: fixed; inset: 0;
+      pointer-events: none; overflow: hidden; z-index: 0;
     `;
-
-    document.body.style.position = 'relative';
     document.body.insertBefore(this.container, document.body.firstChild);
 
-    this.createElements();
-
-    window.addEventListener('scroll', () => {
-      this.scrollY = window.scrollY;
-    }, { passive: true });
-
-    this.animate();
-  }
-
-  createElements() {
-    // 配比調整：圓點 + 線條變多、方框變小
+    /* 元素配置 */
     const configs = [
-      { type: 'circle',  count: 5,  sizeRange: [40, 110]  },
-      { type: 'ring',    count: 4,  sizeRange: [60, 140]  },
-      { type: 'dot',     count: 15, sizeRange: [3, 8]     },  // 大幅增加
-      { type: 'line',    count: 8,  sizeRange: [60, 160]  },  // 增加
-      { type: 'square',  count: 3,  sizeRange: [18, 36]   }   // 變小
+      { type: 'circle', count: 6,  size: [50, 120] },
+      { type: 'ring',   count: 5,  size: [65, 150] },
+      { type: 'dot',    count: 22, size: [3, 9]    },
+      { type: 'line',   count: 10, size: [70, 170] },
+      { type: 'square', count: 4,  size: [8, 18]   }   // ← 縮小：原本 16-32
     ];
 
-    const pageHeight = document.body.scrollHeight || window.innerHeight * 3;
-
-    configs.forEach(config => {
-      for (let i = 0; i < config.count; i++) {
-        const size = this.randomBetween(config.sizeRange[0], config.sizeRange[1]);
-        const x = Math.random() * 100;
-        const y = Math.random() * pageHeight;
-
-        // 視差速度（滾動相關）
-        const parallaxSpeed = this.randomBetween(0.1, 0.4);
-
-        // 氣泡上升動畫
-        // 不同元素類型不同上升速度，營造前後景深度
-        const riseSpeedBase = {
-          'dot':    this.randomBetween(40, 90),    // 小圓點較快（前景）
-          'circle': this.randomBetween(80, 150),   // 圓暈較慢（後景）
-          'ring':   this.randomBetween(70, 140),
-          'line':   this.randomBetween(60, 120),
-          'square': this.randomBetween(80, 130)
-        };
-        const riseDuration = riseSpeedBase[config.type] || 90;
-
-        // 水平漂移幅度（微小，像水流）
-        const swayX = this.randomBetween(-25, 25);
-        const swayDuration = this.randomBetween(8, 18);
-
-        // 隨機起始延遲（讓元素不同時刻運動）
-        const riseDelay = this.randomBetween(-riseDuration, 0); // 負值讓動畫已經在進行中
-        const swayDelay = this.randomBetween(-swayDuration, 0);
-
-        // 外層：視差容器
-        const wrapper = document.createElement('div');
-        wrapper.style.cssText = `
-          position: absolute;
-          left: ${x}%;
-          top: ${y}px;
-          width: ${size}px;
-          height: ${size}px;
-          will-change: transform;
-        `;
-
-        // 中層：氣泡上升（無限循環）
-        const riseLayer = document.createElement('div');
-        riseLayer.style.cssText = `
-          width: 100%;
-          height: 100%;
-          animation: bubbleRise ${riseDuration}s linear ${riseDelay}s infinite;
-        `;
-
-        // 內層：左右搖擺（像水流晃動）
-        const swayLayer = document.createElement('div');
-        swayLayer.style.cssText = `
-          width: 100%;
-          height: 100%;
-          --sway-x: ${swayX}px;
-          animation: bubbleSway ${swayDuration}s ease-in-out ${swayDelay}s infinite alternate;
-        `;
-
-        // 最內層：實際視覺元素
-        const visual = this.createElement(config.type, size);
-        visual.style.width = '100%';
-        visual.style.height = '100%';
-
-        swayLayer.appendChild(visual);
-        riseLayer.appendChild(swayLayer);
-        wrapper.appendChild(riseLayer);
-        this.container.appendChild(wrapper);
-
-        this.elements.push({
-          wrapper: wrapper,
-          baseY: y,
-          parallaxSpeed: parallaxSpeed
-        });
+    configs.forEach(({ type, count, size }) => {
+      for (let i = 0; i < count; i++) {
+        this.spawnElement(type, size, true);
       }
     });
   }
 
-  createElement(type, size) {
-    const el = document.createElement('div');
+  /* 產生單一飄浮元素 */
+  spawnElement(type, sizeRange, randomStart = false) {
+    const sz = this.rand(sizeRange[0], sizeRange[1]);
 
+    /* 起始 Y：隨機分散在畫面中（第一次），之後從底部出現 */
+    const startY = randomStart
+      ? this.rand(0, window.innerHeight + 200)
+      : window.innerHeight + sz + 50;
+
+    const baseX = this.rand(0, window.innerWidth);
+    const speed = this.rand(40, 100);       // px/s，越小越慢
+    const swayAmp = this.rand(15, 40);      // 左右搖擺幅度
+    const swayFreq = this.rand(0.3, 0.8);  // 搖擺頻率
+
+    const el = document.createElement('div');
+    el.style.cssText = `
+      position: absolute;
+      width: ${sz}px; height: ${sz}px;
+      pointer-events: none;
+      will-change: transform;
+    `;
+    this.applyStyle(el, type);
+    this.container.appendChild(el);
+
+    const item = {
+      el, type, sizeRange,
+      sz,
+      baseX,               // 正常路徑的 X 中心（會因搖擺變動）
+      x: baseX,            // 目前實際 X
+      y: startY,           // 目前實際 Y（從畫面下方或隨機）
+      vy: -speed,          // 每秒向上的速度（負值＝往上）
+      swayAmp,
+      swayFreq,
+      swayPhase: Math.random() * Math.PI * 2,
+      repelX: 0,           // 閃躲位移 X
+      repelY: 0,           // 閃躲位移 Y
+      dead: false
+    };
+    this.elements.push(item);
+    return item;
+  }
+
+  /* 套用視覺樣式 */
+  applyStyle(el, type) {
     switch (type) {
       case 'circle':
-        // 圓暈（後景）
-        el.style.background = 'radial-gradient(circle, rgba(0, 212, 163, 0.06) 0%, rgba(0, 212, 163, 0) 70%)';
+        el.style.background = 'radial-gradient(circle, rgba(0,212,163,0.07) 0%, rgba(0,212,163,0) 70%)';
         el.style.borderRadius = '50%';
         break;
-
       case 'ring':
-        // 圓環
-        el.style.border = '1px solid rgba(0, 212, 163, 0.08)';
+        el.style.border = '1px solid rgba(0,212,163,0.1)';
         el.style.borderRadius = '50%';
         break;
-
       case 'dot':
-        // 小亮點（前景，像水中氣泡）
-        el.style.background = 'rgba(0, 212, 163, 0.3)';
+        el.style.background = 'rgba(0,212,163,0.35)';
         el.style.borderRadius = '50%';
-        el.style.boxShadow = '0 0 10px rgba(0, 212, 163, 0.4)';
+        el.style.boxShadow = '0 0 10px rgba(0,212,163,0.45)';
         break;
-
       case 'line':
-        // 細線（隨機角度）
         el.style.height = '1px';
-        el.style.background = 'linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08), transparent)';
-        el.style.transform = `rotate(${Math.random() * 180}deg)`;
+        el.style.width = '100%';
+        el.style.background = 'linear-gradient(90deg, transparent, rgba(255,255,255,0.09), transparent)';
         el.style.transformOrigin = 'center';
+        el.style.transform = `rotate(${Math.random() * 180}deg)`;
         break;
-
       case 'square':
-        // 小方框（旋轉）
-        el.style.border = '1px solid rgba(255, 255, 255, 0.07)';
+        el.style.border = '1px solid rgba(255,255,255,0.09)';
         el.style.transform = `rotate(${Math.random() * 45}deg)`;
         break;
     }
-
-    return el;
   }
 
-  randomBetween(min, max) {
-    return Math.random() * (max - min) + min;
-  }
+  /* === 主循環 === */
+  lastTime = 0;
+  tick(now = 0) {
+    const dt = Math.min((now - this.lastTime) / 1000, 0.05); // delta time，秒
+    this.lastTime = now;
 
-  animate() {
-    // 視差效果：頁面滾動時元素額外位移
-    this.elements.forEach(item => {
-      const offset = this.scrollY * item.parallaxSpeed;
-      item.wrapper.style.transform = `translateY(${-offset}px)`;
-    });
+    for (let i = this.elements.length - 1; i >= 0; i--) {
+      const item = this.elements[i];
 
-    requestAnimationFrame(() => this.animate());
-  }
-}
+      /* 1. 基礎上升 + 左右搖擺 */
+      item.y += item.vy * dt;
+      item.swayPhase += item.swayFreq * dt;
+      const swayX = Math.sin(item.swayPhase) * item.swayAmp;
+      item.x = item.baseX + swayX;
 
-/* 注入動畫 CSS */
-if (!document.getElementById('floating-decorations-style')) {
-  const style = document.createElement('style');
-  style.id = 'floating-decorations-style';
-  style.textContent = `
-    @keyframes bubbleRise {
-      0% {
-        transform: translateY(100vh);
+      /* 2. 計算滑鼠排斥力 */
+      const cx = item.x + item.sz / 2;    // 元素中心 X（以 fixed 座標）
+      const cy = item.y + item.sz / 2;    // 元素中心 Y（以 fixed 座標）
+      const dx = cx - this.mouseX;
+      const dy = cy - this.mouseY;
+      const dist = Math.sqrt(dx * dx + dy * dy);
+
+      if (dist < this.REPEL_RADIUS) {
+        /* 閃躲：推離到 REPEL_DIST 距離 */
+        const angle = Math.atan2(dy, dx);
+        const targetDist = this.REPEL_DIST;
+        const pushX = Math.cos(angle) * targetDist - dx;
+        const pushY = Math.sin(angle) * targetDist - dy;
+        item.repelX += (pushX - item.repelX) * 0.25;
+        item.repelY += (pushY - item.repelY) * 0.25;
+      } else {
+        /* 恢復 */
+        item.repelX *= 0.88;
+        item.repelY *= 0.88;
       }
-      100% {
-        transform: translateY(-100vh);
+
+      /* 3. 最終位置 */
+      const finalX = item.x + item.repelX;
+      const finalY = item.y + item.repelY;
+      item.el.style.transform = `translate(${finalX}px, ${finalY}px)`;
+
+      /* 4. 超出畫面上方 → 重生於底部 */
+      if (item.y + item.sz < -200) {
+        item.baseX = this.rand(0, window.innerWidth);
+        item.y = window.innerHeight + item.sz + 10;
+        item.vy = -(this.rand(40, 100));
+        item.repelX = 0;
+        item.repelY = 0;
+        item.swayPhase = Math.random() * Math.PI * 2;
       }
     }
-    @keyframes bubbleSway {
-      0% {
-        transform: translateX(0);
-      }
-      100% {
-        transform: translateX(var(--sway-x, 20px));
-      }
+
+    requestAnimationFrame(t => this.tick(t));
+  }
+
+  /* === 滑鼠拖尾綠點 === */
+  initMouseTrail() {
+    const count = 8;
+    const wrap = document.createElement('div');
+    wrap.style.cssText = 'position:fixed;inset:0;pointer-events:none;z-index:9999;';
+    document.body.appendChild(wrap);
+
+    const dots = [];
+    for (let i = 0; i < count; i++) {
+      const sz = Math.max(2, 6 - i * 0.6);
+      const d = document.createElement('div');
+      d.style.cssText = `
+        position:absolute; width:${sz}px; height:${sz}px;
+        border-radius:50%;
+        background:rgba(0,212,163,${0.75 - i * 0.08});
+        box-shadow:0 0 ${7 - i}px rgba(0,212,163,0.6);
+        transform:translate(-50%,-50%);
+        pointer-events:none;
+        transition:opacity 0.3s;
+        opacity:0;
+      `;
+      wrap.appendChild(d);
+      dots.push({ el: d, x: 0, y: 0 });
     }
-  `;
-  document.head.appendChild(style);
+
+    let mx = 0, my = 0;
+    document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; dots.forEach(d => d.el.style.opacity = '1'); });
+    document.addEventListener('mouseleave', () => dots.forEach(d => d.el.style.opacity = '0'));
+
+    let lt = 0;
+    const loop = (t) => {
+      if (t - lt > 14) {
+        dots[0].x = mx; dots[0].y = my;
+        for (let i = 1; i < dots.length; i++) {
+          dots[i].x += (dots[i-1].x - dots[i].x) * 0.35;
+          dots[i].y += (dots[i-1].y - dots[i].y) * 0.35;
+        }
+        dots.forEach(d => { d.el.style.left = d.x + 'px'; d.el.style.top = d.y + 'px'; });
+        lt = t;
+      }
+      requestAnimationFrame(loop);
+    };
+    requestAnimationFrame(loop);
+  }
+
+  rand(min, max) { return Math.random() * (max - min) + min; }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  new FloatingDecorations();
-});
+document.addEventListener('DOMContentLoaded', () => { new FloatingDecorations(); });
