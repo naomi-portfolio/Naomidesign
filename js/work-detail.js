@@ -7,6 +7,140 @@
  * 新增作品：複製一個物件、修改 id 與內容
  */
 const WORKS_DATA = {
+  'music-polaris': {
+    id: 'music-polaris',
+    category: 'music',
+    categoryLabel: { 'zh-TW': '音樂創作', 'en': 'Music' },
+    title: { 'zh-TW': '【願如北辰般】梧桐烽煙', 'en': '【Polaris】Tung & Feng' },
+    tagline: {
+      'zh-TW': '原創漫畫【願如北辰般】高宸&紹君主題音樂',
+      'en': 'Theme music for characters Gaouchen & Shaojun in original comic Polaris'
+    },
+    featureImage: 'images/polaris-cover.jpg',
+    featureIsVideo: false,
+    galleryStyle: 'spaced',
+    info: {
+      client: { 'zh-TW': '—', 'en': '—' },
+      year: '2026',
+      role: { 'zh-TW': '創作者', 'en': 'Creator' },
+      tools: 'Gemini + ChatGPT + Suno'
+    },
+    description: {
+      heading: {
+        'zh-TW': '願如<em>北辰般</em>，守望彼此',
+        'en': 'Like the <em>Polaris</em>, watching over each other'
+      },
+      paragraphs: {
+        'zh-TW': [
+          '<a href="https://youtu.be/x0fxyX0cGF0?si=VLZK8LgfHLCF8_eR" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.5em;padding:0.6em 1.4em;background:var(--color-accent);color:#000;font-weight:600;font-size:0.9rem;letter-spacing:0.05em;border-radius:6px;text-decoration:none;margin-bottom:0.5rem;">▶ 前往 YouTube 收聽</a>'
+        ],
+        'en': [
+          '<a href="https://youtu.be/x0fxyX0cGF0?si=VLZK8LgfHLCF8_eR" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.5em;padding:0.6em 1.4em;background:var(--color-accent);color:#000;font-weight:600;font-size:0.9rem;letter-spacing:0.05em;border-radius:6px;text-decoration:none;margin-bottom:0.5rem;">▶ Listen on YouTube</a>'
+        ]
+      }
+    },
+    lyrics: {
+      'zh-TW': `南國舊院 梧桐落盡 昨夜的烽煙
+撐傘少年 轉眼消失 殘酷的火線
+我以為 跨越階級 是最美的眷戀
+卻看見 你的長劍 斬斷了從前
+
+北國冰雪 淬鍊出 我無情的刀鋒
+重返故土 只為了 刺穿你的面容
+踏著殺機 潛伏在 你熟悉的迷宮
+這一次 我要親手 畫下這句終
+
+在這場 沒有贏家 的焚心局（焚心局）
+溫柔與槍口 殘酷地對立（殘酷對立）
+我帶著血仇 踏上生死的路途
+我藏著真相 換你片刻的救贖
+哪怕萬劫不復 也要為你粉身碎骨
+
+權力階梯 鋪滿了 被操弄的謊言
+處長大衣 掩不住 我當年的可憐
+卑微棋子 卻毀了 你一生的晴天
+知你活著 我靈魂 才逃出深淵
+
+南國黑夜 就由我 用這雙手掌控
+槍林彈雨 我為你 擋下所有煽動
+哪怕槍管 已抵住 我沉重的心胸
+我手中的 準星裡 留退路的風
+
+在這場 沒有贏家 的焚心局（只要你活下去）
+溫柔與槍口 殘酷地對立（殘酷對立）
+我帶著血仇 踏上生死的路途
+我藏著真相 換你片刻的救贖
+哪怕萬劫不復 也要為你粉身碎骨
+
+警報劃破黑夜 快逃出這座深淵
+滿城特工追殺 為何你擋在身前
+這是遲來救贖 讓我來斬斷鎖鏈
+不能倒在這裡 說好要一起走遠
+別回頭 快走！這是我最後的成全！
+
+撕裂這場 沒有贏家 的焚心局
+讓所有仇恨 在烈焰中 化為灰燼
+我以一人之軀 擋下所有殺戮
+卻眼看你倒下 踏上死神的路
+這是最殘忍的愛 也是最悲壯的救贖
+
+臉頰滑落 滾燙的淚水
+是大仇得報 還是心碎
+那個為我赴死的人 永遠沉睡
+這分不清的眼淚 是為了誰`,
+      'en': `Southern courtyard — the phoenix trees are bare, last night's signal fires
+A boy with an umbrella — vanished in an instant, into the cruel frontline
+I thought crossing the class divide was the most beautiful devotion
+Yet I watched your long sword sever everything we had before
+
+Northern ice and snow forged the cold edge of my mercy-less blade
+Returning to my homeland — only to drive it through your face
+Stepping through killing intent, lurking in the labyrinth you know so well
+This time, I will draw the final stroke with my own hands
+
+In this no-winner's game of burning hearts (burning hearts)
+Tenderness and gunpoint stand in cruel opposition (cruel opposition)
+I carry blood debts onto the road of life and death
+I hide the truth to buy you one moment of salvation
+Even if I am damned beyond return — I will be shattered to dust for you
+
+The ladder of power is paved with manipulated lies
+A director's coat cannot conceal how pitiful I once was
+A humble pawn who still managed to ruin the clear skies of your life
+Knowing you are alive — that is how my soul escaped the abyss
+
+The southern night is mine to command with these two hands
+Through storms of bullets I shield you from every act of incitement
+Even as the barrel presses hard against my heavy chest
+In the crosshairs I still hold — a chance for you to escape
+
+In this no-winner's game of burning hearts (just let you live)
+Tenderness and gunpoint stand in cruel opposition (cruel opposition)
+I carry blood debts onto the road of life and death
+I hide the truth to buy you one moment of salvation
+Even if I am damned beyond return — I will be shattered to dust for you
+
+The alarms tear through the black night — flee this deep pit now
+The city's agents are hunting us — why are you standing in their way
+This is a late-coming salvation — let me be the one to break the chains
+We cannot fall here — we promised we would walk away together
+Don't look back — go! This is my final gift to you!
+
+I tear apart this no-winner's burning-heart game
+Let all hatred turn to ash in the raging flames
+With only my body I hold back all the killing
+Yet I watch you fall — stepping onto death's own road
+This is love in its cruelest form — and the most valiant act of salvation
+
+Tears sliding hot down my cheek
+Is this the vengeance I sought — or is this heartbreak
+The one who died for me now sleeps forever
+These tears I cannot separate — whom are they even for`
+    },
+    gallery: [],
+    next: 'music-polaris'
+  },
+
   'eggpop-nft': {
     id: 'eggpop-nft',
     category: 'uiux',
@@ -416,11 +550,11 @@ const WORKS_DATA = {
       paragraphs: {
         'zh-TW': [
           '競賽活動頒獎典禮平面攝影紀錄',
-          '活動完整報導：<a href="https://www.acic.tw/coophub%E9%9D%92%E5%B9%B4%E5%9F%B9%E5%8A%9B%E6%9A%A8%E5%89%B5%E6%A5%AD%E6%A7%8B%E6%83%B3%E7%AB%B6%E8%B3%BD" target="_blank" rel="noopener" style="color:var(--color-accent);text-decoration:underline">acic.tw CoopHub</a>'
+          '<a href="https://www.acic.tw/coophub%E9%9D%92%E5%B9%B4%E5%9F%B9%E5%8A%9B%E6%9A%A8%E5%89%B5%E6%A5%AD%E6%A7%8B%E6%83%B3%E7%AB%B6%E8%B3%BD" target="_blank" rel="noopener" style="color:var(--color-accent);text-decoration:underline">官網活動介紹</a>'
         ],
         'en': [
           'Official photography documentation of the CoopHub award ceremony.',
-          'View full event coverage: <a href="https://www.acic.tw/coophub%E9%9D%92%E5%B9%B4%E5%9F%B9%E5%8A%9B%E6%9A%A8%E5%89%B5%E6%A5%AD%E6%A7%8B%E6%83%B3%E7%AB%B6%E8%B3%BD" target="_blank" rel="noopener" style="color:var(--color-accent);text-decoration:underline">acic.tw CoopHub</a>'
+          '<a href="https://www.acic.tw/coophub%E9%9D%92%E5%B9%B4%E5%9F%B9%E5%8A%9B%E6%9A%A8%E5%89%B5%E6%A5%AD%E6%A7%8B%E6%83%B3%E7%AB%B6%E8%B3%BD" target="_blank" rel="noopener" style="color:var(--color-accent);text-decoration:underline">Official Event Page</a>'
         ]
       }
     },
@@ -1031,13 +1165,16 @@ const WORKS_DATA = {
   'video-keelung-police': {
     id: 'video-keelung-police',
     category: 'video',
-    categoryLabel: { 'zh-TW': '影片', 'en': 'Video' },
+    categoryLabel: { 'zh-TW': '攝影剪輯', 'en': 'Photo & Edit' },
     title: { 'zh-TW': '基隆市警察局反詐宣導影片', 'en': 'Keelung Police Anti-Fraud Campaign Video' },
     tagline: {
       'zh-TW': '與基隆市警察局、吳怡霈合作，拍攝反詐宣導影片',
       'en': 'Anti-fraud awareness video produced in collaboration with Keelung Police Department and artist Wu Yi-Pei'
     },
     featureImage: 'images/antiscam-01.png',
+    embedVideo: 'https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fkcpb110%2Fvideos%2F475165201999063%2F&show_text=false&width=560&t=0',
+    embedVideoWidth: 560,
+    embedVideoHeight: 314,
     galleryStyle: 'masonry',
     info: {
       client: { 'zh-TW': '基隆市警察局', 'en': 'Keelung Police Department' },
@@ -1079,7 +1216,7 @@ const WORKS_DATA = {
   'clip-zhongqing': {
     id: 'clip-zhongqing',
     category: 'video',
-    categoryLabel: { 'zh-TW': '影片', 'en': 'Video' },
+    categoryLabel: { 'zh-TW': '攝影剪輯', 'en': 'Photo & Edit' },
     title: { 'zh-TW': '眾青雲集造浪營', 'en': 'Zhongqing Wave Camp' },
     tagline: {
       'zh-TW': '眾青雲集造浪營活動短影片剪輯',
@@ -1100,10 +1237,12 @@ const WORKS_DATA = {
       },
       paragraphs: {
         'zh-TW': [
-          '風掀浪起，眾青雲集！參與營隊，帶你認識政治選戰工作。模擬選戰 × 議題辯論 × 政治幕僚，不隨波逐流，學青？社青？來展現實力一同較勁！'
+          '風掀浪起，眾青雲集！參與營隊，帶你認識政治選戰工作。模擬選戰 × 議題辯論 × 政治幕僚，不隨波逐流，學青？社青？來展現實力一同較勁！',
+          '<a href="https://youtube.com/playlist?list=PL5m94OYv97Zt-vvOVnDuby_CnVENkFrE5&si=8XdUCz6uqmjwz75T" target="_blank" rel="noopener" style="color:var(--color-accent);text-decoration:underline">影片連結</a>'
         ],
         'en': [
-          "Waves rising, youth gathering! Join the camp and explore the world of political campaigns. Simulated elections x issue debates x political strategy — not going with the flow. Come and show what you're made of!"
+          "Waves rising, youth gathering! Join the camp and explore the world of political campaigns. Simulated elections x issue debates x political strategy — not going with the flow. Come and show what you're made of!",
+          '<a href="https://youtube.com/playlist?list=PL5m94OYv97Zt-vvOVnDuby_CnVENkFrE5&si=8XdUCz6uqmjwz75T" target="_blank" rel="noopener" style="color:var(--color-accent);text-decoration:underline">Video Playlist</a>'
         ]
       }
     },
@@ -1163,8 +1302,26 @@ class WorkDetailRenderer {
     // 主視覺
     const featureImg = document.querySelector('.work-feature-image img');
     if (featureImg) {
-      featureImg.src = w.featureImage;
-      featureImg.alt = this.t(w.title);
+      if (w.featureIsVideo && w.embedVideo) {
+        // 音樂/影片作品：頂部主圖用 YouTube iframe 替代
+        const featureInner = featureImg.closest('.work-feature-image-inner') || featureImg.parentElement;
+        featureInner.innerHTML = `
+          <div style="position:relative;width:100%;padding-bottom:56.25%;background:#000;">
+            <iframe
+              style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;"
+              src="${w.embedVideo}"
+              title="${this.t(w.title)}"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+        `;
+      } else {
+        featureImg.src = w.featureImage;
+        featureImg.alt = this.t(w.title);
+      }
     }
 
     // 專案資訊
@@ -1180,7 +1337,7 @@ class WorkDetailRenderer {
       paragraphsContainer.innerHTML = '';
       this.t(w.description.paragraphs).forEach(p => {
         const pEl = document.createElement('p');
-        pEl.textContent = p;
+        pEl.innerHTML = p;
         paragraphsContainer.appendChild(pEl);
       });
     }
@@ -1236,6 +1393,56 @@ class WorkDetailRenderer {
       const nextSection = document.querySelector('.work-next');
       if (nextSection) {
         nextSection.parentNode.insertBefore(protoSection, nextSection);
+      }
+    }
+
+    // embedVideo 嵌入（FB/YouTube iframe）：顯示在 gallery 上方
+    const existingEmbed = document.querySelector('.work-embed-video-section');
+    if (existingEmbed) existingEmbed.remove();
+    if (w.embedVideo) {
+      const embedSection = document.createElement('section');
+      embedSection.className = 'work-embed-video-section';
+      embedSection.style.cssText = 'padding: 4rem 0; background: var(--color-bg-soft);';
+      const w2 = w.embedVideoWidth || 560;
+      const h2 = w.embedVideoHeight || 315;
+      const ratio = (h2 / w2 * 100).toFixed(2);
+      embedSection.innerHTML = `
+        <div style="max-width: 900px; margin: 0 auto; padding: 0 var(--container-padding);">
+          <div style="position:relative; width:100%; padding-bottom:${ratio}%; border-radius:12px; overflow:hidden; background:#111;">
+            <iframe
+              style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;"
+              src="${w.embedVideo}"
+              scrolling="no"
+              allowfullscreen="true"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      `;
+      const gallerySection = document.querySelector('.work-gallery');
+      if (gallerySection) {
+        gallerySection.parentNode.insertBefore(embedSection, gallerySection);
+      }
+    }
+
+    // 歌詞區塊（僅音樂類作品）
+    const existingLyrics = document.querySelector('.work-lyrics-section');
+    if (existingLyrics) existingLyrics.remove();
+    if (w.lyrics) {
+      const lyricsText = this.t(w.lyrics);
+      const lyricsSection = document.createElement('section');
+      lyricsSection.className = 'work-lyrics-section';
+      lyricsSection.style.cssText = 'padding: 5rem 0; background: var(--color-bg);';
+      lyricsSection.innerHTML = `
+        <div style="max-width: 680px; margin: 0 auto; padding: 0 var(--container-padding);">
+          <p style="font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--color-text-muted); margin-bottom: 2rem;">— Lyrics</p>
+          <pre style="font-family: inherit; font-size: 1rem; line-height: 2.1; color: var(--color-text); white-space: pre-wrap; word-break: break-word; margin: 0;">${lyricsText}</pre>
+        </div>
+      `;
+      const gallerySection2 = document.querySelector('.work-gallery');
+      if (gallerySection2) {
+        gallerySection2.parentNode.insertBefore(lyricsSection, gallerySection2);
       }
     }
 

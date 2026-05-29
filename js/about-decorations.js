@@ -45,8 +45,15 @@ class FloatingDecorations {
     this.container = document.createElement('div');
     this.container.id = 'floating-decorations';
     this.container.style.cssText = `
-      position: fixed; inset: 0;
-      pointer-events: none; overflow: hidden; z-index: 0;
+      position: fixed;
+      top: -1px; left: -1px;
+      width: calc(100% + 2px);
+      height: calc(100% + 2px);
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 0;
+      border: none;
+      outline: none;
     `;
     document.body.insertBefore(this.container, document.body.firstChild);
 
@@ -55,7 +62,6 @@ class FloatingDecorations {
       { type: 'circle', count: 6,  size: [50, 120] },
       { type: 'ring',   count: 5,  size: [65, 150] },
       { type: 'dot',    count: 22, size: [3, 9]    },
-      { type: 'line',   count: 10, size: [70, 170] },
       { type: 'square', count: 4,  size: [8, 18]   }   // ← 縮小：原本 16-32
     ];
 
@@ -116,20 +122,14 @@ class FloatingDecorations {
         el.style.borderRadius = '50%';
         break;
       case 'ring':
-        el.style.border = '1px solid rgba(0,212,163,0.1)';
+        el.style.border = '1px solid rgba(0,212,163,0.08)';
         el.style.borderRadius = '50%';
+        el.style.boxSizing = 'border-box';
         break;
       case 'dot':
         el.style.background = 'rgba(0,212,163,0.35)';
         el.style.borderRadius = '50%';
         el.style.boxShadow = '0 0 10px rgba(0,212,163,0.45)';
-        break;
-      case 'line':
-        el.style.height = '1px';
-        el.style.width = '100%';
-        el.style.background = 'linear-gradient(90deg, transparent, rgba(255,255,255,0.09), transparent)';
-        el.style.transformOrigin = 'center';
-        el.style.transform = `rotate(${Math.random() * 180}deg)`;
         break;
       case 'square':
         el.style.border = '1px solid rgba(255,255,255,0.09)';

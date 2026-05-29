@@ -5,7 +5,7 @@ const translations = {
     'nav.about': '關於我',
     'nav.portfolio': '設計',
     'nav.photography': '攝影',
-    'nav.illustration': '插畫',
+    'nav.illustration': '創作',
     'nav.contact': '聯繫方式',
 
     'hero.eyebrow': 'UI / UX 設計師',
