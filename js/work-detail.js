@@ -139,7 +139,7 @@ These tears I cannot separate — whom are they even for`
     },
     gallery: [],
     next: 'music-polaris'
-  }
+  },
 
   'eggpop-nft': {
     id: 'eggpop-nft',
