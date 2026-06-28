@@ -775,9 +775,17 @@ class NavbarScroll {
 
   init() {
     if (!this.navbar) return;
+    // 動態設定 --navbar-height 供 filter-section sticky top 使用
+    const updateNavHeight = () => {
+      const h = this.navbar.getBoundingClientRect().height;
+      document.documentElement.style.setProperty('--navbar-height', h + 'px');
+    };
+    updateNavHeight();
     window.addEventListener('scroll', () => {
       this.navbar.classList.toggle('scrolled', window.scrollY > 50);
+      updateNavHeight();
     }, { passive: true });
+    window.addEventListener('resize', updateNavHeight, { passive: true });
   }
 }
 

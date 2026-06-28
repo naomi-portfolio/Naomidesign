@@ -63,46 +63,6 @@
     body.locked .footer { visibility: hidden; }
     body.unlocked #lock-screen { display: none; }
 
-    /* ── 頁首 ── */
-    .food-page-header {
-      padding: 9rem 0 3rem;
-      position: relative;
-      overflow: hidden;
-    }
-    .food-page-header::before {
-      content: '';
-      position: absolute; inset: 0;
-      background:
-        radial-gradient(circle at 30% 50%, rgba(0,212,163,0.07) 0%, transparent 50%),
-        radial-gradient(circle at 70% 30%, rgba(0,212,163,0.04) 0%, transparent 50%);
-      pointer-events: none;
-    }
-    .food-page-header .eyebrow {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.72rem; letter-spacing: 0.3em; text-transform: uppercase;
-      color: var(--color-accent, #00d4a3);
-      margin-bottom: 1.2rem;
-      display: flex; align-items: center; gap: 0.75rem;
-    }
-    .food-page-header .eyebrow::before {
-      content: ''; display: block;
-      width: 2rem; height: 1px;
-      background: var(--color-accent, #00d4a3);
-    }
-    .food-page-header h1 {
-      font-family: 'Playfair Display', 'Noto Serif TC', serif;
-      font-size: clamp(2.4rem, 5vw, 4rem);
-      font-weight: 700; line-height: 1.15;
-      color: var(--color-text, #e8e8e8);
-      margin-bottom: 1.2rem;
-    }
-    .food-page-header h1 em { font-style: italic; color: var(--color-accent, #00d4a3); }
-    .food-page-header p {
-      font-size: 1rem;
-      color: var(--color-text-muted, #888);
-      max-width: 520px; line-height: 1.8;
-    }
-
     .food-works-section { padding: 2rem 0 6rem; }
   </style>
 </head>
@@ -152,41 +112,52 @@
 
   <div id="page-content">
 
-    <!-- 標題區 -->
-    <header class="food-page-header">
+    <!-- 標題區（與設計頁一致） -->
+    <section class="portfolio-hero">
+      <div class="portfolio-hero-bg"></div>
       <div class="container">
-        <p class="eyebrow">餐飲品牌設計</p>
-        <h1>以美食為靈感的<br><em>品牌</em>視覺</h1>
-        <p>餐飲品牌識別、菜單設計、包裝與空間視覺，為每個品牌找到屬於它的味道。</p>
+        <div class="portfolio-hero-content">
+          <p class="portfolio-hero-eyebrow">餐飲品牌設計</p>
+          <h1 class="portfolio-hero-title">
+            <span class="title-wrapper">
+              <span class="title-line title-line-1">以美食為靈感的</span>
+            </span>
+            <span class="title-wrapper">
+              <span class="title-line title-line-2"><em>品牌</em>視覺</span>
+            </span>
+          </h1>
+          <p class="portfolio-hero-tagline">
+            餐飲品牌識別、菜單設計、包裝與空間視覺，為每個品牌找到屬於它的味道。
+          </p>
+        </div>
       </div>
-    </header>
+    </section>
 
     <!-- 作品網格 -->
     <section class="food-works-section">
       <div class="container">
         <div class="works-grid" id="food-grid">
 
-          <!-- ★ 新增作品請在此複製以下格式 ★
-
-          <a href="work-detail.html?id=WORK_ID" class="work-card" data-category="branding">
-            <div class="work-card-image" style="background-image: url('images/COVER.jpg');"></div>
+          <!-- 元氣十盅 -->
+          <a href="work-detail.html?id=food-yuanqi" class="work-card" data-category="branding">
+            <div class="work-card-image" style="background-image: url('images/yuanqi-01.jpg');"></div>
             <div class="work-card-overlay"></div>
             <span class="work-card-number">01</span>
             <div class="work-card-content">
               <div class="work-card-meta">
                 <span class="work-card-category">品牌識別</span>
-                <span class="work-card-year">2024</span>
+                <span class="work-card-year">2026</span>
               </div>
-              <h3 class="work-card-title">品牌名稱</h3>
-              <p class="work-card-description">簡短描述</p>
+              <h3 class="work-card-title">元氣十盅</h3>
+              <p class="work-card-description">餐飲品牌設計</p>
             </div>
           </a>
 
-          -->
+          <!-- ★ 新增更多作品請在此複製上方格式 ★ -->
 
           <div class="empty-state">
             <div class="empty-state-icon">∅</div>
-            <p class="empty-state-text">作品即將上線</p>
+            <p class="empty-state-text">此分類暫無作品</p>
           </div>
 
         </div>

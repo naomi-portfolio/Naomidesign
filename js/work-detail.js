@@ -1140,24 +1140,20 @@ These tears I cannot separate — whom are they even for`
         ]
       }
     },
-    gallery:     [
-      { src: 'images/zq-01.jpg', caption: { 'zh-TW': '主視覺', 'en': 'Key Visual' } },
-      { src: 'images/zq-02.jpg', caption: { 'zh-TW': '活動紀錄', 'en': 'Event' } },
-      { src: 'images/zq-03.jpg', caption: { 'zh-TW': '活動紀錄', 'en': 'Event' } },
-      { src: 'images/zq-04.jpg', caption: { 'zh-TW': '活動紀錄', 'en': 'Event' } },
-      { src: 'images/zq-05.jpg', caption: { 'zh-TW': '活動紀錄', 'en': 'Event' } },
-      { src: 'images/zq-06.jpg', caption: { 'zh-TW': '活動紀錄', 'en': 'Event' } },
-      { src: 'images/zq-07.jpg', caption: { 'zh-TW': '活動紀錄', 'en': 'Event' } },
-      { src: 'images/zq-08.jpg', caption: { 'zh-TW': '活動紀錄', 'en': 'Event' } },
-      { src: 'images/zq-09.jpg', caption: { 'zh-TW': '活動紀錄', 'en': 'Event' } },
-      { src: 'images/zq-10.jpg', caption: { 'zh-TW': '活動紀錄', 'en': 'Event' } },
-      { src: 'images/zq-11.jpg', caption: { 'zh-TW': '活動紀錄', 'en': 'Event' } },
-      { src: 'images/zq-12.jpg', caption: { 'zh-TW': '活動紀錄', 'en': 'Event' } },
-      { src: 'images/zq-13.jpg', caption: { 'zh-TW': '活動紀錄', 'en': 'Event' } },
-      { src: 'images/zq-14.jpg', caption: { 'zh-TW': '活動紀錄', 'en': 'Event' } },
-      { src: 'images/zq-15.jpg', caption: { 'zh-TW': '活動紀錄', 'en': 'Event' } },
-      { src: 'images/zq-16.jpg', caption: { 'zh-TW': '活動紀錄', 'en': 'Event' } },
-      { src: 'images/zq-17.jpg', caption: { 'zh-TW': '活動紀錄', 'en': 'Event' } }
+    gallery: [
+      { src: 'images/swap_01-01.jpg', caption: { 'zh-TW': 'LOGO 設計', 'en': 'LOGO Design' } },
+      { src: 'images/swap_01-02.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/swap_01-03.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/swap_01-04.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/swap_01-05.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/swap_01-06.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/swap_01-07.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/swap_01-08.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/swap_01-09.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/swap_01-10.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/swap_01-11.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/swap_01-12.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/swap_01-13.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } }
     ],
     next: 'tpp-app-redesign'
   },
@@ -1256,6 +1252,231 @@ These tears I cannot separate — whom are they even for`
       { src: 'images/wave-06.png', caption: { 'zh-TW': '影片截圖', 'en': 'Video Screenshot' } }
     ],
     next: 'video-keelung-police'
+  },
+
+  'zhongqing': {
+    id: 'zhongqing',
+    category: 'event',
+    categoryLabel: { 'zh-TW': '活動設計', 'en': 'Event Design' },
+    title: { 'zh-TW': '眾青雲集造浪營', 'en': 'Zhongqing Wave Camp' },
+    tagline: {
+      'zh-TW': '民眾黨青年委員會青年營隊規劃設計',
+      'en': 'TPP Youth Committee Camp Planning & Design'
+    },
+    featureImage: 'images/zq-01.jpg',
+    info: {
+      client: { 'zh-TW': '民眾黨青年委員會', 'en': 'TPP Youth Committee' },
+      year: '2023',
+      role: { 'zh-TW': '活動視覺設計', 'en': 'Event Visual Designer' },
+      tools: 'Illustrator, Photoshop'
+    },
+    description: {
+      heading: {
+        'zh-TW': '風掀浪起，眾青<em>雲集</em>',
+        'en': 'Waves rising, youth <em>gathering</em>'
+      },
+      paragraphs: {
+        'zh-TW': [
+          '風掀浪起，眾青雲集！參與營隊，帶你認識政治選戰工作。模擬選戰 × 議題辯論 × 政治幕僚，不隨波逐流，學青？社青？來展現實力一同較勁！',
+          '<a href="https://www.acic.tw/coophub%E9%9D%92%E5%B9%B4%E5%89%B5%E6%A5%AD%E6%9A%A8%E5%89%B5%E6%96%B0%E5%89%B5%E6%A5%AD%E7%A7%BB" target="_blank" rel="noopener" style="color:var(--color-accent);text-decoration:underline">官網活動介紹</a>'
+        ],
+        'en': [
+          "Waves rising, youth gathering! Join the camp and explore the world of political campaigns. Simulated elections x issue debates x political strategy — not going with the flow.",
+          '<a href="https://www.acic.tw/coophub%E9%9D%92%E5%B9%B4%E5%89%B5%E6%A5%AD%E6%9A%A8%E5%89%B5%E6%96%B0%E5%89%B5%E6%A5%AD%E7%A7%BB" target="_blank" rel="noopener" style="color:var(--color-accent);text-decoration:underline">Official Event Page</a>'
+        ]
+      }
+    },
+    gallery: [
+      { src: 'images/zq-01.jpg', caption: { 'zh-TW': '主視覺', 'en': 'Key Visual' } },
+      { src: 'images/zq-02.jpg', caption: { 'zh-TW': '活動設計', 'en': 'Event Design' } },
+      { src: 'images/zq-03.jpg', caption: { 'zh-TW': '活動設計', 'en': 'Event Design' } },
+      { src: 'images/zq-04.jpg', caption: { 'zh-TW': '活動設計', 'en': 'Event Design' } },
+      { src: 'images/zq-05.jpg', caption: { 'zh-TW': '活動設計', 'en': 'Event Design' } },
+      { src: 'images/zq-06.jpg', caption: { 'zh-TW': '活動設計', 'en': 'Event Design' } },
+      { src: 'images/zq-07.jpg', caption: { 'zh-TW': '活動設計', 'en': 'Event Design' } },
+      { src: 'images/zq-08.jpg', caption: { 'zh-TW': '活動設計', 'en': 'Event Design' } },
+      { src: 'images/zq-09.jpg', caption: { 'zh-TW': '活動設計', 'en': 'Event Design' } },
+      { src: 'images/zq-10.jpg', caption: { 'zh-TW': '活動設計', 'en': 'Event Design' } },
+      { src: 'images/zq-11.jpg', caption: { 'zh-TW': '活動設計', 'en': 'Event Design' } },
+      { src: 'images/zq-12.jpg', caption: { 'zh-TW': '活動設計', 'en': 'Event Design' } },
+      { src: 'images/zq-13.jpg', caption: { 'zh-TW': '活動設計', 'en': 'Event Design' } },
+      { src: 'images/zq-14.jpg', caption: { 'zh-TW': '活動設計', 'en': 'Event Design' } },
+      { src: 'images/zq-15.jpg', caption: { 'zh-TW': '活動設計', 'en': 'Event Design' } },
+      { src: 'images/zq-16.jpg', caption: { 'zh-TW': '活動設計', 'en': 'Event Design' } },
+      { src: 'images/zq-17.jpg', caption: { 'zh-TW': '活動設計', 'en': 'Event Design' } }
+    ],
+    next: 'xinsheng'
+  },
+
+  'defi': {
+    id: 'defi',
+    category: 'branding',
+    categoryLabel: { 'zh-TW': '品牌設計', 'en': 'Branding' },
+    title: { 'zh-TW': 'DeFi', 'en': 'DeFi' },
+    tagline: {
+      'zh-TW': 'DeFi 金融產品 LOGO 設計',
+      'en': 'DeFi financial product LOGO design'
+    },
+    featureImage: 'images/defi-01.jpg',
+    info: {
+      client: { 'zh-TW': 'DeFi', 'en': 'DeFi' },
+      year: '2024',
+      role: { 'zh-TW': 'LOGO 設計師', 'en': 'LOGO Designer' },
+      tools: 'Illustrator'
+    },
+    description: {
+      heading: {
+        'zh-TW': '此作品<em>內容待補</em>',
+        'en': 'Content <em>coming soon</em>'
+      },
+      paragraphs: {
+        'zh-TW': [
+          '此作品的詳細內容尚在整理中，後續會補上完整的專案敘述',
+          '若您對此作品感興趣，歡迎透過聯繫方式與我交流，我會分享更多細節'
+        ],
+        'en': [
+          'Detailed content for this project is being organized and will be added soon.',
+          'If you are interested, please reach out via the contact page for more details.'
+        ]
+      }
+    },
+    gallery: [
+      { src: 'images/defi-01.jpg', caption: { 'zh-TW': 'LOGO 設計', 'en': 'LOGO Design' } },
+      { src: 'images/defi-02.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/defi-03.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/defi-04.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/defi-05.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/defi-06.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/defi-07.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/defi-08.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/defi-09.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/defi-10.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/defi-11.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/defi-12.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } }
+    ],
+    next: 'swap'
+  },
+
+  'logo-collection': {
+    id: 'logo-collection',
+    category: 'graphic',
+    categoryLabel: { 'zh-TW': '平面設計', 'en': 'Graphic Design' },
+    title: { 'zh-TW': 'LOGO Collection', 'en': 'LOGO Collection' },
+    tagline: {
+      'zh-TW': '多元 LOGO 設計作品合集',
+      'en': 'Diverse LOGO design collection'
+    },
+    featureImage: '',
+    info: {
+      client: { 'zh-TW': '各品牌客戶', 'en': 'Various Clients' },
+      year: '2023 — 2024',
+      role: { 'zh-TW': 'LOGO 設計師', 'en': 'LOGO Designer' },
+      tools: 'Illustrator'
+    },
+    description: {
+      heading: {
+        'zh-TW': '此作品<em>內容待補</em>',
+        'en': 'Content <em>coming soon</em>'
+      },
+      paragraphs: {
+        'zh-TW': [
+          '此作品的詳細內容尚在整理中，後續會補上完整的專案敘述'
+        ],
+        'en': [
+          'Detailed content for this project is being organized and will be added soon.'
+        ]
+      }
+    },
+    gallery: [],
+    next: 'xinsheng'
+  },
+
+  'election': {
+    id: 'election',
+    category: 'graphic',
+    categoryLabel: { 'zh-TW': '平面設計', 'en': 'Graphic Design' },
+    title: { 'zh-TW': '縣市議員選舉文宣設計', 'en': 'City Council Election Campaign Design' },
+    tagline: {
+      'zh-TW': '新北市議員候選人選舉設計物',
+      'en': 'Campaign materials for New Taipei City council candidates'
+    },
+    featureImage: '',
+    info: {
+      client: { 'zh-TW': '新北市議員候選人', 'en': 'New Taipei City Council Candidates' },
+      year: '2022 — 2023',
+      role: { 'zh-TW': '平面設計師', 'en': 'Graphic Designer' },
+      tools: 'Illustrator, Photoshop'
+    },
+    description: {
+      heading: {
+        'zh-TW': '此作品<em>內容待補</em>',
+        'en': 'Content <em>coming soon</em>'
+      },
+      paragraphs: {
+        'zh-TW': [
+          '此作品的詳細內容尚在整理中，後續會補上完整的專案敘述'
+        ],
+        'en': [
+          'Detailed content for this project is being organized and will be added soon.'
+        ]
+      }
+    },
+    gallery: [],
+    next: 'logo-collection'
+  },
+
+  'food-yuanqi': {
+    id: 'food-yuanqi',
+    category: 'branding',
+    categoryLabel: { 'zh-TW': '餐飲品牌設計', 'en': 'F&B Branding' },
+    title: { 'zh-TW': '元氣十盅 日常料理小食堂', 'en': 'Yuan Qi Daily Kitchen' },
+    tagline: {
+      'zh-TW': '餐飲品牌設計',
+      'en': 'F&B Brand Design'
+    },
+    featureImage: 'images/yuanqi-01.jpg',
+    info: {
+      client: { 'zh-TW': '元氣十盅', 'en': 'Yuan Qi' },
+      year: '2026',
+      role: { 'zh-TW': '品牌設計師', 'en': 'Brand Designer' },
+      tools: 'Illustrator'
+    },
+    description: {
+      heading: {
+        'zh-TW': '元氣<em>十盅</em>，日常料理小食堂',
+        'en': 'Yuan Qi <em>Daily Kitchen</em>'
+      },
+      paragraphs: {
+        'zh-TW': [
+          '一盅熱湯、一碗拌麵、一碟家常小菜，如家一般的溫柔款待，讓好好吃飯成為一家人最期待的溫馨日常'
+        ],
+        'en': [
+          'A bowl of warm soup, a plate of noodles, a dish of home-style sides — gentle hospitality like home, making every meal a cherished daily moment for the family.'
+        ]
+      }
+    },
+    gallery: [
+      { src: 'images/yuanqi-01.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/yuanqi-02.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/yuanqi-03.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/yuanqi-04.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/yuanqi-05.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/yuanqi-06.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/yuanqi-07.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/yuanqi-08.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/yuanqi-09.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/yuanqi-10.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/yuanqi-11.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/yuanqi-12.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/yuanqi-13.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/yuanqi-14.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/yuanqi-15.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/yuanqi-16.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/yuanqi-17.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/yuanqi-18.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/yuanqi-19.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } }
+    ],
+    next: 'food-yuanqi'
   },
 };
 
