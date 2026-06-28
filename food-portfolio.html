@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>餐飲品牌設計 — Designer Name</title>
+  <title>餐飲品牌設計 — Naomi</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -24,69 +24,46 @@
       align-items: center;
       justify-content: center;
     }
-    .lock-inner {
-      width: min(420px, 90vw);
-      text-align: center;
-    }
+    .lock-inner { width: min(420px, 90vw); text-align: center; }
     .lock-icon { font-size: 2.5rem; margin-bottom: 1.5rem; opacity: 0.5; }
     .lock-inner h2 {
       font-family: 'Noto Serif TC', serif;
-      font-size: 1.4rem;
-      font-weight: 500;
+      font-size: 1.4rem; font-weight: 500;
       color: var(--color-text, #e8e8e8);
       margin-bottom: 0.4rem;
     }
     .lock-inner p {
       font-size: 0.85rem;
       color: var(--color-text-muted, #666);
-      margin-bottom: 2rem;
-      letter-spacing: 0.04em;
+      margin-bottom: 2rem; letter-spacing: 0.04em;
     }
-    .pw-field {
-      display: flex;
-      gap: 0.75rem;
-    }
+    .pw-field { display: flex; gap: 0.75rem; }
     .pw-field input {
       flex: 1;
       background: rgba(255,255,255,0.05);
       border: 1px solid rgba(255,255,255,0.12);
       border-radius: 8px;
       color: var(--color-text, #e8e8e8);
-      font-size: 1rem;
-      padding: 0.75rem 1rem;
-      outline: none;
-      transition: border-color 0.2s;
-      font-family: inherit;
+      font-size: 1rem; padding: 0.75rem 1rem;
+      outline: none; transition: border-color 0.2s; font-family: inherit;
     }
     .pw-field input:focus { border-color: var(--color-accent, #00d4a3); }
     .pw-field button {
       padding: 0.75rem 1.5rem;
       background: var(--color-accent, #00d4a3);
-      color: #000;
-      font-weight: 600;
-      font-size: 0.9rem;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-family: inherit;
-      transition: opacity 0.2s;
-      white-space: nowrap;
+      color: #000; font-weight: 600; font-size: 0.9rem;
+      border: none; border-radius: 8px; cursor: pointer;
+      font-family: inherit; transition: opacity 0.2s; white-space: nowrap;
     }
     .pw-field button:hover { opacity: 0.85; }
-    .pw-error {
-      margin-top: 0.75rem;
-      font-size: 0.8rem;
-      color: #e04050;
-      min-height: 1.2em;
-    }
+    .pw-error { margin-top: 0.75rem; font-size: 0.8rem; color: #e04050; min-height: 1.2em; }
 
-    /* ── 頁面鎖定時隱藏主體 ── */
     body.locked .navbar,
     body.locked #page-content,
-    body.locked .site-footer { visibility: hidden; }
+    body.locked .footer { visibility: hidden; }
     body.unlocked #lock-screen { display: none; }
 
-    /* ── 頁首標題區（無 hero，直接標題列）── */
+    /* ── 頁首 ── */
     .food-page-header {
       padding: 9rem 0 3rem;
       position: relative;
@@ -94,8 +71,7 @@
     }
     .food-page-header::before {
       content: '';
-      position: absolute;
-      inset: 0;
+      position: absolute; inset: 0;
       background:
         radial-gradient(circle at 30% 50%, rgba(0,212,163,0.07) 0%, transparent 50%),
         radial-gradient(circle at 70% 30%, rgba(0,212,163,0.04) 0%, transparent 50%);
@@ -103,42 +79,30 @@
     }
     .food-page-header .eyebrow {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 0.72rem;
-      letter-spacing: 0.3em;
-      text-transform: uppercase;
+      font-size: 0.72rem; letter-spacing: 0.3em; text-transform: uppercase;
       color: var(--color-accent, #00d4a3);
       margin-bottom: 1.2rem;
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
+      display: flex; align-items: center; gap: 0.75rem;
     }
     .food-page-header .eyebrow::before {
-      content: '';
-      display: block;
-      width: 2rem;
-      height: 1px;
+      content: ''; display: block;
+      width: 2rem; height: 1px;
       background: var(--color-accent, #00d4a3);
     }
     .food-page-header h1 {
       font-family: 'Playfair Display', 'Noto Serif TC', serif;
       font-size: clamp(2.4rem, 5vw, 4rem);
-      font-weight: 700;
-      line-height: 1.15;
+      font-weight: 700; line-height: 1.15;
       color: var(--color-text, #e8e8e8);
       margin-bottom: 1.2rem;
     }
-    .food-page-header h1 em {
-      font-style: italic;
-      color: var(--color-accent, #00d4a3);
-    }
+    .food-page-header h1 em { font-style: italic; color: var(--color-accent, #00d4a3); }
     .food-page-header p {
       font-size: 1rem;
       color: var(--color-text-muted, #888);
-      max-width: 520px;
-      line-height: 1.8;
+      max-width: 520px; line-height: 1.8;
     }
 
-    /* ── 作品格 ── */
     .food-works-section { padding: 2rem 0 6rem; }
   </style>
 </head>
@@ -164,7 +128,9 @@
   <div class="scroll-progress"></div>
 
   <nav class="navbar">
-    <a href="index.html" class="nav-logo">Designer<span class="accent">.</span></a>
+    <a href="index.html" class="nav-logo">
+      Designer<span class="accent">.</span>
+    </a>
     <button class="menu-toggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
     </button>
@@ -200,7 +166,7 @@
       <div class="container">
         <div class="works-grid" id="food-grid">
 
-          <!-- ★ 新增作品請在此區塊內複製以下格式 ★
+          <!-- ★ 新增作品請在此複製以下格式 ★
 
           <a href="work-detail.html?id=WORK_ID" class="work-card" data-category="branding">
             <div class="work-card-image" style="background-image: url('images/COVER.jpg');"></div>
@@ -230,41 +196,60 @@
     <!-- CTA -->
     <section class="portfolio-cta">
       <div class="container">
-        <h2 class="portfolio-cta-text reveal">對某個<em>專案</em>感興趣嗎？</h2>
+        <h2 class="portfolio-cta-text reveal" data-i18n="portfolio.cta.text">對某個<em>專案</em>感興趣嗎？</h2>
         <div class="magnetic reveal">
           <a href="contact.html" class="contact-cta-button magnetic-inner">
-            <span>聊聊合作</span>
+            <span data-i18n="portfolio.cta.btn">聊聊合作</span>
             <span class="arrow">→</span>
           </a>
         </div>
       </div>
     </section>
 
-  </div>
+  </div><!-- /page-content -->
 
-  <footer class="site-footer">
+  <!-- Footer（與 portfolio.html 完全一致） -->
+  <footer class="footer">
     <div class="container">
-      <div class="footer-top">
-        <a href="index.html" class="footer-logo">Designer<span class="accent">.</span></a>
-        <nav class="footer-nav">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3 data-i18n="footer.brand">設計師姓名</h3>
+          <p data-i18n="footer.tagline">UI/UX 設計師、視覺創作者，專注於打造令人記憶深刻的數位體驗。</p>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer.col1.title">導覽</h4>
           <ul>
-            <li><a href="index.html">首頁</a></li>
-            <li><a href="portfolio.html">設計</a></li>
-            <li><a href="photography.html">攝影</a></li>
-            <li><a href="illustration.html">創作</a></li>
-            <li><a href="contact.html">聯繫方式</a></li>
+            <li><a href="index.html" data-i18n="nav.home">首頁</a></li>
+            <li><a href="about.html" data-i18n="nav.about">關於我</a></li>
+            <li><a href="portfolio.html" data-i18n="nav.portfolio">設計</a></li>
+            <li><a href="photography.html" data-i18n="nav.photography">攝影</a></li>
+            <li><a href="illustration.html" data-i18n="nav.illustration">創作</a></li>
           </ul>
-        </nav>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer.col2.title">聯絡</h4>
+          <ul>
+            <li><a href="mailto:tp6vul3vm06@gmail.com">tp6vul3vm06@gmail.com</a></li>
+            <li><a href="#" target="_blank">Instagram</a></li>
+            <li><a href="#" target="_blank">Behance</a></li>
+            <li><a href="https://www.linkedin.com/in/%E7%AD%B1%E7%92%87-%E9%99%B3-86a71436a/" target="_blank">LinkedIn</a></li>
+          </ul>
+        </div>
       </div>
+
       <div class="footer-bottom">
-        <p>© 2025 Designer Name. All rights reserved.</p>
+        <span data-i18n="footer.copyright">© 2026 設計師姓名. 版權所有。</span>
+        <span data-i18n="footer.location">Made in Taipei</span>
       </div>
     </div>
   </footer>
 
   <script src="https://unpkg.com/lenis@1.3.21/dist/lenis.min.js"></script>
-  <script src="js/common.js"></script>
   <script src="js/particles.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/portfolio.js"></script>
 
   <script>
     const CORRECT_PW = 'gengyu0824';
