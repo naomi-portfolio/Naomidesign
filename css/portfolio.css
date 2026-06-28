@@ -89,15 +89,16 @@
 
 /* === 篩選器（Sticky）=== */
 .filter-section {
-  padding: 0 0 1.5rem;
+  padding: 1rem 0 1.5rem;
   position: sticky;
-  top: 80px;
+  top: 56px;
   z-index: 50;
   background: rgba(10, 10, 10, 0.95);
   backdrop-filter: blur(16px) saturate(150%);
   -webkit-backdrop-filter: blur(16px) saturate(150%);
   border-bottom: 1px solid var(--color-border);
   margin-top: 0;
+  box-shadow: 0 -30px 0 0 rgba(10, 10, 10, 0.95);
 }
 
 .filter-bar {
@@ -401,7 +402,7 @@
   }
 
   .filter-section {
-    top: 70px;
+    top: 48px;
   }
 
   .filter-bar {
