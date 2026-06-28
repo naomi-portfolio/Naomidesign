@@ -9,7 +9,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 8rem 0 3rem;
+  padding: 8rem 0 0;
   overflow: hidden;
 }
 
@@ -89,14 +89,15 @@
 
 /* === 篩選器（Sticky）=== */
 .filter-section {
-  padding: 2rem 0 3rem;
+  padding: 1.5rem 0 2rem;
   position: sticky;
   top: 80px;
   z-index: 50;
-  background: rgba(10, 10, 10, 0.85);
+  background: rgba(10, 10, 10, 0.95);
   backdrop-filter: blur(16px) saturate(150%);
   -webkit-backdrop-filter: blur(16px) saturate(150%);
   border-bottom: 1px solid var(--color-border);
+  margin-top: 0;
 }
 
 .filter-bar {
