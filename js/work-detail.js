@@ -1476,6 +1476,109 @@ These tears I cannot separate — whom are they even for`
       { src: 'images/yuanqi-18.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
       { src: 'images/yuanqi-19.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } }
     ],
+    next: 'food-jiuzai'
+  },
+
+  'food-jiuzai': {
+    id: 'food-jiuzai',
+    category: 'branding',
+    categoryLabel: { 'zh-TW': '餐飲品牌設計', 'en': 'F&B Branding' },
+    title: { 'zh-TW': '玖在一方 北方手做麵餃', 'en': 'Jiuzai Yifang — Northern Handmade Noodles & Dumplings' },
+    tagline: {
+      'zh-TW': '餐飲品牌設計',
+      'en': 'F&B Brand Design'
+    },
+    featureImage: 'images/jiuzai-01.jpg',
+    info: {
+      client: { 'zh-TW': '玖在一方', 'en': 'Jiuzai Yifang' },
+      year: '2026',
+      role: { 'zh-TW': '品牌設計師', 'en': 'Brand Designer' },
+      tools: 'Illustrator'
+    },
+    description: {
+      heading: {
+        'zh-TW': '一方圓滿，長<em>玖</em>相伴',
+        'en': 'A place of fulfillment, <em>lasting</em> companionship'
+      },
+      paragraphs: {
+        'zh-TW': [
+          '傳承佟記小北平近四十年的歲月火候，將揉捻麵糰的職人溫度，化作款待四方來客的真誠。將緣分與人情溫暖交織、讓旅人與在地客都能安心歇腳的一方天地'
+        ],
+        'en': [
+          "Inheriting nearly four decades of culinary heritage from Tong\'s Xiao Bei Ping, transforming the artisan warmth of hand-kneaded dough into sincere hospitality for guests from all directions — weaving together fate and human warmth, creating a haven where travelers and locals alike can rest easy."
+        ]
+      }
+    },
+    gallery: [
+      { src: 'images/jiuzai-01.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/jiuzai-02.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/jiuzai-03.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/jiuzai-04.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/jiuzai-05.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/jiuzai-06.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/jiuzai-07.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/jiuzai-08.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/jiuzai-09.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/jiuzai-10.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/jiuzai-11.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/jiuzai-12.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/jiuzai-13.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/jiuzai-14.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/jiuzai-15.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/jiuzai-16.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/jiuzai-17.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } }
+    ],
+    next: 'food-zhengzheng'
+  },
+
+  'food-zhengzheng': {
+    id: 'food-zhengzheng',
+    category: 'branding',
+    categoryLabel: { 'zh-TW': '餐飲品牌設計', 'en': 'F&B Branding' },
+    title: { 'zh-TW': '蒸蒸日饗 地中海健康餐盒', 'en': 'Zheng Zheng Ri Xiang — Mediterranean Healthy Meals' },
+    tagline: {
+      'zh-TW': '餐飲品牌設計',
+      'en': 'F&B Brand Design'
+    },
+    featureImage: 'images/zhengzheng-01.jpg',
+    info: {
+      client: { 'zh-TW': '蒸蒸日饗', 'en': 'Zheng Zheng Ri Xiang' },
+      year: '2026',
+      role: { 'zh-TW': '品牌設計師', 'en': 'Brand Designer' },
+      tools: 'Illustrator'
+    },
+    description: {
+      heading: {
+        'zh-TW': '減法日常，純粹<em>日饗</em>',
+        'en': 'Subtraction in daily life, pure <em>daily delights</em>'
+      },
+      paragraphs: {
+        'zh-TW': [
+          '捨去繁雜調味，以地中海均衡哲學，淬鍊食材最純粹的鮮甜。'
+        ],
+        'en': [
+          'Letting go of complex seasonings, embracing the Mediterranean philosophy of balance, distilling the purest sweetness from every ingredient.'
+        ]
+      }
+    },
+    gallery: [
+      { src: 'images/zhengzheng-01.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/zhengzheng-02.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/zhengzheng-03.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/zhengzheng-04.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/zhengzheng-05.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/zhengzheng-06.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/zhengzheng-07.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/zhengzheng-08.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/zhengzheng-09.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/zhengzheng-10.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/zhengzheng-11.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/zhengzheng-12.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/zhengzheng-13.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/zhengzheng-14.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/zhengzheng-15.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } },
+      { src: 'images/zhengzheng-16.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } }
+    ],
     next: 'food-yuanqi'
   },
 };
