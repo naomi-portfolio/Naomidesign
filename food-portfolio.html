@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>餐飲品牌設計 — Designer Name</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.21/dist/lenis.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/portfolio.css">
+
+  <style>
+    /* ── 密碼畫面 ── */
+    #lock-screen {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: var(--color-bg, #0a0a0a);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    #lock-screen .lock-inner {
+      width: min(420px, 90vw);
+      text-align: center;
+    }
+    #lock-screen .lock-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      opacity: 0.6;
+    }
+    #lock-screen h2 {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: var(--color-text, #e8e8e8);
+      margin-bottom: 0.5rem;
+    }
+    #lock-screen p {
+      font-size: 0.85rem;
+      color: var(--color-text-muted, #666);
+      margin-bottom: 2rem;
+      letter-spacing: 0.05em;
+    }
+    #lock-screen .pw-field {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+    }
+    #lock-screen input[type="password"] {
+      flex: 1;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 8px;
+      color: var(--color-text, #e8e8e8);
+      font-size: 1rem;
+      padding: 0.75rem 1rem;
+      outline: none;
+      transition: border-color 0.2s;
+      font-family: inherit;
+    }
+    #lock-screen input[type="password"]:focus {
+      border-color: var(--color-accent, #00d4a3);
+    }
+    #lock-screen button {
+      padding: 0.75rem 1.5rem;
+      background: var(--color-accent, #00d4a3);
+      color: #000;
+      font-weight: 600;
+      font-size: 0.9rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: opacity 0.2s;
+      font-family: inherit;
+    }
+    #lock-screen button:hover { opacity: 0.85; }
+    #lock-screen .pw-error {
+      margin-top: 0.75rem;
+      font-size: 0.8rem;
+      color: #e05;
+      min-height: 1.2em;
+      letter-spacing: 0.03em;
+    }
+
+    /* ── 頁面隱藏時 ── */
+    body.locked .navbar,
+    body.locked #page-content {
+      visibility: hidden;
+    }
+    body.unlocked #lock-screen {
+      display: none;
+    }
+  </style>
+</head>
+<body class="locked">
+
+  <!-- ── 密碼畫面 ── -->
+  <div id="lock-screen">
+    <div class="lock-inner">
+      <div class="lock-icon">🔒</div>
+      <h2>此頁面受密碼保護</h2>
+      <p>請輸入密碼以進入餐飲品牌設計作品集</p>
+      <div class="pw-field">
+        <input type="password" id="pw-input" placeholder="輸入密碼" autocomplete="off">
+        <button id="pw-btn">進入</button>
+      </div>
+      <div class="pw-error" id="pw-error"></div>
+    </div>
+  </div>
+
+  <!-- ── 主頁面（密碼正確後顯示）── -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <div class="scroll-progress"></div>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      Designer<span class="accent">.</span>
+    </a>
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav.home">首頁</a></li>
+        <li><a href="about.html" data-i18n="nav.about">關於我</a></li>
+        <li><a href="portfolio.html" data-i18n="nav.portfolio">設計</a></li>
+        <li><a href="photography.html" data-i18n="nav.photography">攝影</a></li>
+        <li><a href="illustration.html" data-i18n="nav.illustration">創作</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">聯繫方式</a></li>
+      </ul>
+      <div class="lang-switch">
+        <button data-lang="zh-TW" class="active">中</button>
+        <button data-lang="en">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <div id="page-content">
+
+    <!-- 1. 頁首 -->
+    <section class="portfolio-hero">
+      <div class="portfolio-hero-bg"></div>
+      <div class="container">
+        <div class="portfolio-hero-content">
+          <p class="portfolio-hero-eyebrow">餐飲品牌設計</p>
+          <h1 class="portfolio-hero-title">
+            <span class="title-wrapper">
+              <span class="title-line title-line-1">以美食為靈感的</span>
+            </span>
+            <span class="title-wrapper">
+              <span class="title-line title-line-2"><em>品牌</em>視覺</span>
+            </span>
+          </h1>
+          <p class="portfolio-hero-tagline">
+            餐飲品牌識別、菜單設計、包裝與空間視覺，為每個品牌找到屬於它的味道。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. 篩選器 -->
+    <section class="filter-section">
+      <div class="container">
+        <div class="filter-bar">
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">全部</button>
+            <button class="filter-btn" data-filter="branding">品牌識別</button>
+            <button class="filter-btn" data-filter="menu">菜單設計</button>
+            <button class="filter-btn" data-filter="packaging">包裝設計</button>
+          </div>
+          <div class="filter-count">
+            <span>展示作品</span>
+            <span class="count-num" id="food-count">0</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. 作品網格 -->
+    <section class="works-grid-section">
+      <div class="container">
+        <div class="works-grid" id="food-grid">
+          <!-- 作品卡片請依以下格式新增 -->
+          <!-- 範例卡片（可替換成真實作品）-->
+          <!--
+          <a href="work-detail.html?id=WORK_ID" class="work-card" data-category="branding">
+            <div class="work-card-image" style="background-image: url('images/COVER.jpg');"></div>
+            <div class="work-card-overlay"></div>
+            <span class="work-card-number">01</span>
+            <div class="work-card-content">
+              <div class="work-card-meta">
+                <span class="work-card-category">品牌識別</span>
+                <span class="work-card-year">2024</span>
+              </div>
+              <h3 class="work-card-title">品牌名稱</h3>
+              <p class="work-card-description">簡短描述</p>
+            </div>
+          </a>
+          -->
+
+          <div class="empty-state">
+            <div class="empty-state-icon">∅</div>
+            <p class="empty-state-text">此分類暫無作品</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. 返回設計頁 -->
+    <section class="portfolio-cta">
+      <div class="container">
+        <h2 class="portfolio-cta-text reveal">對某個<em>專案</em>感興趣嗎？</h2>
+        <div class="magnetic reveal">
+          <a href="contact.html" class="contact-cta-button magnetic-inner">
+            <span>聊聊合作</span>
+            <span class="arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /page-content -->
+
+  <!-- Footer（與 portfolio.html 一致） -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="index.html" class="footer-logo">Designer<span class="accent">.</span></a>
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">首頁</a></li>
+            <li><a href="portfolio.html" data-i18n="nav.portfolio">設計</a></li>
+            <li><a href="photography.html" data-i18n="nav.photography">攝影</a></li>
+            <li><a href="illustration.html" data-i18n="nav.illustration">創作</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">聯繫方式</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer.copy">© 2025 Designer Name. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lenis@1.3.21/dist/lenis.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/portfolio.js"></script>
+  <script src="js/particles.js"></script>
+
+  <script>
+    // ── 密碼驗證 ──
+    const CORRECT_PW = 'gengyu0824';
+    const SESSION_KEY = 'food_portfolio_unlocked';
+
+    function unlock() {
+      document.body.classList.remove('locked');
+      document.body.classList.add('unlocked');
+      sessionStorage.setItem(SESSION_KEY, '1');
+      updateCount();
+    }
+
+    function tryUnlock() {
+      const val = document.getElementById('pw-input').value;
+      if (val === CORRECT_PW) {
+        unlock();
+      } else {
+        const err = document.getElementById('pw-error');
+        err.textContent = '密碼錯誤，請再試一次。';
+        document.getElementById('pw-input').value = '';
+        document.getElementById('pw-input').focus();
+        setTimeout(() => { err.textContent = ''; }, 3000);
+      }
+    }
+
+    document.getElementById('pw-btn').addEventListener('click', tryUnlock);
+    document.getElementById('pw-input').addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') tryUnlock();
+    });
+
+    // 同一 session 內已解鎖則直接顯示
+    if (sessionStorage.getItem(SESSION_KEY) === '1') unlock();
+
+    // 更新作品數量
+    function updateCount() {
+      const cards = document.querySelectorAll('#food-grid .work-card');
+      document.getElementById('food-count').textContent = cards.length;
+    }
+
+    // 篩選器
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('#food-grid .work-card').forEach(card => {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

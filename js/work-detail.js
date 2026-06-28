@@ -139,7 +139,7 @@ These tears I cannot separate — whom are they even for`
     },
     gallery: [],
     next: 'music-polaris'
-  },
+  }
 
   'eggpop-nft': {
     id: 'eggpop-nft',
@@ -1104,7 +1104,7 @@ These tears I cannot separate — whom are they even for`
       { src: 'images/xs-08.jpg', caption: { 'zh-TW': '旗幟與服裝設計', 'en': 'Flag & Apparel Design' } },
       { src: 'images/xs-09.jpg', caption: { 'zh-TW': '校慶紀念品', 'en': 'Anniversary Merchandise' } }
     ],
-    next: 'zhongqing'
+    next: 'clip-zhongqing'
   },
 
   'swap': {
@@ -1420,6 +1420,7 @@ class WorkDetailRenderer {
           </div>
         </div>
       `;
+      // 插在 work-gallery 之前
       const gallerySection = document.querySelector('.work-gallery');
       if (gallerySection) {
         gallerySection.parentNode.insertBefore(embedSection, gallerySection);
