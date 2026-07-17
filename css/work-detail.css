@@ -242,8 +242,8 @@
   width: 100%;
   overflow: hidden;
   background: var(--color-bg-soft);
-  opacity: 0;
-  transform: translateY(60px);
+  opacity: 1;
+  transform: none;
   transition: opacity 1.4s var(--ease-out-expo),
               transform 1.4s var(--ease-out-expo);
 }
