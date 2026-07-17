@@ -943,7 +943,7 @@ These tears I cannot separate — whom are they even for`
     featureImage: 'images/tpp-01.jpg',
     figmaPrototype: 'https://embed.figma.com/proto/EgTseeAoPXfryAl8LV485r/%E6%B0%91%E7%9C%BE%E9%BB%A8app?node-id=4853-1073&starting-point-node-id=4850%3A1070&embed-host=share',
     info: {
-      client: { 'zh-TW': '台灣民眾黨（自主重製）', 'en': "Taiwan People's Party (Self-initiated Redesign)" },
+      client: { 'zh-TW': '台灣民眾黨', 'en': "Taiwan People's Party" },
       year: '2022',
       role: { 'zh-TW': 'UI / UX 設計師', 'en': 'UI / UX Designer' },
       tools: 'Figma'
@@ -1580,6 +1580,62 @@ These tears I cannot separate — whom are they even for`
       { src: 'images/zhengzheng-16.jpg', caption: { 'zh-TW': '品牌設計', 'en': 'Branding' } }
     ],
     next: 'food-yuanqi'
+  },
+
+  'galaxy-domain': {
+    id: 'galaxy-domain',
+    category: 'uiux',
+    categoryLabel: { 'zh-TW': 'UI / UX', 'en': 'UI / UX' },
+    title: { 'zh-TW': '星塵領域 Galaxy Domain', 'en': 'Galaxy Domain' },
+    tagline: {
+      'zh-TW': '一款將 DeFi 質押機制包裝成療癒系模擬經營遊戲的 App，搭配完整的 B 端營運管理後台，讓零區塊鏈經驗的玩家也能無痛遊玩。',
+      'en': 'A healing simulation game app that wraps DeFi staking mechanics, with a complete B-side operations dashboard, enabling zero-blockchain-experience players to play effortlessly.'
+    },
+    featureImage: 'images/galaxy-hero.jpg',
+    info: {
+      client: { 'zh-TW': '—', 'en': '—' },
+      year: '2025',
+      role: { 'zh-TW': 'UIUX 設計師 / 美術設計', 'en': 'UIUX Designer / Art Director' },
+      tools: 'Figma'
+    },
+    description: {
+      heading: {
+        'zh-TW': '不只是一款遊戲，而是一次金融體驗的<em>遊戲化翻譯</em>',
+        'en': 'Not just a game, but a <em>gamified translation</em> of financial experience'
+      },
+      paragraphs: {
+        'zh-TW': [
+          '傳統 DeFi 產品存在極高的認知門檻——質押、流動性挖礦、年化報酬率等術語，讓超過 90% 的潛在用戶在註冊前就已流失。問題的根源不在功能不足，而在於整套體驗是「為懂的人設計的」。',
+          '這次設計的目的不是在金融介面上貼一層遊戲皮，而是一次由底層心智模型出發的體驗架構重構——用模擬經營取代操作報表，用收成動畫取代交易確認，讓零區塊鏈經驗的玩家也能無痛遊玩。'
+        ],
+        'en': [
+          'Traditional DeFi products have an extremely high cognitive barrier — terminology like staking, liquidity mining, and APY causes over 90% of potential users to drop off before even registering. The root cause is not a lack of features, but that the entire experience is "designed for those who already understand."',
+          "This design's purpose is not to slap a game skin onto a financial interface, but to restructure the experience from the ground up — replacing dashboards with simulation management, replacing transaction confirmations with harvest animations, enabling zero-blockchain-experience players to play effortlessly."
+        ]
+      }
+    },
+    gallery: [
+      { src: 'images/galaxy-02.jpg', caption: { 'zh-TW': 'App 介面設計', 'en': 'App UI Design' } },
+      { src: 'images/galaxy-03.jpg', caption: { 'zh-TW': '角色設計', 'en': 'Character Design' } },
+      { src: 'images/galaxy-gif-idle.gif', caption: { 'zh-TW': '角色動畫 — 待機', 'en': 'Character Animation — Idle' } },
+      { src: 'images/galaxy-gif-walk.gif', caption: { 'zh-TW': '角色動畫 — 行走', 'en': 'Character Animation — Walk' } },
+      { src: 'images/galaxy-gif-wave.gif', caption: { 'zh-TW': '角色動畫 — 揮手', 'en': 'Character Animation — Wave' } },
+      { src: 'images/galaxy-04.jpg', caption: { 'zh-TW': 'App 介面設計', 'en': 'App UI Design' } },
+      { src: 'images/galaxy-05.jpg', caption: { 'zh-TW': '遊戲機制', 'en': 'Game Mechanics' } },
+      { src: 'images/galaxy-06.jpg', caption: { 'zh-TW': '遊戲機制', 'en': 'Game Mechanics' } },
+      { src: 'images/galaxy-gif-hub.gif', caption: { 'zh-TW': '星河中樞動畫 — 運轉中', 'en': 'Star Hub Animation — Running' } },
+      { src: 'images/galaxy-gif-noinput.gif', caption: { 'zh-TW': '星河中樞動畫 — 無投入', 'en': 'Star Hub Animation — No Input' } },
+      { src: 'images/galaxy-07.jpg', caption: { 'zh-TW': 'App 介面設計', 'en': 'App UI Design' } },
+      { src: 'images/galaxy-08.jpg', caption: { 'zh-TW': 'App 介面設計', 'en': 'App UI Design' } },
+      { src: 'images/galaxy-09.jpg', caption: { 'zh-TW': 'App 介面設計', 'en': 'App UI Design' } },
+      { src: 'images/galaxy-10.jpg', caption: { 'zh-TW': 'App 介面設計', 'en': 'App UI Design' } },
+      { src: 'images/galaxy-11.jpg', caption: { 'zh-TW': 'App 介面設計', 'en': 'App UI Design' } },
+      { src: 'images/galaxy-12.jpg', caption: { 'zh-TW': '後台管理', 'en': 'Admin Dashboard' } },
+      { src: 'images/galaxy-13.jpg', caption: { 'zh-TW': '後台管理', 'en': 'Admin Dashboard' } },
+      { src: 'images/galaxy-14.jpg', caption: { 'zh-TW': '後台管理', 'en': 'Admin Dashboard' } },
+      { src: 'images/galaxy-15.jpg', caption: { 'zh-TW': '後台管理', 'en': 'Admin Dashboard' } }
+    ],
+    next: 'tpp-app-redesign'
   },
 };
 
