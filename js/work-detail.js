@@ -1630,6 +1630,7 @@ These tears I cannot separate — whom are they even for`
       { src: 'images/galaxy-13.jpg', caption: { 'zh-TW': '', 'en': '' } },
       { src: 'images/galaxy-14.jpg', caption: { 'zh-TW': '', 'en': '' } }
     ],
+    galleryEndVideo: 'https://www.youtube.com/embed/a8-dP7L9G7E?si=9p_Xqz9LY81un5Jq',
     next: 'tpp-app-redesign'
   },
 };
@@ -1755,6 +1756,33 @@ class WorkDetailRenderer {
         `;
         galleryContainer.appendChild(itemEl);
       });
+    }
+
+    // Gallery 結尾影片嵌入（YouTube）
+    const existingEndVideo = document.querySelector('.work-gallery-end-video');
+    if (existingEndVideo) existingEndVideo.remove();
+    if (w.galleryEndVideo) {
+      const endVideoSection = document.createElement('section');
+      endVideoSection.className = 'work-gallery-end-video';
+      endVideoSection.style.cssText = 'padding: 0; background: var(--color-bg);';
+      endVideoSection.innerHTML = `
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 var(--container-padding);">
+          <div style="position:relative; width:100%; padding-bottom:56.25%; border-radius:0; overflow:hidden; background:#000;">
+            <iframe
+              style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;"
+              src="${w.galleryEndVideo}"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      `;
+      const gallerySection = document.querySelector('.work-gallery');
+      if (gallerySection) {
+        gallerySection.parentNode.insertBefore(endVideoSection, gallerySection.nextSibling);
+      }
     }
 
     // Figma 原型嵌入（僅限民眾黨 APP）
