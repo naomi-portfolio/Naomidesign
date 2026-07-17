@@ -1764,19 +1764,17 @@ class WorkDetailRenderer {
     if (w.galleryEndVideo) {
       const endVideoSection = document.createElement('section');
       endVideoSection.className = 'work-gallery-end-video';
-      endVideoSection.style.cssText = 'padding: 0; background: var(--color-bg);';
+      endVideoSection.style.cssText = 'padding: 0; background: #000;';
       endVideoSection.innerHTML = `
-        <div style="max-width: 1200px; margin: 0 auto; padding: 0 var(--container-padding);">
-          <div style="position:relative; width:100%; padding-bottom:56.25%; border-radius:0; overflow:hidden; background:#000;">
-            <iframe
-              style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;"
-              src="${w.galleryEndVideo}"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-              loading="lazy"
-            ></iframe>
-          </div>
+        <div style="position:relative; width:100%; padding-bottom:56.25%; overflow:hidden; background:#000;">
+          <iframe
+            style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;"
+            src="${w.galleryEndVideo}"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
         </div>
       `;
       const gallerySection = document.querySelector('.work-gallery');
