@@ -432,6 +432,14 @@
   transition: transform 1.4s var(--ease-out-expo);
 }
 
+/* 圖片改用 <img> 標籤（供 Google 圖片搜尋索引 + alt 無障礙文字） */
+.work-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .work-card:hover .work-card-image {
   transform: scale(1.06);
 }

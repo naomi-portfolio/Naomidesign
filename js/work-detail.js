@@ -943,7 +943,7 @@ These tears I cannot separate — whom are they even for`
     featureImage: 'images/tpp-01.jpg',
     figmaPrototype: 'https://embed.figma.com/proto/EgTseeAoPXfryAl8LV485r/%E6%B0%91%E7%9C%BE%E9%BB%A8app?node-id=4853-1073&starting-point-node-id=4850%3A1070&embed-host=share',
     info: {
-      client: { 'zh-TW': '台灣民眾黨（自主重製）', 'en': "Taiwan People's Party (Self-initiated Redesign)" },
+      client: { 'zh-TW': '台灣民眾黨', 'en': "Taiwan People's Party" },
       year: '2022',
       role: { 'zh-TW': 'UI / UX 設計師', 'en': 'UI / UX Designer' },
       tools: 'Figma'
@@ -1581,6 +1581,72 @@ These tears I cannot separate — whom are they even for`
     ],
     next: 'food-yuanqi'
   },
+
+  'galaxy-domain': {
+    id: 'galaxy-domain',
+    category: 'uiux',
+    categoryLabel: { 'zh-TW': 'UI / UX', 'en': 'UI / UX' },
+    title: { 'zh-TW': '星塵領域 Galaxy Domain', 'en': 'Galaxy Domain' },
+    tagline: {
+      'zh-TW': '一款將 DeFi 質押機制包裝成療癒系模擬經營遊戲的 App，搭配完整的 B 端營運管理後台，讓零區塊鏈經驗的玩家也能無痛遊玩。',
+      'en': 'A healing simulation game app that wraps DeFi staking mechanics, with a complete B-side operations dashboard, enabling zero-blockchain-experience players to play effortlessly.'
+    },
+    featureImage: 'images/galaxy-hero.jpg',
+    info: {
+      client: { 'zh-TW': '—', 'en': '—' },
+      year: '2025',
+      role: { 'zh-TW': 'UIUX 設計師 / 美術設計', 'en': 'UIUX Designer / Art Director' },
+      tools: 'Figma'
+    },
+    description: {
+      heading: {
+        'zh-TW': '不只是一款遊戲，而是一次金融體驗的<em>遊戲化翻譯</em>',
+        'en': 'Not just a game, but a <em>gamified translation</em> of financial experience'
+      },
+      paragraphs: {
+        'zh-TW': [
+          '傳統 DeFi 產品存在極高的認知門檻——質押、流動性挖礦、年化報酬率等術語，讓超過 90% 的潛在用戶在註冊前就已流失。問題的根源不在功能不足，而在於整套體驗是「為懂的人設計的」。',
+          '這次設計的目的不是在金融介面上貼一層遊戲皮，而是一次由底層心智模型出發的體驗架構重構——用模擬經營取代操作報表，用收成動畫取代交易確認，讓零區塊鏈經驗的玩家也能無痛遊玩。'
+        ],
+        'en': [
+          'Traditional DeFi products have an extremely high cognitive barrier — terminology like staking, liquidity mining, and APY causes over 90% of potential users to drop off before even registering. The root cause is not a lack of features, but that the entire experience is "designed for those who already understand."',
+          "This design's purpose is not to slap a game skin onto a financial interface, but to restructure the experience from the ground up — replacing dashboards with simulation management, replacing transaction confirmations with harvest animations, enabling zero-blockchain-experience players to play effortlessly."
+        ]
+      }
+    },
+    gallery: [
+      { src: 'images/galaxy-02.jpg', caption: { 'zh-TW': '專案背景與設計策略', 'en': 'Project Background & Design Strategy' } },
+      { src: 'images/galaxy-03.jpg', caption: { 'zh-TW': '核心人物誌', 'en': 'Primary Persona' } },
+      { src: 'images/galaxy-04.jpg', caption: { 'zh-TW': '核心機制與互動邏輯', 'en': 'Core Loop & Mechanics' } },
+      { src: 'images/galaxy-05.jpg', caption: { 'zh-TW': '人物誌', 'en': 'Persona' } },
+      { src: 'images/galaxy-06.jpg', caption: { 'zh-TW': '人物誌', 'en': 'Persona' } },
+      { src: 'images/galaxy-07.jpg', caption: { 'zh-TW': '使用者旅程地圖', 'en': 'User Journey Map' } },
+      { src: 'images/galaxy-08.jpg', caption: { 'zh-TW': '資訊架構與導航策略', 'en': 'Information Architecture' } },
+      { src: 'images/galaxy-09.jpg', caption: { 'zh-TW': '導航設計', 'en': 'Navigation Design' } },
+      {
+        src: 'images/galaxy-10.jpg',
+        caption: { 'zh-TW': '最終介面展示 — 角色設計', 'en': 'High-fidelity UI — Character Design' },
+        overlays: [
+          { gif: 'images/galaxy-gif-walk.gif', top: 56.8, left: 5.8, width: 23.8, height: 7.8 },
+          { gif: 'images/galaxy-gif-wave.gif', top: 56.8, left: 33.9, width: 23.8, height: 7.8 },
+          { gif: 'images/galaxy-gif-idle.gif', top: 56.8, left: 62.1, width: 23.8, height: 7.8 }
+        ]
+      },
+      {
+        src: 'images/galaxy-11.jpg',
+        caption: { 'zh-TW': '最終介面展示 — 星核中樞', 'en': 'High-fidelity UI — Star Hub' },
+        overlays: [
+          { gif: 'images/galaxy-gif-hub.gif', top: 62.5, left: 12, width: 35, height: 12 },
+          { gif: 'images/galaxy-gif-noinput.gif', top: 62.5, left: 53, width: 35, height: 12 }
+        ]
+      },
+      { src: 'images/galaxy-12.jpg', caption: { 'zh-TW': '最終介面展示', 'en': 'High-fidelity UI' } },
+      { src: 'images/galaxy-13.jpg', caption: { 'zh-TW': '後台管理系統', 'en': 'Admin Dashboard' } },
+      { src: 'images/galaxy-14.jpg', caption: { 'zh-TW': '後台管理系統', 'en': 'Admin Dashboard' } },
+      { src: 'images/galaxy-15.jpg', caption: { 'zh-TW': '後台管理系統', 'en': 'Admin Dashboard' } }
+    ],
+    next: 'tpp-app-redesign'
+  },
 };
 
 /* === 作品詳情頁渲染器 === */
@@ -1682,8 +1748,21 @@ class WorkDetailRenderer {
         const sizeClass = item.size && item.size !== 'wide' ? `size-${item.size}` : '';
         const itemEl = document.createElement('div');
         itemEl.className = `work-gallery-item ${sizeClass}`.trim();
+
+        // 支援 GIF overlay：在基底圖上疊加動畫
+        let overlayHTML = '';
+        if (item.overlays && item.overlays.length > 0) {
+          overlayHTML = item.overlays.map(o =>
+            `<img src="${o.gif}" alt="" loading="lazy" style="position:absolute;top:${o.top}%;left:${o.left}%;width:${o.width}%;height:${o.height}%;object-fit:contain;pointer-events:none;">`
+          ).join('');
+        }
+
+        const wrapStyle = item.overlays ? 'position:relative;' : '';
         itemEl.innerHTML = `
-          <img src="${item.src}" alt="${this.t(item.caption)}" loading="lazy">
+          <div style="${wrapStyle}">
+            <img src="${item.src}" alt="${this.t(item.caption)}" loading="lazy" style="display:block;width:100%;">
+            ${overlayHTML}
+          </div>
           <div class="work-gallery-caption">
             <div class="work-gallery-caption-title">${this.t(item.caption)}</div>
             <div class="work-gallery-caption-meta">${String(index + 1).padStart(2, '0')} / ${String(w.gallery.length).padStart(2, '0')}</div>
@@ -1783,7 +1862,49 @@ class WorkDetailRenderer {
     }
 
     // 更新頁面標題
-    document.title = `${this.t(w.title)} — Designer Name`;
+    document.title = `${this.t(w.title)} — Naomi`;
+
+    // 更新 SEO / social share 標籤（canonical、meta description、Open Graph、Twitter Card）
+    const seoTitle = `${this.t(w.title)} — Naomi`;
+    const seoDesc = this.t(w.tagline) || '設計師 Naomi 的作品案例';
+    const seoUrl = `https://naomi-portfolio.github.io/Naomidesign/work-detail.html?id=${w.id}`;
+    const seoImage = w.featureImage
+      ? `https://naomi-portfolio.github.io/Naomidesign/${w.featureImage}`
+      : 'https://naomi-portfolio.github.io/Naomidesign/images/galaxy-cover.jpg';
+
+    const upsertMeta = (attr, key, value) => {
+      let el = document.querySelector(`meta[${attr}="${key}"]`);
+      if (!el) {
+        el = document.createElement('meta');
+        el.setAttribute(attr, key);
+        document.head.appendChild(el);
+      }
+      el.setAttribute('content', value);
+    };
+
+    let canonicalEl = document.querySelector('link[rel="canonical"]');
+    if (!canonicalEl) {
+      canonicalEl = document.createElement('link');
+      canonicalEl.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonicalEl);
+    }
+    canonicalEl.setAttribute('href', seoUrl);
+
+    upsertMeta('name', 'description', seoDesc);
+    upsertMeta('property', 'og:title', seoTitle);
+    upsertMeta('property', 'og:description', seoDesc);
+    upsertMeta('property', 'og:url', seoUrl);
+    upsertMeta('property', 'og:image', seoImage);
+    upsertMeta('property', 'og:type', 'article');
+    upsertMeta('name', 'twitter:card', 'summary_large_image');
+    upsertMeta('name', 'twitter:title', seoTitle);
+    upsertMeta('name', 'twitter:description', seoDesc);
+    upsertMeta('name', 'twitter:image', seoImage);
+
+    // 密碼保護的餐飲品牌案例（food-portfolio.html 底下的作品）不對外索引
+    if (w.id && w.id.startsWith('food-')) {
+      upsertMeta('name', 'robots', 'noindex, nofollow');
+    }
   }
 
   setText(selector, text) {
