@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /food-portfolio.html
+
+Sitemap: https://naomi-portfolio.github.io/Naomidesign/sitemap.xml
