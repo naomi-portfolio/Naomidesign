@@ -7,140 +7,6 @@
  * 新增作品：複製一個物件、修改 id 與內容
  */
 const WORKS_DATA = {
-  'music-polaris': {
-    id: 'music-polaris',
-    category: 'music',
-    categoryLabel: { 'zh-TW': '音樂創作', 'en': 'Music' },
-    title: { 'zh-TW': '【願如北辰般】梧桐烽煙', 'en': '【Polaris】Tung & Feng' },
-    tagline: {
-      'zh-TW': '原創漫畫【願如北辰般】高宸&紹君主題音樂',
-      'en': 'Theme music for characters Gaouchen & Shaojun in original comic Polaris'
-    },
-    featureImage: 'images/polaris-cover.jpg',
-    featureIsVideo: false,
-    galleryStyle: 'spaced',
-    info: {
-      client: { 'zh-TW': '—', 'en': '—' },
-      year: '2026',
-      role: { 'zh-TW': '創作者', 'en': 'Creator' },
-      tools: 'Gemini + ChatGPT + Suno'
-    },
-    description: {
-      heading: {
-        'zh-TW': '願如<em>北辰般</em>，守望彼此',
-        'en': 'Like the <em>Polaris</em>, watching over each other'
-      },
-      paragraphs: {
-        'zh-TW': [
-          '<a href="https://youtu.be/x0fxyX0cGF0?si=VLZK8LgfHLCF8_eR" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.5em;padding:0.6em 1.4em;background:var(--color-accent);color:#000;font-weight:600;font-size:0.9rem;letter-spacing:0.05em;border-radius:6px;text-decoration:none;margin-bottom:0.5rem;">▶ 前往 YouTube 收聽</a>'
-        ],
-        'en': [
-          '<a href="https://youtu.be/x0fxyX0cGF0?si=VLZK8LgfHLCF8_eR" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.5em;padding:0.6em 1.4em;background:var(--color-accent);color:#000;font-weight:600;font-size:0.9rem;letter-spacing:0.05em;border-radius:6px;text-decoration:none;margin-bottom:0.5rem;">▶ Listen on YouTube</a>'
-        ]
-      }
-    },
-    lyrics: {
-      'zh-TW': `南國舊院 梧桐落盡 昨夜的烽煙
-撐傘少年 轉眼消失 殘酷的火線
-我以為 跨越階級 是最美的眷戀
-卻看見 你的長劍 斬斷了從前
-
-北國冰雪 淬鍊出 我無情的刀鋒
-重返故土 只為了 刺穿你的面容
-踏著殺機 潛伏在 你熟悉的迷宮
-這一次 我要親手 畫下這句終
-
-在這場 沒有贏家 的焚心局（焚心局）
-溫柔與槍口 殘酷地對立（殘酷對立）
-我帶著血仇 踏上生死的路途
-我藏著真相 換你片刻的救贖
-哪怕萬劫不復 也要為你粉身碎骨
-
-權力階梯 鋪滿了 被操弄的謊言
-處長大衣 掩不住 我當年的可憐
-卑微棋子 卻毀了 你一生的晴天
-知你活著 我靈魂 才逃出深淵
-
-南國黑夜 就由我 用這雙手掌控
-槍林彈雨 我為你 擋下所有煽動
-哪怕槍管 已抵住 我沉重的心胸
-我手中的 準星裡 留退路的風
-
-在這場 沒有贏家 的焚心局（只要你活下去）
-溫柔與槍口 殘酷地對立（殘酷對立）
-我帶著血仇 踏上生死的路途
-我藏著真相 換你片刻的救贖
-哪怕萬劫不復 也要為你粉身碎骨
-
-警報劃破黑夜 快逃出這座深淵
-滿城特工追殺 為何你擋在身前
-這是遲來救贖 讓我來斬斷鎖鏈
-不能倒在這裡 說好要一起走遠
-別回頭 快走！這是我最後的成全！
-
-撕裂這場 沒有贏家 的焚心局
-讓所有仇恨 在烈焰中 化為灰燼
-我以一人之軀 擋下所有殺戮
-卻眼看你倒下 踏上死神的路
-這是最殘忍的愛 也是最悲壯的救贖
-
-臉頰滑落 滾燙的淚水
-是大仇得報 還是心碎
-那個為我赴死的人 永遠沉睡
-這分不清的眼淚 是為了誰`,
-      'en': `Southern courtyard — the phoenix trees are bare, last night's signal fires
-A boy with an umbrella — vanished in an instant, into the cruel frontline
-I thought crossing the class divide was the most beautiful devotion
-Yet I watched your long sword sever everything we had before
-
-Northern ice and snow forged the cold edge of my mercy-less blade
-Returning to my homeland — only to drive it through your face
-Stepping through killing intent, lurking in the labyrinth you know so well
-This time, I will draw the final stroke with my own hands
-
-In this no-winner's game of burning hearts (burning hearts)
-Tenderness and gunpoint stand in cruel opposition (cruel opposition)
-I carry blood debts onto the road of life and death
-I hide the truth to buy you one moment of salvation
-Even if I am damned beyond return — I will be shattered to dust for you
-
-The ladder of power is paved with manipulated lies
-A director's coat cannot conceal how pitiful I once was
-A humble pawn who still managed to ruin the clear skies of your life
-Knowing you are alive — that is how my soul escaped the abyss
-
-The southern night is mine to command with these two hands
-Through storms of bullets I shield you from every act of incitement
-Even as the barrel presses hard against my heavy chest
-In the crosshairs I still hold — a chance for you to escape
-
-In this no-winner's game of burning hearts (just let you live)
-Tenderness and gunpoint stand in cruel opposition (cruel opposition)
-I carry blood debts onto the road of life and death
-I hide the truth to buy you one moment of salvation
-Even if I am damned beyond return — I will be shattered to dust for you
-
-The alarms tear through the black night — flee this deep pit now
-The city's agents are hunting us — why are you standing in their way
-This is a late-coming salvation — let me be the one to break the chains
-We cannot fall here — we promised we would walk away together
-Don't look back — go! This is my final gift to you!
-
-I tear apart this no-winner's burning-heart game
-Let all hatred turn to ash in the raging flames
-With only my body I hold back all the killing
-Yet I watch you fall — stepping onto death's own road
-This is love in its cruelest form — and the most valiant act of salvation
-
-Tears sliding hot down my cheek
-Is this the vengeance I sought — or is this heartbreak
-The one who died for me now sleeps forever
-These tears I cannot separate — whom are they even for`
-    },
-    gallery: [],
-    next: 'music-polaris'
-  },
-
   'eggpop-nft': {
     id: 'eggpop-nft',
     category: 'uiux',
@@ -1645,6 +1511,7 @@ These tears I cannot separate — whom are they even for`
       { src: 'images/galaxy-14.jpg', caption: { 'zh-TW': '後台管理系統', 'en': 'Admin Dashboard' } },
       { src: 'images/galaxy-15.jpg', caption: { 'zh-TW': '後台管理系統', 'en': 'Admin Dashboard' } }
     ],
+    galleryEndVideo: 'https://www.youtube.com/embed/a8-dP7L9G7E?si=9p_Xqz9LY81un5Jq',
     next: 'tpp-app-redesign'
   },
 };
@@ -1770,6 +1637,31 @@ class WorkDetailRenderer {
         `;
         galleryContainer.appendChild(itemEl);
       });
+    }
+
+    // Gallery 結尾影片嵌入（YouTube）
+    const existingEndVideo = document.querySelector('.work-gallery-end-video');
+    if (existingEndVideo) existingEndVideo.remove();
+    if (w.galleryEndVideo) {
+      const endVideoSection = document.createElement('section');
+      endVideoSection.className = 'work-gallery-end-video';
+      endVideoSection.style.cssText = 'padding: 0; background: #000;';
+      endVideoSection.innerHTML = `
+        <div style="position:relative; width:100%; padding-bottom:56.25%; overflow:hidden; background:#000;">
+          <iframe
+            style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;"
+            src="${w.galleryEndVideo}"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+      `;
+      const gallerySection = document.querySelector('.work-gallery');
+      if (gallerySection) {
+        gallerySection.parentNode.insertBefore(endVideoSection, gallerySection.nextSibling);
+      }
     }
 
     // Figma 原型嵌入（僅限民眾黨 APP）

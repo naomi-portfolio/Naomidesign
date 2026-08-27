@@ -226,7 +226,7 @@
 
 /* === 圖片區（16:9 滿版垂直排列、無間距）=== */
 .work-gallery {
-  padding: 4rem 0 6rem;
+  padding: 0;
 }
 
 /* 模式 A：滿版無間距（設計類作品使用） */
@@ -242,8 +242,8 @@
   width: 100%;
   overflow: hidden;
   background: var(--color-bg-soft);
-  opacity: 0;
-  transform: translateY(60px);
+  opacity: 1;
+  transform: none;
   transition: opacity 1.4s var(--ease-out-expo),
               transform 1.4s var(--ease-out-expo);
 }
