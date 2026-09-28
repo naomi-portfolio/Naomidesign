@@ -338,6 +338,48 @@ const WORKS_DATA = {
       { src: 'images/rotary3490-shovelmuseum-10.jpg', caption: { 'zh-TW': '懸吊鏟子裝置藝術，呼應「鏟子超人集結」的行動足跡', 'en': 'Hanging shovel installation art echoing the footsteps of the “Shovel Heroes Assemble” movement' } },
       { src: 'images/rotary3490-shovelmuseum-11.jpg', caption: { 'zh-TW': '印有「鏟子超人」字樣的紀念T恤，成為這場全民行動的鮮明印記', 'en': 'Commemorative T-shirt printed with “Shovel Heroes,” a vivid mark of this nationwide movement' } }
     ],
+    next: 'video-shovelanniversary'
+  },
+
+  'video-shovelanniversary': {
+    id: 'video-shovelanniversary',
+    category: 'video',
+    categoryLabel: { 'zh-TW': '攝影剪輯', 'en': 'Photo & Edit' },
+    title: { 'zh-TW': '鏟子超人周年感恩會 紀錄片', 'en': 'Shovel Heroes Anniversary Thanksgiving Documentary' },
+    tagline: {
+      'zh-TW': '【那一天，我們都是鏟子超人】國際扶輪3490地區26-27年度 鏟子超人周年感恩會 紀錄片',
+      'en': '["That Day, We Were All Shovel Heroes"] Rotary International District 3490 2026-27 Shovel Heroes Anniversary Thanksgiving Gathering Documentary'
+    },
+    featureImage: 'images/rotary3490-shovelanniversary-cover.jpg',
+    embedVideo: 'https://www.youtube.com/embed/4eoMJtLy0E0?si=TpJufkJBxQYMIW4Q',
+    embedVideoWidth: 560,
+    embedVideoHeight: 315,
+    galleryStyle: 'masonry',
+    info: {
+      client: { 'zh-TW': '國際扶輪3490地區', 'en': 'Rotary International District 3490' },
+      year: '2026',
+      role: { 'zh-TW': '剪輯師', 'en': 'Editor' },
+      tools: 'SUNO、剪映'
+    },
+    description: {
+      heading: {
+        'zh-TW': '那一天，我們都是<em>鏟子超人</em>',
+        'en': 'That day, we were all <em>Shovel Heroes</em>'
+      },
+      paragraphs: {
+        'zh-TW': [
+          '整體風格以紀錄片感為主，透過當時真實救災影像、環境聲、人物細節與鏟子超人紀念館素材，重新帶觀眾回到那一天，重返花蓮縣光復鄉的救災現場與一週年感恩會現場。',
+          '<a href="https://youtu.be/4eoMJtLy0E0" target="_blank" rel="noopener" style="color:var(--color-accent);text-decoration:underline">影片連結</a>'
+        ],
+        'en': [
+          'The overall style centers on a documentary feel, using real disaster-relief footage, ambient sound, human details, and material from the Shovel Heroes Memorial Hall to bring viewers back to that day — back to the relief site and the first-anniversary thanksgiving gathering in Guangfu Township, Hualien County.',
+          '<a href="https://youtu.be/4eoMJtLy0E0" target="_blank" rel="noopener" style="color:var(--color-accent);text-decoration:underline">Video Link</a>'
+        ]
+      }
+    },
+    gallery: [
+      { src: 'images/rotary3490-shovelanniversary-cover.jpg', caption: { 'zh-TW': '國際扶輪3490地區 鏟子超人周年感恩會主視覺', 'en': 'Key visual for the Rotary District 3490 Shovel Heroes Anniversary Thanksgiving event' } }
+    ],
     next: 'video-keelung-police'
   },
 
