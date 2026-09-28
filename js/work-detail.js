@@ -289,6 +289,55 @@ const WORKS_DATA = {
       { src: 'images/masada-13.jpg', caption: { 'zh-TW': '記者會現場', 'en': 'Press Conference' } },
       { src: 'images/masada-14.jpg', caption: { 'zh-TW': '記者會現場', 'en': 'Press Conference' } }
     ],
+    next: 'photo-shovelmuseum'
+  },
+
+  'photo-shovelmuseum': {
+    id: 'photo-shovelmuseum',
+    category: 'event-photo',
+    categoryLabel: { 'zh-TW': '活動攝影', 'en': 'Event Photo' },
+    title: { 'zh-TW': '鏟子超人館開幕典禮', 'en': 'Shovel Heroes Museum Opening Ceremony' },
+    tagline: {
+      'zh-TW': '紀錄鏟子超人館落成開幕活動',
+      'en': 'Photography documentation of the Shovel Heroes Museum opening ceremony'
+    },
+    featureImage: 'images/rotary3490-shovelmuseum-cover.jpg',
+    galleryStyle: 'masonry',
+    info: {
+      client: { 'zh-TW': '國際扶輪3490地區', 'en': 'Rotary International District 3490' },
+      year: '2026',
+      role: { 'zh-TW': '攝影師', 'en': 'Photographer' },
+      tools: 'Sony α7 IV'
+    },
+    description: {
+      heading: {
+        'zh-TW': '從一把鏟子到一座紀念館的<em>感動旅程</em>',
+        'en': 'The <em>moving journey</em> from a single shovel to a memorial museum'
+      },
+      paragraphs: {
+        'zh-TW': [
+          '紀錄國際扶輪3490地區於花蓮縣光復鄉舉辦的「鏟子超人館」落成開幕活動，從一把鏟子到一座紀念館，見證「鏟子超人」誕生背後的感動旅程。',
+          '<a href="https://www.taiwan-rotary.org/article/detail.php?id=1298" target="_blank" rel="noopener" style="color:var(--color-accent);text-decoration:underline">地區報導</a>'
+        ],
+        'en': [
+          'Documentation of the Shovel Heroes Museum opening ceremony held by Rotary International District 3490 in Guangfu Township, Hualien — witnessing the moving journey behind the birth of the “Shovel Heroes,” from a single shovel to a memorial museum.',
+          '<a href="https://www.taiwan-rotary.org/article/detail.php?id=1298" target="_blank" rel="noopener" style="color:var(--color-accent);text-decoration:underline">District News Coverage</a>'
+        ]
+      }
+    },
+    gallery: [
+      { src: 'images/rotary3490-shovelmuseum-01.jpg', caption: { 'zh-TW': '現場湧入上百位扶輪社友與地方鄉親，齊聚帳篷下見證開幕時刻', 'en': 'Hundreds of Rotarians and local residents gathered under the tent to witness the opening ceremony' } },
+      { src: 'images/rotary3490-shovelmuseum-02.jpg', caption: { 'zh-TW': '剪綵揭牌儀式，各界代表齊聚見證鏟子超人紀念館正式啟用', 'en': 'Ribbon-cutting ceremony — representatives from all sectors witness the official opening of the Shovel Heroes Museum' } },
+      { src: 'images/rotary3490-shovelmuseum-03.jpg', caption: { 'zh-TW': '太鼓表演揭開開幕典禮序幕', 'en': 'Taiko drum performance opens the ceremony' } },
+      { src: 'images/rotary3490-shovelmuseum-04.jpg', caption: { 'zh-TW': '學童排笛演出，為典禮增添溫馨氛圍', 'en': 'Schoolchildren perform on pan flutes, adding a warm touch to the ceremony' } },
+      { src: 'images/rotary3490-shovelmuseum-05.jpg', caption: { 'zh-TW': '國際扶輪3490地區代表團合影留念', 'en': 'Rotary International District 3490 delegation group photo' } },
+      { src: 'images/rotary3490-shovelmuseum-06.jpg', caption: { 'zh-TW': '貴賓手持鏟子於展區合影，呼應鏟子超人的行動精神', 'en': 'Guests pose with shovels in the exhibition hall, echoing the spirit of the Shovel Heroes' } },
+      { src: 'images/rotary3490-shovelmuseum-07.jpg', caption: { 'zh-TW': '光復花蓮蜜蜂志工於展區合影，記錄物資運送與救援接力的夥伴情誼', 'en': 'Guangfu Hualien Bee Volunteers pose in the exhibition, documenting the camaraderie of supply relief and rescue relay' } },
+      { src: 'images/rotary3490-shovelmuseum-08.jpg', caption: { 'zh-TW': '民眾駐足細看牆面上記錄光復救災歷程的影像牆', 'en': 'A visitor pauses to view the photo wall documenting Guangfu’s disaster relief journey' } },
+      { src: 'images/rotary3490-shovelmuseum-09.jpg', caption: { 'zh-TW': '展區陳列沾滿泥漿的雨鞋，訴說光復鄉親清淤救災的艱辛歷程', 'en': 'Mud-caked rain boots on display, telling the story of Guangfu residents’ arduous mud-clearing relief work' } },
+      { src: 'images/rotary3490-shovelmuseum-10.jpg', caption: { 'zh-TW': '懸吊鏟子裝置藝術，呼應「鏟子超人集結」的行動足跡', 'en': 'Hanging shovel installation art echoing the footsteps of the “Shovel Heroes Assemble” movement' } },
+      { src: 'images/rotary3490-shovelmuseum-11.jpg', caption: { 'zh-TW': '印有「鏟子超人」字樣的紀念T恤，成為這場全民行動的鮮明印記', 'en': 'Commemorative T-shirt printed with “Shovel Heroes,” a vivid mark of this nationwide movement' } }
+    ],
     next: 'video-keelung-police'
   },
 
