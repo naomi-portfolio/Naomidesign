@@ -1166,6 +1166,119 @@ const WORKS_DATA = {
       { src: 'images/wave-05.png', caption: { 'zh-TW': '影片截圖', 'en': 'Video Screenshot' } },
       { src: 'images/wave-06.png', caption: { 'zh-TW': '影片截圖', 'en': 'Video Screenshot' } }
     ],
+    next: 'video-shovelmuseum-anniversary'
+  },
+
+  'video-shovelmuseum-anniversary': {
+    id: 'video-shovelmuseum-anniversary',
+    category: 'video',
+    categoryLabel: { 'zh-TW': '攝影剪輯', 'en': 'Photo & Edit' },
+    title: { 'zh-TW': '鏟子超人周年感恩會 紀錄片', 'en': 'Shovel Heroes Anniversary Thanksgiving Ceremony Documentary' },
+    tagline: {
+      'zh-TW': '【那一天，我們都是鏟子超人】國際扶輪3490地區26-27年度 鏟子超人周年感恩會 紀錄片',
+      'en': '["That Day, We Were All Shovel Heroes"] Rotary International District 3490, 2026–27, Shovel Heroes Anniversary Thanksgiving Ceremony Documentary'
+    },
+    featureImage: 'images/rotary3490-shovelmuseum-anniversary-cover.jpg',
+    embedVideo: 'https://www.youtube.com/embed/4eoMJtLy0E0?si=TpJufkJBxQYMIW4Q',
+    embedVideoWidth: 560,
+    embedVideoHeight: 315,
+    info: {
+      client: { 'zh-TW': '國際扶輪3490地區', 'en': 'Rotary International District 3490' },
+      year: '2026',
+      role: { 'zh-TW': '剪輯師', 'en': 'Editor' },
+      tools: 'SUNO, 剪映'
+    },
+    description: {
+      heading: {
+        'zh-TW': '那一天，我們都是<em>鏟子超人</em>',
+        'en': 'That day, we were all <em>Shovel Heroes</em>'
+      },
+      paragraphs: {
+        'zh-TW': [
+          '整體風格以紀錄片感為主，透過當時真實救災影像、環境聲、人物細節與鏟子超人紀念館素材，重新帶觀眾回到那一天。',
+          '紀錄國際扶輪3490地區26-27年度於花蓮縣光復鄉舉辦的鏟子超人周年感恩會，向投入救災與重建的鏟子超人致敬。',
+          '<a href="https://youtu.be/4eoMJtLy0E0" target="_blank" rel="noopener" style="color:var(--color-accent);text-decoration:underline">影片連結</a>'
+        ],
+        'en': [
+          'The overall style centers on a documentary sensibility, drawing on real disaster-relief footage, ambient sound, and personal details from that time, together with material from the Shovel Heroes Memorial Hall, to bring viewers back to that day.',
+          'Documents the Shovel Heroes Anniversary Thanksgiving Ceremony held by Rotary International District 3490 (2026–27) in Guangfu Township, Hualien County, paying tribute to the Shovel Heroes who took part in disaster relief and reconstruction.',
+          '<a href="https://youtu.be/4eoMJtLy0E0" target="_blank" rel="noopener" style="color:var(--color-accent);text-decoration:underline">Video Link</a>'
+        ]
+      }
+    },
+    gallery: [],
+    next: 'clip-rotary3490-thanksgiving'
+  },
+
+  'clip-rotary3490-thanksgiving': {
+    id: 'clip-rotary3490-thanksgiving',
+    category: 'video',
+    categoryLabel: { 'zh-TW': '攝影剪輯', 'en': 'Photo & Edit' },
+    title: { 'zh-TW': '國際扶輪3490地區感恩餐會', 'en': 'Rotary International District 3490 Thanksgiving Banquet' },
+    tagline: {
+      'zh-TW': '【國際扶輪3490地區感恩餐會】主題曲創作與活動影片剪輯',
+      'en': '[Rotary International District 3490 Thanksgiving Banquet] Theme Song Composition and Event Video Editing'
+    },
+    featureImage: 'images/rotary3490-thanksgiving-cover.jpg',
+    info: {
+      client: { 'zh-TW': '國際扶輪3490地區', 'en': 'Rotary International District 3490' },
+      year: '2026',
+      role: { 'zh-TW': '剪輯師', 'en': 'Editor' },
+      tools: 'SUNO, 剪映'
+    },
+    description: {
+      heading: {
+        'zh-TW': '以歌聲與影像，記錄<em>感恩的時刻</em>',
+        'en': 'Recording a <em>moment of gratitude</em> through song and image'
+      },
+      paragraphs: {
+        'zh-TW': [
+          '為國際扶輪3490地區感恩餐會創作主題曲，並剪輯活動紀錄影片，以音樂與畫面重現餐會現場的互動與氛圍。',
+          '<a href="https://youtu.be/lJiZy6YJyBI" target="_blank" rel="noopener" style="color:var(--color-accent);text-decoration:underline">影片連結</a>'
+        ],
+        'en': [
+          'Composed the theme song for the Rotary International District 3490 Thanksgiving Banquet and edited the event documentary video, using music and footage to recreate the interactions and atmosphere of the banquet.',
+          '<a href="https://youtu.be/lJiZy6YJyBI" target="_blank" rel="noopener" style="color:var(--color-accent);text-decoration:underline">Video Link</a>'
+        ]
+      }
+    },
+    gallery: [],
+    next: 'clip-rotary3490-interact'
+  },
+
+  'clip-rotary3490-interact': {
+    id: 'clip-rotary3490-interact',
+    category: 'video',
+    categoryLabel: { 'zh-TW': '攝影剪輯', 'en': 'Photo & Edit' },
+    title: { 'zh-TW': '國際扶輪3490地區扶少團 台日聯合參訪活動', 'en': 'Rotary International District 3490 Interact Club Taiwan–Japan Joint Visit' },
+    tagline: {
+      'zh-TW': '【國際扶輪3490地區扶少團】台日聯合參訪活動 活動主題曲與影片剪輯',
+      'en': '[Rotary International District 3490 Interact Club] Taiwan–Japan Joint Visit Theme Song and Video Editing'
+    },
+    featureImage: 'images/rotary3490-interact-cover.jpg',
+    info: {
+      client: { 'zh-TW': '國際扶輪3490地區扶少團', 'en': 'Rotary International District 3490 Interact Club' },
+      year: '2026',
+      role: { 'zh-TW': '剪輯師', 'en': 'Editor' },
+      tools: 'SUNO, 剪映'
+    },
+    description: {
+      heading: {
+        'zh-TW': '跨越海峽，<em>共創交流</em>',
+        'en': 'Across the strait, <em>creating exchange together</em>'
+      },
+      paragraphs: {
+        'zh-TW': [
+          '為國際扶輪3490地區扶少團台日聯合參訪活動創作主題曲並剪輯活動影片，記錄台日青年交流互動的過程。',
+          '<a href="https://youtu.be/LacNdolXqyY" target="_blank" rel="noopener" style="color:var(--color-accent);text-decoration:underline">影片連結</a>'
+        ],
+        'en': [
+          "Composed the theme song and edited the event video for the Rotary International District 3490 Interact Club's Taiwan–Japan Joint Visit, documenting the exchange between Taiwanese and Japanese youth.",
+          '<a href="https://youtu.be/LacNdolXqyY" target="_blank" rel="noopener" style="color:var(--color-accent);text-decoration:underline">Video Link</a>'
+        ]
+      }
+    },
+    gallery: [],
     next: 'video-keelung-police'
   },
 
