@@ -102,7 +102,6 @@ const translations = {
     'about.exp.1.period': '2026 — 現在',
     'about.exp.1.role': 'Product Designer (UIUX)',
     'about.exp.1.company': '友訊機器人股份有限公司',
-    'about.exp.1.desc': '參與陪伴型機器人 App 產品開發，負責需求釐清、資訊架構、User Flow、Wireframe 與 Prototype 等 UI/UX 設計流程，並將產品、行銷與軟硬體研發需求轉化為具體操作流程，補足邊界情境與使用體驗斷點。規劃 App 與機器人之跨裝置使用體驗，包含藍牙配對、Wi-Fi 連線與裝置狀態等操作流程，並建立 App Design System，與 IP／視覺設計師協作維持產品介面與品牌視覺的一致性',
 
     'about.exp.2.period': '2025 — 2026',
     'about.exp.2.role': 'UI/UX 設計師',
@@ -406,7 +405,6 @@ const translations = {
     'about.exp.1.period': '2026 — Present',
     'about.exp.1.role': 'Product Designer (UIUX)',
     'about.exp.1.company': '友訊機器人股份有限公司',
-    'about.exp.1.desc': 'Participates in the development of a companion robot App, handling requirement scoping, information architecture, User Flow, Wireframe, and Prototype design, while translating product, marketing, and hardware/software engineering requirements into concrete workflows and filling in edge cases and experience gaps. Plans the cross-device experience between the App and the robot — Bluetooth pairing, Wi-Fi connection, and device status flows — and built the App Design System, collaborating with IP/visual designers to keep the interface and brand visuals consistent.',
 
     'about.exp.2.period': '2025 — 2026',
     'about.exp.2.role': 'UI/UX Designer',
