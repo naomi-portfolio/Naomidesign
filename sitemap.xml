@@ -223,6 +223,7 @@
     <priority>0.6</priority>
   </url>
   <url>
+<<<<<<< HEAD
     <loc>https://naomi-portfolio.github.io/Naomidesign/work-detail.html?id=video-shovelmuseum-anniversary</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>yearly</changefreq>
@@ -237,6 +238,10 @@
   <url>
     <loc>https://naomi-portfolio.github.io/Naomidesign/work-detail.html?id=clip-rotary3490-interact</loc>
     <lastmod>2026-10-03</lastmod>
+=======
+    <loc>https://naomi-portfolio.github.io/Naomidesign/work-detail.html?id=video-shovelanniversary</loc>
+    <lastmod>2026-09-28</lastmod>
+>>>>>>> 35dc76b38517ceb8b90e60b983628b48c1b82663
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
