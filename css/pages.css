@@ -667,10 +667,14 @@
   line-height: 1.7;
 }
 
+.services-section .section-header {
+  gap: 0;
+}
+
 .services-tagline {
-  font-size: 1.05rem;
-  color: var(--color-text-muted);
-  max-width: 640px;
+  font-size: 1.15rem;
+  color: var(--color-text);
+  max-width: 760px;
   margin-top: 1rem;
   line-height: 1.7;
 }
@@ -679,7 +683,7 @@
   font-size: 0.95rem;
   color: var(--color-text-muted);
   max-width: 760px;
-  margin-top: 0.75rem;
+  margin-top: 1rem;
   line-height: 1.8;
 }
 
