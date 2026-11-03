@@ -179,27 +179,41 @@ const translations = {
     'contact.info.hours.value': '每日 12:00 — 20:00',
 
     // 服務項目
-    'contact.services.eyebrow': '提供服務',
-    'contact.services.title': '我能<em>幫您做什麼</em>',
-    'contact.services.tagline': '根據您的需求量身打造完整解決方案',
+    'services.eyebrow': '提供服務',
+    'services.title': '我能<em>幫您做什麼</em>',
+    'services.tagline': '從企劃、設計、拍攝到上線，一條龍完成您的專案',
 
-    'contact.service.1.title': 'UI/UX 設計',
-    'contact.service.1.desc': '從使用者研究、流程設計到高保真原型，打造直覺易用的數位產品',
+    'services.1.title': '影像製作',
+    'services.1.desc': '微電影、紀錄片、品牌形象影片與活動紀錄，從企劃、腳本、拍攝到剪輯調色一手包辦，也能製作社群短影音',
+    'services.1.tags': '<span>微電影</span><span>紀錄片</span><span>形象影片</span><span>短影音</span>',
 
-    'contact.service.2.title': '品牌識別系統',
-    'contact.service.2.desc': 'LOGO、視覺規範、應用素材的完整建置，建立有靈魂的品牌視覺語言',
+    'services.2.title': 'AI 影片製作',
+    'services.2.desc': '結合 AI 生成與實拍素材，快速做出廣告、社群短片與概念影片，再由我親自剪輯、把關畫面品質',
+    'services.2.tags': '<span>AI 生成</span><span>廣告短片</span><span>概念影片</span>',
 
-    'contact.service.3.title': '活動設計',
-    'contact.service.3.desc': '從活動規劃、主視覺設計、延伸物件到供應商發包執行的全流程整合服務',
+    'services.3.title': '攝影',
+    'services.3.desc': '活動、記者會、人像、商品與食物攝影，擅長捕捉現場的真實情感與故事感',
+    'services.3.tags': '<span>活動紀錄</span><span>人像</span><span>商品</span><span>食物</span>',
 
-    'contact.service.4.title': '攝影與影片',
-    'contact.service.4.desc': '人像、商品、活動紀錄與影片剪輯，擅長捕捉真實情感與故事感',
+    'services.4.title': '活動行銷企劃與執行',
+    'services.4.desc': '從活動企劃、主視覺、文宣物料、廠商發包到現場執行與攝影紀錄，記者會、典禮、餐會與營隊都能一手規劃',
+    'services.4.tags': '<span>活動企劃</span><span>主視覺</span><span>現場執行</span><span>廠商整合</span>',
 
-    'contact.service.5.title': '插畫委託',
-    'contact.service.5.desc': '商業插畫、書籍封面、原創角色、漫畫敘事與私人客製委託',
+    'services.5.title': '品牌識別與平面設計',
+    'services.5.desc': 'LOGO、CIS／VI、包裝、菜單、文宣與社群素材的完整建置，建立有靈魂的品牌視覺語言',
+    'services.5.tags': '<span>LOGO</span><span>CIS / VI</span><span>包裝</span><span>社群素材</span>',
 
-    'contact.service.6.title': '網站設計開發',
-    'contact.service.6.desc': '從 UI 設計、Wix/HTML 建置到上線部署的完整網站開發流程',
+    'services.6.title': 'UI/UX 與網站設計',
+    'services.6.desc': '從使用者研究、流程設計、高保真原型，到 Wix／HTML 網站建置與上線，打造直覺易用的數位產品',
+    'services.6.tags': '<span>UX 研究</span><span>原型設計</span><span>網站建置</span>',
+
+    'services.7.title': '插畫委託',
+    'services.7.desc': '商業插畫、書籍封面、原創角色、漫畫敘事與私人客製委託',
+    'services.7.tags': '<span>商業插畫</span><span>書籍封面</span><span>原創角色</span>',
+
+    'services.adv.eyebrow': '為什麼找我',
+    'services.adv.title': '從企劃到成品，<em>每一步都親自把關</em>',
+    'services.adv.desc': '企劃、設計、攝影與剪輯都由我親自操刀；規模更大的案子，再串連嗡嗡設計團隊與長期合作的設計、攝影及製作廠商。不靠層層外包，也不是把需求丟給 AI 就交件，每個環節都經過專業判斷與美感把關，溝通更快、品質更一致',
 
     // 設計頁面
     'portfolio.hero.eyebrow': '設計作品',
@@ -482,27 +496,41 @@ const translations = {
     'contact.info.hours.value': 'Daily  12:00 — 20:00',
 
     // Services
-    'contact.services.eyebrow': 'Services',
-    'contact.services.title': 'How <em>I can help you</em>',
-    'contact.services.tagline': 'Tailored solutions based on your needs.',
+    'services.eyebrow': 'Services',
+    'services.title': 'How <em>I can help you</em>',
+    'services.tagline': 'From planning and design to shooting and launch — your project, end to end.',
 
-    'contact.service.1.title': 'UI/UX Design',
-    'contact.service.1.desc': 'From user research and flow design to high-fidelity prototypes, building intuitive digital products.',
+    'services.1.title': 'Film & Video Production',
+    'services.1.desc': 'Short films, documentaries, brand films and event coverage — planning, scripting, shooting, editing and grading all in one hand, plus short-form social video.',
+    'services.1.tags': '<span>Short Film</span><span>Documentary</span><span>Brand Film</span><span>Short-form</span>',
 
-    'contact.service.2.title': 'Brand Identity',
-    'contact.service.2.desc': 'LOGO, visual guidelines, and application assets — building soulful brand visual languages.',
+    'services.2.title': 'AI Video Production',
+    'services.2.desc': 'Ads, social clips and concept films that blend AI generation with live footage, edited and quality-checked by me.',
+    'services.2.tags': '<span>AI Generation</span><span>Ad Clips</span><span>Concept Film</span>',
 
-    'contact.service.3.title': 'Event Design',
-    'contact.service.3.desc': 'End-to-end event design — from planning, key visuals, collateral, to supplier coordination and execution.',
+    'services.3.title': 'Photography',
+    'services.3.desc': 'Events, press conferences, portraits, products and food — capturing real emotion and story on site.',
+    'services.3.tags': '<span>Events</span><span>Portrait</span><span>Product</span><span>Food</span>',
 
-    'contact.service.4.title': 'Photography & Video',
-    'contact.service.4.desc': 'Portrait, product, event documentation, and video editing — specializing in genuine emotion and storytelling.',
+    'services.4.title': 'Event Marketing & Production',
+    'services.4.desc': 'From planning, key visuals, print collateral and vendor coordination to on-site execution and coverage — press events, ceremonies, banquets and camps.',
+    'services.4.tags': '<span>Planning</span><span>Key Visual</span><span>On-site</span><span>Vendors</span>',
 
-    'contact.service.5.title': 'Illustration',
-    'contact.service.5.desc': 'Commercial illustration, book covers, original characters, comic narratives, and private commissions.',
+    'services.5.title': 'Branding & Graphic Design',
+    'services.5.desc': 'LOGO, CIS / VI, packaging, menus, print and social assets — building a brand language with soul.',
+    'services.5.tags': '<span>LOGO</span><span>CIS / VI</span><span>Packaging</span><span>Social</span>',
 
-    'contact.service.6.title': 'Web Design & Development',
-    'contact.service.6.desc': 'Complete website development from UI design, Wix/HTML implementation, to deployment.',
+    'services.6.title': 'UI/UX & Web Design',
+    'services.6.desc': 'From user research, flows and high-fidelity prototypes to building and launching sites on Wix / HTML.',
+    'services.6.tags': '<span>UX Research</span><span>Prototyping</span><span>Web Build</span>',
+
+    'services.7.title': 'Illustration',
+    'services.7.desc': 'Commercial illustration, book covers, original characters, comic narratives and private commissions.',
+    'services.7.tags': '<span>Commercial</span><span>Book Cover</span><span>Characters</span>',
+
+    'services.adv.eyebrow': 'Why work with me',
+    'services.adv.title': 'Planning to final cut, <em>hands-on at every step</em>',
+    'services.adv.desc': 'I plan, design, shoot and edit myself; bigger projects bring in the BuzzDesign Studio team and long-term design, photo and production partners. No layers of outsourcing, no hand-it-to-AI-and-ship — every step gets a professional eye and real taste, so communication is faster and quality stays consistent.',
 
     // Portfolio page
     'portfolio.hero.eyebrow': 'Design Works',
