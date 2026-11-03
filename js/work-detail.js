@@ -1720,20 +1720,20 @@ const WORKS_DATA = {
   },
   'photo-weiya': {
     id: 'photo-weiya',
-    category: 'portrait-photo',
-    categoryLabel: { 'zh-TW': '人像攝影', 'en': 'Portrait Photo' },
-    title: { 'zh-TW': '尾牙攝影', 'en': 'Year-end Banquet Photography' },
+    category: 'event-photo',
+    categoryLabel: { 'zh-TW': '活動攝影', 'en': 'Event Photo' },
+    title: { 'zh-TW': '公司尾牙攝影', 'en': 'Company Year-end Party Photography' },
     tagline: {
-      'zh-TW': '',
-      'en': ''
+      'zh-TW': '公司尾牙活動紀錄',
+      'en': 'Event coverage of a company year-end party'
     },
     featureImage: 'images/weiya-cover.jpg',
     galleryStyle: 'masonry',
     info: {
-      client: { 'zh-TW': '', 'en': '' },
-      year: '',
-      role: { 'zh-TW': '', 'en': '' },
-      tools: ''
+      client: { 'zh-TW': '富京科技', 'en': 'Fujing Technology' },
+      year: '2025',
+      role: { 'zh-TW': '平面動態攝影', 'en': 'Photo & Video' },
+      tools: 'Sony α7 IV'
     },
     description: {
       heading: {
@@ -1741,8 +1741,12 @@ const WORKS_DATA = {
         'en': ''
       },
       paragraphs: {
-        'zh-TW': [],
-        'en': []
+        'zh-TW': [
+          '公司尾牙活動紀錄'
+        ],
+        'en': [
+          'Event coverage of a company year-end party'
+        ]
       }
     },
     gallery: [
@@ -1770,16 +1774,16 @@ const WORKS_DATA = {
     categoryLabel: { 'zh-TW': '活動攝影', 'en': 'Event Photo' },
     title: { 'zh-TW': '板橋群英扶輪社 24-25 授證', 'en': 'Banqiao Rotary 24-25 Charter' },
     tagline: {
-      'zh-TW': '',
-      'en': ''
+      'zh-TW': '紀錄板橋群英扶輪社 24-25 年度授證典禮',
+      'en': 'Documentary photography of the Banqiao Rotary Club 24-25 charter ceremony'
     },
     featureImage: 'images/rotary2425-cover.jpg',
     galleryStyle: 'masonry',
     info: {
       client: { 'zh-TW': '板橋群英扶輪社', 'en': 'Banqiao Rotary Club' },
       year: '',
-      role: { 'zh-TW': '', 'en': '' },
-      tools: ''
+      role: { 'zh-TW': '平面動態攝影', 'en': 'Photo & Video' },
+      tools: 'Sony α7 IV'
     },
     description: {
       heading: {
@@ -1787,8 +1791,12 @@ const WORKS_DATA = {
         'en': ''
       },
       paragraphs: {
-        'zh-TW': [],
-        'en': []
+        'zh-TW': [
+          '紀錄板橋群英扶輪社 24-25 年度授證典禮'
+        ],
+        'en': [
+          'Documentary photography of the Banqiao Rotary Club 24-25 charter ceremony'
+        ]
       }
     },
     gallery: [
@@ -1810,17 +1818,17 @@ const WORKS_DATA = {
     categoryLabel: { 'zh-TW': '活動攝影', 'en': 'Event Photo' },
     title: { 'zh-TW': '板橋群英扶輪社 × 球芽基金 社區服務', 'en': 'Banqiao Rotary × Qiuya Foundation Community Service' },
     tagline: {
-      'zh-TW': '',
-      'en': ''
+      'zh-TW': '紀錄板橋群英扶輪社與球芽基金公益服務活動',
+      'en': 'Documenting the charity service event by Banqiao Rotary Club and the Qiuya Foundation'
     },
     featureImage: 'images/qiuya-cover.jpg',
     embedVideo: 'https://www.youtube.com/embed/z6YVgP3w88g',
     galleryStyle: 'masonry',
     info: {
       client: { 'zh-TW': '板橋群英扶輪社', 'en': 'Banqiao Rotary Club' },
-      year: '',
-      role: { 'zh-TW': '', 'en': '' },
-      tools: ''
+      year: '2025',
+      role: { 'zh-TW': '平面攝影', 'en': 'Photographer' },
+      tools: 'Sony α7 IV'
     },
     description: {
       heading: {
@@ -1828,8 +1836,12 @@ const WORKS_DATA = {
         'en': ''
       },
       paragraphs: {
-        'zh-TW': [],
-        'en': []
+        'zh-TW': [
+          '紀錄板橋群英扶輪社與球芽基金公益服務活動'
+        ],
+        'en': [
+          'Documenting the charity service event by Banqiao Rotary Club and the Qiuya Foundation'
+        ]
       }
     },
     gallery: [
@@ -1894,47 +1906,6 @@ const WORKS_DATA = {
       { src: 'images/xile-06.jpg', caption: { 'zh-TW': '', 'en': '' } },
       { src: 'images/xile-07.jpg', caption: { 'zh-TW': '', 'en': '' } },
       { src: 'images/xile-08.jpg', caption: { 'zh-TW': '', 'en': '' } }
-    ],
-    next: 'photo-ctbc-xinzhuang'
-  },
-  'photo-ctbc-xinzhuang': {
-    id: 'photo-ctbc-xinzhuang',
-    category: 'event-photo',
-    categoryLabel: { 'zh-TW': '活動攝影', 'en': 'Event Photo' },
-    title: { 'zh-TW': '中信房屋 新莊開幕', 'en': 'CTBC Realty Xinzhuang Opening' },
-    tagline: {
-      'zh-TW': '',
-      'en': ''
-    },
-    featureImage: 'images/ctbc-xinzhuang-cover.jpg',
-    galleryStyle: 'masonry',
-    info: {
-      client: { 'zh-TW': '中信房屋', 'en': 'CTBC Realty' },
-      year: '',
-      role: { 'zh-TW': '', 'en': '' },
-      tools: ''
-    },
-    description: {
-      heading: {
-        'zh-TW': '',
-        'en': ''
-      },
-      paragraphs: {
-        'zh-TW': [],
-        'en': []
-      }
-    },
-    gallery: [
-      { src: 'images/ctbc-xinzhuang-01.jpg', caption: { 'zh-TW': '', 'en': '' } },
-      { src: 'images/ctbc-xinzhuang-02.jpg', caption: { 'zh-TW': '', 'en': '' } },
-      { src: 'images/ctbc-xinzhuang-03.jpg', caption: { 'zh-TW': '', 'en': '' } },
-      { src: 'images/ctbc-xinzhuang-04.jpg', caption: { 'zh-TW': '', 'en': '' } },
-      { src: 'images/ctbc-xinzhuang-05.jpg', caption: { 'zh-TW': '', 'en': '' } },
-      { src: 'images/ctbc-xinzhuang-06.jpg', caption: { 'zh-TW': '', 'en': '' } },
-      { src: 'images/ctbc-xinzhuang-07.jpg', caption: { 'zh-TW': '', 'en': '' } },
-      { src: 'images/ctbc-xinzhuang-08.jpg', caption: { 'zh-TW': '', 'en': '' } },
-      { src: 'images/ctbc-xinzhuang-09.jpg', caption: { 'zh-TW': '', 'en': '' } },
-      { src: 'images/ctbc-xinzhuang-10.jpg', caption: { 'zh-TW': '', 'en': '' } }
     ],
     next: 'photo-blackmoon-yikou'
   },
