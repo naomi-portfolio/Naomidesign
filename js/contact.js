@@ -8,14 +8,14 @@ class ContactForm {
     this.submitBtn = document.querySelector('.form-submit');
     this.successBox = document.querySelector('.form-success');
 
-    /* === Formspree 接入點 ===
-     * 未來上線時：
-     * 1. 到 https://formspree.io 註冊免費帳號
-     * 2. 建立新表單，取得 endpoint URL（格式：https://formspree.io/f/XXXXXXXX）
-     * 3. 把下方 null 改成您的 endpoint URL 字串
-     * 4. 表單就會真的寄信到您的 Email
+    /* === Web3Forms 接入點 ===
+     * 1. 到 https://web3forms.com 輸入要收信的 Email，取得 Access Key（寄到信箱）
+     * 2. 把下方 accessKey 的 null 改成那串 Key
+     * 3. 表單就會真的寄信到該 Email
      */
-    this.formspreeEndpoint = null; // 例：'https://formspree.io/f/XXXXXXXX'
+    this.endpoint = 'https://api.web3forms.com/submit';
+    this.accessKey = 'a4bddd5d-b571-4b54-88c7-4568f1d26d4e';
+    this.formspreeEndpoint = this.accessKey ? this.endpoint : null;
 
     this.init();
   }
@@ -108,6 +108,9 @@ class ContactForm {
 
     // 收集表單資料
     const formData = new FormData(this.form);
+    formData.append('access_key', this.accessKey);
+    formData.append('from_name', 'Naomi 作品集網站');
+    formData.set('subject', `［作品集來信］${formData.get('subject') || ''}`);
 
     try {
       // 真實送出（透過 Formspree）
