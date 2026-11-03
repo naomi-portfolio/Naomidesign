@@ -17,7 +17,7 @@ const translations = {
 
     'about.eyebrow': '關於設計師',
     'about.title': '我是 <em>Naomi</em>，相信好設計能讓人停下腳步',
-    'about.p1': '擁有跨領域設計經驗，專精於 UI/UX、品牌識別、插畫敘事與遊戲美術',
+    'about.p1': '擁有跨領域設計經驗，專精於 UI/UX、品牌識別、插畫敘事與遊戲美術，現為<a class="studio-link" href="https://tp6vul3vm06.wixsite.com/buzzdesign" target="_blank" rel="noopener">嗡嗡設計 BuzzDesign Studio</a> 創辦人',
     'about.p2': '我的設計理念是用系統性思維，在商業邏輯與使用者情感之間取得平衡',
     'about.cta': '更認識我',
 
@@ -37,7 +37,7 @@ const translations = {
     'contact.cta': '聯繫我',
 
     'footer.brand': 'Naomi',
-    'footer.tagline': '用設計編織情感的設計師。橫跨 UI/UX、品牌、插畫、攝影與遊戲美術的多元創作者',
+    'footer.tagline': '用設計編織情感的設計師。橫跨 UI/UX、品牌、插畫、攝影與遊戲美術的多元創作者。現為<a class="studio-link" href="https://tp6vul3vm06.wixsite.com/buzzdesign" target="_blank" rel="noopener">嗡嗡設計 BuzzDesign Studio</a> 創辦人',
     'footer.col1.title': '導覽',
     'footer.col2.title': '聯絡',
     'footer.copyright': '© 2026 Naomi. 版權所有',
@@ -53,7 +53,7 @@ const translations = {
     'about.story.eyebrow': '個人故事',
     'about.story.title': '在<em>理性與感性</em>之間說故事',
     'about.story.p1': '對我來說，設計從來不只是視覺問題，而是「如何讓陌生人在第一秒就理解、第二秒就被打動」的細膩工程。從 UI/UX、遊戲美術到插畫敘事，我喜歡用不同的形式去探索同一個命題：人為什麼會對某個畫面停下來？',
-    'about.story.p2': '過去幾年，我從零到一打造過數位產品、品牌識別、遊戲內容與商業合作專案。這些經驗讓我深刻體會：好的設計需要設計系統的嚴謹，也需要對情感的敏銳——兩者缺一不可',
+    'about.story.p2': '過去幾年，我從零到一打造過數位產品、品牌識別、遊戲內容與商業合作專案。這些經驗讓我深刻體會：好的設計需要設計系統的嚴謹，也需要對情感的敏銳——兩者缺一不可。現為<a class="studio-link" href="https://tp6vul3vm06.wixsite.com/buzzdesign" target="_blank" rel="noopener">嗡嗡設計 BuzzDesign Studio</a> 創辦人',
     'about.story.p3': '我相信最好的設計，是讓使用者在不察覺技術存在的同時，被故事與情感打動。這也是我每次拿起筆、打開 Figma 時，最想傳遞的事',
     'about.story.quote': '「設計的真正力量，不在於被看見，而在於被感受。」',
     'about.story.caption': 'TAIPEI · 2026',
@@ -321,7 +321,7 @@ const translations = {
 
     'about.eyebrow': 'About the Designer',
     'about.title': 'I am <em>Naomi</em>, designing to make people pause',
-    'about.p1': 'A multi-disciplinary designer with experience in UI/UX, brand identity, illustration narrative, and game art.',
+    'about.p1': 'A multi-disciplinary designer with experience in UI/UX, brand identity, illustration narrative, and game art. Currently the founder of <a class="studio-link" href="https://tp6vul3vm06.wixsite.com/buzzdesign" target="_blank" rel="noopener">BuzzDesign Studio（嗡嗡設計）</a>.',
     'about.p2': 'My design philosophy: using systematic thinking to balance business logic and user emotion.',
     'about.cta': 'Know Me More',
 
@@ -341,7 +341,7 @@ const translations = {
     'contact.cta': 'Contact Me',
 
     'footer.brand': 'Naomi',
-    'footer.tagline': 'A designer who weaves emotion through design. Multi-disciplinary creator across UI/UX, branding, illustration, photography, and game art.',
+    'footer.tagline': 'A designer who weaves emotion through design. Multi-disciplinary creator across UI/UX, branding, illustration, photography, and game art. Currently the founder of <a class="studio-link" href="https://tp6vul3vm06.wixsite.com/buzzdesign" target="_blank" rel="noopener">BuzzDesign Studio（嗡嗡設計）</a>.',
     'footer.col1.title': 'Navigation',
     'footer.col2.title': 'Contact',
     'footer.copyright': '© 2026 Naomi. All rights reserved.',
@@ -357,7 +357,7 @@ const translations = {
     'about.story.eyebrow': 'My Story',
     'about.story.title': 'Telling stories between <em>logic and emotion</em>',
     'about.story.p1': 'For me, design has never been just a visual problem — it\'s the delicate art of making strangers understand in the first second and be moved in the second. From UI/UX to game art to illustration narrative, I love exploring the same question through different forms: why do people pause at certain images?',
-    'about.story.p2': 'Over the past few years, I\'ve built digital products, brand identities, game content, and commercial collaborations from zero to one. These experiences taught me: good design requires both the rigor of design systems and sensitivity to emotion — neither can be missing.',
+    'about.story.p2': 'Over the past few years, I\'ve built digital products, brand identities, game content, and commercial collaborations from zero to one. These experiences taught me: good design requires both the rigor of design systems and sensitivity to emotion — neither can be missing. Currently the founder of <a class="studio-link" href="https://tp6vul3vm06.wixsite.com/buzzdesign" target="_blank" rel="noopener">BuzzDesign Studio（嗡嗡設計）</a>.',
     'about.story.p3': 'I believe the best design is when users are moved by story and emotion without noticing the technology behind it. That\'s what I want to convey every time I pick up a pen or open Figma.',
     'about.story.quote': '"The true power of design lies not in being seen, but in being felt."',
     'about.story.caption': 'TAIPEI · 2026',
