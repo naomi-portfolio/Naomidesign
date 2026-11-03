@@ -1718,6 +1718,573 @@ const WORKS_DATA = {
     galleryEndVideo: 'https://www.youtube.com/embed/a8-dP7L9G7E?si=9p_Xqz9LY81un5Jq',
     next: 'tpp-app-redesign'
   },
+  'photo-weiya': {
+    id: 'photo-weiya',
+    category: 'portrait-photo',
+    categoryLabel: { 'zh-TW': '人像攝影', 'en': 'Portrait Photo' },
+    title: { 'zh-TW': '尾牙攝影', 'en': 'Year-end Banquet Photography' },
+    tagline: {
+      'zh-TW': '',
+      'en': ''
+    },
+    featureImage: 'images/weiya-cover.jpg',
+    galleryStyle: 'masonry',
+    info: {
+      client: { 'zh-TW': '', 'en': '' },
+      year: '',
+      role: { 'zh-TW': '', 'en': '' },
+      tools: ''
+    },
+    description: {
+      heading: {
+        'zh-TW': '',
+        'en': ''
+      },
+      paragraphs: {
+        'zh-TW': [],
+        'en': []
+      }
+    },
+    gallery: [
+      { src: 'images/weiya-01.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/weiya-02.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/weiya-03.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/weiya-04.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/weiya-05.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/weiya-06.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/weiya-07.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/weiya-08.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/weiya-09.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/weiya-10.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/weiya-11.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/weiya-12.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/weiya-13.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/weiya-14.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/weiya-15.jpg', caption: { 'zh-TW': '', 'en': '' } }
+    ],
+    next: 'photo-rotary-2425'
+  },
+  'photo-rotary-2425': {
+    id: 'photo-rotary-2425',
+    category: 'event-photo',
+    categoryLabel: { 'zh-TW': '活動攝影', 'en': 'Event Photo' },
+    title: { 'zh-TW': '板橋群英扶輪社 24-25 授證', 'en': 'Banqiao Rotary 24-25 Charter' },
+    tagline: {
+      'zh-TW': '',
+      'en': ''
+    },
+    featureImage: 'images/rotary2425-cover.jpg',
+    galleryStyle: 'masonry',
+    info: {
+      client: { 'zh-TW': '板橋群英扶輪社', 'en': 'Banqiao Rotary Club' },
+      year: '',
+      role: { 'zh-TW': '', 'en': '' },
+      tools: ''
+    },
+    description: {
+      heading: {
+        'zh-TW': '',
+        'en': ''
+      },
+      paragraphs: {
+        'zh-TW': [],
+        'en': []
+      }
+    },
+    gallery: [
+      { src: 'images/rotary2425-01.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/rotary2425-02.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/rotary2425-03.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/rotary2425-04.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/rotary2425-05.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/rotary2425-06.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/rotary2425-07.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/rotary2425-08.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/rotary2425-09.jpg', caption: { 'zh-TW': '', 'en': '' } }
+    ],
+    next: 'photo-rotary-qiuya'
+  },
+  'photo-rotary-qiuya': {
+    id: 'photo-rotary-qiuya',
+    category: 'event-photo',
+    categoryLabel: { 'zh-TW': '活動攝影', 'en': 'Event Photo' },
+    title: { 'zh-TW': '板橋群英扶輪社 × 球芽基金 社區服務', 'en': 'Banqiao Rotary × Qiuya Foundation Community Service' },
+    tagline: {
+      'zh-TW': '',
+      'en': ''
+    },
+    featureImage: 'images/qiuya-cover.jpg',
+    embedVideo: 'https://www.youtube.com/embed/z6YVgP3w88g',
+    galleryStyle: 'masonry',
+    info: {
+      client: { 'zh-TW': '板橋群英扶輪社', 'en': 'Banqiao Rotary Club' },
+      year: '',
+      role: { 'zh-TW': '', 'en': '' },
+      tools: ''
+    },
+    description: {
+      heading: {
+        'zh-TW': '',
+        'en': ''
+      },
+      paragraphs: {
+        'zh-TW': [],
+        'en': []
+      }
+    },
+    gallery: [
+      { src: 'images/qiuya-01.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/qiuya-02.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/qiuya-03.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/qiuya-04.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/qiuya-05.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/qiuya-06.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/qiuya-07.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/qiuya-08.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/qiuya-09.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/qiuya-10.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/qiuya-11.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/qiuya-12.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/qiuya-13.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/qiuya-14.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/qiuya-15.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/qiuya-16.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/qiuya-17.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/qiuya-18.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/qiuya-19.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/qiuya-20.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/qiuya-21.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/qiuya-22.jpg', caption: { 'zh-TW': '', 'en': '' } }
+    ],
+    next: 'photo-rotary-xile'
+  },
+  'photo-rotary-xile': {
+    id: 'photo-rotary-xile',
+    category: 'event-photo',
+    categoryLabel: { 'zh-TW': '活動攝影', 'en': 'Event Photo' },
+    title: { 'zh-TW': '板橋群英扶輪社 × 喜樂小田田 社區服務', 'en': 'Banqiao Rotary × Xile Xiaotiantian Community Service' },
+    tagline: {
+      'zh-TW': '',
+      'en': ''
+    },
+    featureImage: 'images/xile-cover.jpg',
+    galleryStyle: 'masonry',
+    info: {
+      client: { 'zh-TW': '板橋群英扶輪社', 'en': 'Banqiao Rotary Club' },
+      year: '',
+      role: { 'zh-TW': '', 'en': '' },
+      tools: ''
+    },
+    description: {
+      heading: {
+        'zh-TW': '',
+        'en': ''
+      },
+      paragraphs: {
+        'zh-TW': [],
+        'en': []
+      }
+    },
+    gallery: [
+      { src: 'images/xile-01.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/xile-02.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/xile-03.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/xile-04.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/xile-05.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/xile-06.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/xile-07.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/xile-08.jpg', caption: { 'zh-TW': '', 'en': '' } }
+    ],
+    next: 'photo-ctbc-xinzhuang'
+  },
+  'photo-ctbc-xinzhuang': {
+    id: 'photo-ctbc-xinzhuang',
+    category: 'event-photo',
+    categoryLabel: { 'zh-TW': '活動攝影', 'en': 'Event Photo' },
+    title: { 'zh-TW': '中信房屋 新莊開幕', 'en': 'CTBC Realty Xinzhuang Opening' },
+    tagline: {
+      'zh-TW': '',
+      'en': ''
+    },
+    featureImage: 'images/ctbc-xinzhuang-cover.jpg',
+    galleryStyle: 'masonry',
+    info: {
+      client: { 'zh-TW': '中信房屋', 'en': 'CTBC Realty' },
+      year: '',
+      role: { 'zh-TW': '', 'en': '' },
+      tools: ''
+    },
+    description: {
+      heading: {
+        'zh-TW': '',
+        'en': ''
+      },
+      paragraphs: {
+        'zh-TW': [],
+        'en': []
+      }
+    },
+    gallery: [
+      { src: 'images/ctbc-xinzhuang-01.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/ctbc-xinzhuang-02.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/ctbc-xinzhuang-03.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/ctbc-xinzhuang-04.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/ctbc-xinzhuang-05.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/ctbc-xinzhuang-06.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/ctbc-xinzhuang-07.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/ctbc-xinzhuang-08.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/ctbc-xinzhuang-09.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/ctbc-xinzhuang-10.jpg', caption: { 'zh-TW': '', 'en': '' } }
+    ],
+    next: 'photo-blackmoon-yikou'
+  },
+  'photo-blackmoon-yikou': {
+    id: 'photo-blackmoon-yikou',
+    category: 'product-photo',
+    categoryLabel: { 'zh-TW': '商品攝影', 'en': 'Product Photo' },
+    title: { 'zh-TW': '黑月亮 一口幸福 食物攝影', 'en': 'Black Moon Bite-size Treats Food Photography' },
+    tagline: {
+      'zh-TW': '',
+      'en': ''
+    },
+    featureImage: 'images/blackmoon-yikou-cover.jpg',
+    galleryStyle: 'masonry',
+    info: {
+      client: { 'zh-TW': '黑月亮', 'en': 'Black Moon' },
+      year: '',
+      role: { 'zh-TW': '', 'en': '' },
+      tools: ''
+    },
+    description: {
+      heading: {
+        'zh-TW': '',
+        'en': ''
+      },
+      paragraphs: {
+        'zh-TW': [],
+        'en': []
+      }
+    },
+    gallery: [
+      { src: 'images/blackmoon-yikou-01.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/blackmoon-yikou-02.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/blackmoon-yikou-03.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/blackmoon-yikou-04.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/blackmoon-yikou-05.jpg', caption: { 'zh-TW': '', 'en': '' } }
+    ],
+    next: 'photo-blackmoon-toast'
+  },
+  'photo-blackmoon-toast': {
+    id: 'photo-blackmoon-toast',
+    category: 'product-photo',
+    categoryLabel: { 'zh-TW': '商品攝影', 'en': 'Product Photo' },
+    title: { 'zh-TW': '黑月亮 吐司 食物攝影', 'en': 'Black Moon Toast Food Photography' },
+    tagline: {
+      'zh-TW': '',
+      'en': ''
+    },
+    featureImage: 'images/blackmoon-toast-cover.jpg',
+    galleryStyle: 'masonry',
+    info: {
+      client: { 'zh-TW': '黑月亮', 'en': 'Black Moon' },
+      year: '',
+      role: { 'zh-TW': '', 'en': '' },
+      tools: ''
+    },
+    description: {
+      heading: {
+        'zh-TW': '',
+        'en': ''
+      },
+      paragraphs: {
+        'zh-TW': [],
+        'en': []
+      }
+    },
+    gallery: [
+      { src: 'images/blackmoon-toast-01.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/blackmoon-toast-02.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/blackmoon-toast-03.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/blackmoon-toast-04.jpg', caption: { 'zh-TW': '', 'en': '' } }
+    ],
+    next: 'photo-blackmoon-yolk'
+  },
+  'photo-blackmoon-yolk': {
+    id: 'photo-blackmoon-yolk',
+    category: 'product-photo',
+    categoryLabel: { 'zh-TW': '商品攝影', 'en': 'Product Photo' },
+    title: { 'zh-TW': '黑月亮 蛋黃酥 食物攝影', 'en': 'Black Moon Egg Yolk Pastry Food Photography' },
+    tagline: {
+      'zh-TW': '',
+      'en': ''
+    },
+    featureImage: 'images/blackmoon-yolk-cover.jpg',
+    galleryStyle: 'masonry',
+    info: {
+      client: { 'zh-TW': '黑月亮', 'en': 'Black Moon' },
+      year: '',
+      role: { 'zh-TW': '', 'en': '' },
+      tools: ''
+    },
+    description: {
+      heading: {
+        'zh-TW': '',
+        'en': ''
+      },
+      paragraphs: {
+        'zh-TW': [],
+        'en': []
+      }
+    },
+    gallery: [
+      { src: 'images/blackmoon-yolk-01.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/blackmoon-yolk-02.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/blackmoon-yolk-03.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/blackmoon-yolk-04.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/blackmoon-yolk-05.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/blackmoon-yolk-06.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/blackmoon-yolk-07.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/blackmoon-yolk-08.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/blackmoon-yolk-09.jpg', caption: { 'zh-TW': '', 'en': '' } }
+    ],
+    next: 'photo-shangweitai'
+  },
+  'photo-shangweitai': {
+    id: 'photo-shangweitai',
+    category: 'product-photo',
+    categoryLabel: { 'zh-TW': '商品攝影', 'en': 'Product Photo' },
+    title: { 'zh-TW': '上味泰 食物攝影', 'en': 'Shang Wei Tai Food Photography' },
+    tagline: {
+      'zh-TW': '',
+      'en': ''
+    },
+    featureImage: 'images/shangweitai-cover.jpg',
+    galleryStyle: 'masonry',
+    info: {
+      client: { 'zh-TW': '上味泰', 'en': 'Shang Wei Tai' },
+      year: '',
+      role: { 'zh-TW': '', 'en': '' },
+      tools: ''
+    },
+    description: {
+      heading: {
+        'zh-TW': '',
+        'en': ''
+      },
+      paragraphs: {
+        'zh-TW': [
+          '<a href="https://www.facebook.com/photo/?fbid=122159434184279528&set=pcb.122159434298279528&locale=zh_TW" target="_blank" rel="noopener" style="color:var(--color-accent);text-decoration:underline">作品連結</a>'
+        ],
+        'en': [
+          '<a href="https://www.facebook.com/photo/?fbid=122159434184279528&set=pcb.122159434298279528&locale=zh_TW" target="_blank" rel="noopener" style="color:var(--color-accent);text-decoration:underline">Photo Link</a>'
+        ]
+      }
+    },
+    gallery: [],
+    next: 'clip-rotary3490-leadership'
+  },
+  'clip-rotary3490-leadership': {
+    id: 'clip-rotary3490-leadership',
+    category: 'video',
+    categoryLabel: { 'zh-TW': '攝影剪輯', 'en': 'Photo & Edit' },
+    title: { 'zh-TW': '國際扶輪3490地區 25-26 扶少團領袖營 蘇澳海事場', 'en': 'Rotary District 3490 25-26 Interact Leadership Camp, Su-ao' },
+    tagline: {
+      'zh-TW': '',
+      'en': ''
+    },
+    featureImage: 'images/rotary-leadership-cover.jpg',
+    embedVideo: 'https://www.youtube.com/embed/HCyoDoYhiPo',
+    galleryStyle: 'masonry',
+    info: {
+      client: { 'zh-TW': '國際扶輪3490地區', 'en': 'Rotary International District 3490' },
+      year: '',
+      role: { 'zh-TW': '', 'en': '' },
+      tools: ''
+    },
+    description: {
+      heading: {
+        'zh-TW': '',
+        'en': ''
+      },
+      paragraphs: {
+        'zh-TW': [],
+        'en': []
+      }
+    },
+    gallery: [],
+    next: 'clip-rotary3490-drawing'
+  },
+  'clip-rotary3490-drawing': {
+    id: 'clip-rotary3490-drawing',
+    category: 'video',
+    categoryLabel: { 'zh-TW': '攝影剪輯', 'en': 'Photo & Edit' },
+    title: { 'zh-TW': '國際扶輪3490地區 畫我家鄉暨板橋我家 繪畫比賽影片', 'en': 'Rotary District 3490 "Draw My Hometown" Student Art Contest Videos' },
+    tagline: {
+      'zh-TW': '',
+      'en': ''
+    },
+    featureImage: 'images/rotary-drawing-cover.jpg',
+    embedVideo: 'https://www.youtube.com/embed/AREwa1Vs0TI',
+    galleryStyle: 'masonry',
+    info: {
+      client: { 'zh-TW': '國際扶輪3490地區', 'en': 'Rotary International District 3490' },
+      year: '',
+      role: { 'zh-TW': '', 'en': '' },
+      tools: ''
+    },
+    description: {
+      heading: {
+        'zh-TW': '',
+        'en': ''
+      },
+      paragraphs: {
+        'zh-TW': [
+          '評審講評定機拍攝，影片剪輯及簡易動畫',
+          '<a href="https://youtu.be/kgJIF79P900" target="_blank" rel="noopener" style="color:var(--color-accent);text-decoration:underline">影片 2</a>',
+          '<a href="https://youtu.be/dNfkAuJvy90" target="_blank" rel="noopener" style="color:var(--color-accent);text-decoration:underline">影片 3</a>',
+          '<a href="https://youtu.be/vXWWoHFbH2c" target="_blank" rel="noopener" style="color:var(--color-accent);text-decoration:underline">影片 4</a>'
+        ],
+        'en': [
+          'Fixed-camera filming of the judges\' comments, video editing and simple animation',
+          '<a href="https://youtu.be/kgJIF79P900" target="_blank" rel="noopener" style="color:var(--color-accent);text-decoration:underline">Video 2</a>',
+          '<a href="https://youtu.be/dNfkAuJvy90" target="_blank" rel="noopener" style="color:var(--color-accent);text-decoration:underline">Video 3</a>',
+          '<a href="https://youtu.be/vXWWoHFbH2c" target="_blank" rel="noopener" style="color:var(--color-accent);text-decoration:underline">Video 4</a>'
+        ]
+      }
+    },
+    gallery: [],
+    next: 'clip-rotary3490-wcs'
+  },
+  'clip-rotary3490-wcs': {
+    id: 'clip-rotary3490-wcs',
+    category: 'video',
+    categoryLabel: { 'zh-TW': '攝影剪輯', 'en': 'Photo & Edit' },
+    title: { 'zh-TW': '國際扶輪3490地區 WCS 服務計畫 訪談及影片剪輯', 'en': 'Rotary District 3490 WCS Service Project Interviews & Editing' },
+    tagline: {
+      'zh-TW': '',
+      'en': ''
+    },
+    featureImage: 'images/rotary-wcs-cover.jpg',
+    embedVideo: 'https://www.youtube.com/embed/DChgWn4F6us',
+    galleryStyle: 'masonry',
+    info: {
+      client: { 'zh-TW': '國際扶輪3490地區', 'en': 'Rotary International District 3490' },
+      year: '',
+      role: { 'zh-TW': '', 'en': '' },
+      tools: ''
+    },
+    description: {
+      heading: {
+        'zh-TW': '',
+        'en': ''
+      },
+      paragraphs: {
+        'zh-TW': [],
+        'en': []
+      }
+    },
+    gallery: [
+      { src: 'images/rotary-wcs-01.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/rotary-wcs-02.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/rotary-wcs-03.jpg', caption: { 'zh-TW': '', 'en': '' } },
+      { src: 'images/rotary-wcs-04.jpg', caption: { 'zh-TW': '', 'en': '' } }
+    ],
+    next: 'clip-yinbao'
+  },
+  'clip-yinbao': {
+    id: 'clip-yinbao',
+    category: 'video',
+    categoryLabel: { 'zh-TW': '攝影剪輯', 'en': 'Photo & Edit' },
+    title: { 'zh-TW': '吳怡霈 × 銀寶善存 微廣告', 'en': 'Wu Yi-Pei × Centrum Silver Micro Ad' },
+    tagline: {
+      'zh-TW': '',
+      'en': ''
+    },
+    featureImage: 'images/yinbao-cover.jpg',
+    galleryStyle: 'masonry',
+    info: {
+      client: { 'zh-TW': '銀寶善存', 'en': 'Centrum Silver' },
+      year: '',
+      role: { 'zh-TW': '', 'en': '' },
+      tools: ''
+    },
+    description: {
+      heading: {
+        'zh-TW': '',
+        'en': ''
+      },
+      paragraphs: {
+        'zh-TW': [
+          '<a href="https://www.facebook.com/reel/364268499785179" target="_blank" rel="noopener" style="color:var(--color-accent);text-decoration:underline">影片連結</a>'
+        ],
+        'en': [
+          '<a href="https://www.facebook.com/reel/364268499785179" target="_blank" rel="noopener" style="color:var(--color-accent);text-decoration:underline">Video Link</a>'
+        ]
+      }
+    },
+    gallery: [],
+    next: 'clip-luup'
+  },
+  'clip-luup': {
+    id: 'clip-luup',
+    category: 'video',
+    categoryLabel: { 'zh-TW': '攝影剪輯', 'en': 'Photo & Edit' },
+    title: { 'zh-TW': '吳怡霈 × LUUP 使用教學影片', 'en': 'Wu Yi-Pei × LUUP Tutorial Video' },
+    tagline: {
+      'zh-TW': '',
+      'en': ''
+    },
+    featureImage: 'images/luup-cover.jpg',
+    galleryStyle: 'masonry',
+    info: {
+      client: { 'zh-TW': 'LUUP', 'en': 'LUUP' },
+      year: '',
+      role: { 'zh-TW': '', 'en': '' },
+      tools: ''
+    },
+    description: {
+      heading: {
+        'zh-TW': '',
+        'en': ''
+      },
+      paragraphs: {
+        'zh-TW': [],
+        'en': []
+      }
+    },
+    gallery: [],
+    next: 'clip-luncheon'
+  },
+  'clip-luncheon': {
+    id: 'clip-luncheon',
+    category: 'video',
+    categoryLabel: { 'zh-TW': '攝影剪輯', 'en': 'Photo & Edit' },
+    title: { 'zh-TW': '午宴 動態攝影', 'en': 'Luncheon Video' },
+    tagline: {
+      'zh-TW': '',
+      'en': ''
+    },
+    featureImage: 'images/luncheon-cover.jpg',
+    galleryStyle: 'masonry',
+    info: {
+      client: { 'zh-TW': '', 'en': '' },
+      year: '',
+      role: { 'zh-TW': '', 'en': '' },
+      tools: ''
+    },
+    description: {
+      heading: {
+        'zh-TW': '',
+        'en': ''
+      },
+      paragraphs: {
+        'zh-TW': [],
+        'en': []
+      }
+    },
+    gallery: [],
+    next: 'photo-rotary-2324'
+  }
 };
 
 /* === 作品詳情頁渲染器 === */
