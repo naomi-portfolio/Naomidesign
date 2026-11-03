@@ -211,9 +211,7 @@ const translations = {
     'services.7.desc': '商業插畫、書籍封面、原創角色、漫畫敘事與私人客製委託',
     'services.7.tags': '<span>商業插畫</span><span>書籍封面</span><span>原創角色</span>',
 
-    'services.adv.eyebrow': '為什麼找我',
-    'services.adv.title': '從企劃到成品，<em>每一步都親自把關</em>',
-    'services.adv.desc': '企劃、設計、攝影與剪輯都由我親自操刀；規模更大的案子，再串連嗡嗡設計團隊與長期合作的設計、攝影及製作廠商。不靠層層外包，也不是把需求丟給 AI 就交件，每個環節都經過專業判斷與美感把關，溝通更快、品質更一致',
+    'services.intro': '企劃、設計、攝影與剪輯都由我親自操刀；規模更大的案子，再串連嗡嗡設計團隊與長期合作的設計、攝影及製作廠商。不靠層層外包，也不是把需求丟給 AI 就交件，每個環節都經過專業判斷與美感把關，溝通更快、品質更一致',
 
     // 設計頁面
     'portfolio.hero.eyebrow': '設計作品',
@@ -528,9 +526,7 @@ const translations = {
     'services.7.desc': 'Commercial illustration, book covers, original characters, comic narratives and private commissions.',
     'services.7.tags': '<span>Commercial</span><span>Book Cover</span><span>Characters</span>',
 
-    'services.adv.eyebrow': 'Why work with me',
-    'services.adv.title': 'Planning to final cut, <em>hands-on at every step</em>',
-    'services.adv.desc': 'I plan, design, shoot and edit myself; bigger projects bring in the BuzzDesign Studio team and long-term design, photo and production partners. No layers of outsourcing, no hand-it-to-AI-and-ship — every step gets a professional eye and real taste, so communication is faster and quality stays consistent.',
+    'services.intro': 'I plan, design, shoot and edit myself; bigger projects bring in the BuzzDesign Studio team and long-term design, photo and production partners. No layers of outsourcing, no hand-it-to-AI-and-ship — every step gets a professional eye and real taste, so communication is faster and quality stays consistent.',
 
     // Portfolio page
     'portfolio.hero.eyebrow': 'Design Works',

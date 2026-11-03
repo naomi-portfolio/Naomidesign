@@ -675,6 +675,14 @@
   line-height: 1.7;
 }
 
+.services-intro {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  max-width: 760px;
+  margin-top: 0.75rem;
+  line-height: 1.8;
+}
+
 .service-tags {
   display: flex;
   flex-wrap: wrap;
@@ -691,28 +699,9 @@
   border-radius: 999px;
 }
 
-/* 優勢說明：跨兩欄 */
-.service-adv {
-  grid-column: span 2;
-  border-color: var(--color-accent-soft);
-  background: linear-gradient(135deg, var(--color-accent-soft), transparent 70%), var(--color-bg-elevated);
-}
-
-.service-adv-title {
-  font-family: var(--font-display);
-  font-size: clamp(1.5rem, 2.4vw, 2rem);
-  font-weight: 500;
-  line-height: 1.35;
-  margin-bottom: 1rem;
-}
-
 @media (max-width: 1024px) {
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .service-adv {
-    grid-column: auto;
   }
 }
 
