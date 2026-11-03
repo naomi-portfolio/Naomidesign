@@ -170,7 +170,7 @@ const translations = {
     // 聯絡資訊
     'contact.info.title': '其他<em>聯絡方式</em>',
     'contact.info.email.label': 'Email',
-    'contact.info.email.value': 'tp6vul3vm06@gmail.com',
+    'contact.info.email.value': 'buzzdesign2023@gmail.com',
     'contact.info.phone.label': '電話',
     'contact.info.phone.value': '請透過 Email 聯繫',
     'contact.info.location.label': '工作地點',
@@ -483,7 +483,7 @@ const translations = {
     // Contact info
     'contact.info.title': 'Other <em>ways to reach me</em>',
     'contact.info.email.label': 'Email',
-    'contact.info.email.value': 'tp6vul3vm06@gmail.com',
+    'contact.info.email.value': 'buzzdesign2023@gmail.com',
     'contact.info.phone.label': 'Phone',
     'contact.info.phone.value': 'Please contact via Email',
     'contact.info.location.label': 'Location',
