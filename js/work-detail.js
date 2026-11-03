@@ -1118,11 +1118,11 @@ const WORKS_DATA = {
   'video-keelung-police': {
     id: 'video-keelung-police',
     category: 'video',
-    categoryLabel: { 'zh-TW': '攝影剪輯', 'en': 'Photo & Edit' },
-    title: { 'zh-TW': '基隆市警察局反詐宣導影片', 'en': 'Keelung Police Anti-Fraud Campaign Video' },
+    categoryLabel: { 'zh-TW': '微電影', 'en': 'Short Film' },
+    title: { 'zh-TW': '基隆市警察局反詐微電影', 'en': 'Keelung Police Anti-Fraud Short Film' },
     tagline: {
-      'zh-TW': '與基隆市警察局、吳怡霈合作，拍攝反詐宣導影片',
-      'en': 'Anti-fraud awareness video produced in collaboration with Keelung Police Department and artist Wu Yi-Pei'
+      'zh-TW': '與基隆市警察局、吳怡霈合作，拍攝反詐微電影',
+      'en': 'Anti-fraud short film produced in collaboration with Keelung Police Department and artist Wu Yi-Pei'
     },
     featureImage: 'images/antiscam-01.png',
     embedVideo: 'https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fkcpb110%2Fvideos%2F475165201999063%2F&show_text=false&width=560&t=0',

@@ -251,6 +251,7 @@ const translations = {
     'photo.filter.portrait': '人像攝影',
     'photo.filter.product': '商品攝影',
     'photo.filter.video': '影片',
+    'photo.filter.shortfilm': '微電影',
 
     'photo.work.1.title': '板橋群英扶輪社授證',
     'photo.work.1.desc': '扶輪社年度授證典禮的完整紀錄',
@@ -563,6 +564,7 @@ const translations = {
     'photo.filter.portrait': 'Portrait',
     'photo.filter.product': 'Product',
     'photo.filter.video': 'Video',
+    'photo.filter.shortfilm': 'Short Film',
 
     'photo.work.1.title': 'Banqiao Rotary Charter',
     'photo.work.1.desc': 'Complete documentation of the Rotary Club annual charter ceremony.',
