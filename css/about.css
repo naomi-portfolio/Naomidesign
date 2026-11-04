@@ -215,7 +215,8 @@
 
 .story-grid {
   display: grid;
-  grid-template-columns: 5fr 7fr;
+  grid-template-columns: 1fr;
+  max-width: 760px;
   gap: var(--space-lg);
   align-items: start;
 }
