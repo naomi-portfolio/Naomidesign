@@ -17,7 +17,7 @@ const translations = {
 
     'about.eyebrow': '關於設計師',
     'about.title': '我是 <em>Naomi</em>，相信好設計能讓人停下腳步',
-    'about.p1': '擁有跨領域設計經驗，專精於 UI/UX、品牌識別、插畫敘事與遊戲美術，<a class="studio-link" href="https://tp6vul3vm06.wixsite.com/buzzdesign" target="_blank" rel="noopener">嗡嗡設計 BuzzDesign Studio</a> 創辦人',
+    'about.p1': '擁有跨領域設計經驗，專精於 UI/UX、品牌識別、插畫敘事與遊戲美術，<a class="studio-link" href="https://tp6vul3vm06.wixsite.com/buzzdesign" target="_blank" rel="noopener">嗡嗡設計 BuzzDesign Studio</a> 創辦人、<a class="studio-link" href="https://www.instagram.com/nveslor.studio/" target="_blank" rel="noopener">N. Veslor Studio</a> 創辦人',
     'about.p2': '我的設計理念是用系統性思維，在商業邏輯與使用者情感之間取得平衡',
     'about.cta': '更認識我',
 
@@ -95,38 +95,23 @@ const translations = {
     'about.software.eyebrow': '常用軟體',
     'about.software.title': 'My <em>Toolkit</em>',
 
-    // 經歷時間軸（倒序：資深 → 學歷）
-    'about.exp.eyebrow': '工作經歷',
-    'about.exp.title': '我走過的<em>每一步</em>',
+    // 經歷清單
+    'about.exp.eyebrow': '經歷',
 
-    'about.exp.1.period': '2026 — 現在',
-    'about.exp.1.role': 'Product Designer (UIUX)',
-    'about.exp.1.company': '友訊機器人股份有限公司',
-
-    'about.exp.2.period': '2025 — 2026',
-    'about.exp.2.role': 'UI/UX 設計師',
-    'about.exp.2.company': '穎宸貿易有限公司',
-    'about.exp.2.desc': '主導 Web3 產品的 UI/UX 設計與開發，負責 Cryptoldyou 與 Eggpop 兩個主要產品的介面設計與資訊架構，從零打造符合區塊鏈專案特性的視覺系統與操作流程。同時負責 NFT 數位資產設計，產出兼具收藏價值與品牌識別的視覺作品。運用 Wix 平台快速建置響應式網站，並支援社群媒體素材設計與遊戲美術製作（角色、場景、道具）',
-
-    'about.exp.3.period': '2023 — 2025',
-    'about.exp.3.role': 'UI/UX 設計師',
-    'about.exp.3.company': '金融科技新創公司',
-    'about.exp.3.desc': '作為團隊核心的設計整合者，主導從 UX 規劃、UI 視覺設計、遊戲美術到行銷內容製作的端對端流程。建立 Design System 統一跨產品線（區塊鏈、投資、遊戲）設計規範，將後續專案開發時間縮短 30%、前期溝通成本降低 50%。獨立負責遊戲美術（角色、場景、UI、Live2D 動畫），為公司節省超過 40 萬元委外費用',
-
-    'about.exp.4.period': '2022 — 2023',
-    'about.exp.4.role': '專案設計師',
-    'about.exp.4.company': '政治公關專案團隊',
-    'about.exp.4.desc': '於政治公關專案中擔任跨部門設計與溝通要職，服務對象橫跨總部、地方分部與多位公共事務候選人。在高壓的選戰期間整合視覺設計、影像製作與專案管理：建立 11 位候選人的整體視覺識別系統、節省超過 20 萬元設計成本；主導活動紀錄與形象短片製作，每支影片節省約 5 萬元委外費用；協同策劃數十場 10 至 300 人規模的地方活動',
-
-    'about.exp.5.period': '2018 — 現在',
-    'about.exp.5.role': '品牌設計師 / 創辦人',
-    'about.exp.5.company': '自營工作室（個人品牌）',
-    'about.exp.5.desc': '長期經營個人品牌設計工作室超過 7 年（與正職並行），整合設計、插畫、攝影與影片剪輯服務。涵蓋 LOGO 設計、UI/UX、書籍排版、宣傳物製作、日系/Q版/卡牌插畫繪製、漫畫敘事、活動紀錄攝影與紀錄片剪輯。定期參與動漫展與同人展，自組品牌攤位並策劃整體視覺與商品銷售流程',
-
-    'about.exp.6.period': '2018',
-    'about.exp.6.role': '平面設計師',
-    'about.exp.6.company': '仁寶電腦工業股份有限公司',
-    'about.exp.6.desc': '建立印前檢查流程，將大型活動輸出物的印製錯誤率降至趨近於零；運用 3D 建模進行展場攤位配置與視覺提案；設計並優化多項內部系統與專案網站介面 (UI)；獨立負責產品與行銷贈品包裝設計，主導從結構展開圖到量產的完整流程；統籌企業活動全系列平面設計物',
+    'about.exp.1.org': '門縫後的球球',
+    'about.exp.1.role': '同人社團',
+    'about.exp.2.org': '接案品牌設計師',
+    'about.exp.2.role': '',
+    'about.exp.3.org': 'N. Veslor Studio',
+    'about.exp.3.role': '創辦人',
+    'about.exp.4.org': '嗡嗡設計工作室',
+    'about.exp.4.role': '共同創辦人',
+    'about.exp.5.org': '星塵領域',
+    'about.exp.5.role': 'UI/UX 設計師兼遊戲主美術',
+    'about.exp.6.org': 'Eggpop',
+    'about.exp.6.role': 'NFT 設計師',
+    'about.exp.7.org': 'Eluvanor',
+    'about.exp.7.role': '遊戲設計師',
 
     // 作品清單區
     'about.works.eyebrow': '作品清單',
@@ -331,7 +316,7 @@ const translations = {
 
     'about.eyebrow': 'About the Designer',
     'about.title': 'I am <em>Naomi</em>, designing to make people pause',
-    'about.p1': 'A multi-disciplinary designer with experience in UI/UX, brand identity, illustration narrative, and game art. Founder of <a class="studio-link" href="https://tp6vul3vm06.wixsite.com/buzzdesign" target="_blank" rel="noopener">BuzzDesign Studio（嗡嗡設計）</a>.',
+    'about.p1': 'A multi-disciplinary designer with experience in UI/UX, brand identity, illustration narrative, and game art. Founder of <a class="studio-link" href="https://tp6vul3vm06.wixsite.com/buzzdesign" target="_blank" rel="noopener">BuzzDesign Studio（嗡嗡設計）</a> and <a class="studio-link" href="https://www.instagram.com/nveslor.studio/" target="_blank" rel="noopener">N. Veslor Studio</a>.',
     'about.p2': 'My design philosophy: using systematic thinking to balance business logic and user emotion.',
     'about.cta': 'Know Me More',
 
@@ -410,36 +395,21 @@ const translations = {
 
     // Experience timeline
     'about.exp.eyebrow': 'Experience',
-    'about.exp.title': 'Every <em>step</em> I\'ve taken',
 
-    'about.exp.1.period': '2026 — Present',
-    'about.exp.1.role': 'Product Designer (UIUX)',
-    'about.exp.1.company': '友訊機器人股份有限公司',
-
-    'about.exp.2.period': '2025 — 2026',
-    'about.exp.2.role': 'UI/UX Designer',
-    'about.exp.2.company': 'Visionary Harvest Trading Co., Ltd.',
-    'about.exp.2.desc': 'Led UI/UX design and development for Web3 products. Designed interfaces and information architecture for Cryptoldyou and Eggpop, building visual systems and user flows tailored for blockchain projects. Designed NFT digital assets that combine collectible value with brand identity. Built responsive websites on Wix, supported social media marketing visuals and 2D game art (characters, scenes, props).',
-
-    'about.exp.3.period': '2023 — 2025',
-    'about.exp.3.role': 'UI/UX Designer',
-    'about.exp.3.company': 'FinTech Startup',
-    'about.exp.3.desc': 'Served as the team\'s core design integrator, leading end-to-end processes from UX planning, UI/visual design, game art, to marketing content production. Established Design System unifying standards across product lines (blockchain, investment, games), reducing development time by ~30% and front-end communication costs by 50%. Independently handled all game art (characters, scenes, UI, Live2D animations), saving over NT$400,000 in outsourcing costs.',
-
-    'about.exp.4.period': '2022 — 2023',
-    'about.exp.4.role': 'Project Designer',
-    'about.exp.4.company': 'Political Public Affairs Team',
-    'about.exp.4.desc': 'Cross-departmental design and communication lead for political public affairs projects, working with headquarters, regional offices, and multiple public affairs candidates. During campaign periods: built visual identity systems for 11 candidates (saved over NT$200,000); led event documentation and image-building short films (saved ~NT$50,000 per video); co-planned dozens of local events ranging from 10 to 300 attendees.',
-
-    'about.exp.5.period': '2018 — Present',
-    'about.exp.5.role': 'Brand Designer / Founder',
-    'about.exp.5.company': 'Independent Studio (Personal Brand)',
-    'about.exp.5.desc': 'Operated an independent design studio for over 7 years (alongside full-time roles), offering integrated design, illustration, photography, and video editing services. Includes LOGO design, UI/UX, book layout, promotional materials, Japanese/chibi/card illustration, comic narrative, event photography, and documentary editing. Regular participant in anime and dōjin events with self-organized booths.',
-
-    'about.exp.6.period': '2018',
-    'about.exp.6.role': 'Graphic Designer',
-    'about.exp.6.company': 'Compal Electronics, Inc.',
-    'about.exp.6.desc': 'Established pre-press inspection workflows reducing print error rates to near zero. Used 3D modeling for booth layout and visual proposals at exhibitions. Designed and optimized internal systems and project website UIs. Independently handled product and promotional packaging design from structural drafting to mass production. Coordinated full-series corporate event graphics.',
+    'about.exp.1.org': '門縫後的球球',
+    'about.exp.1.role': 'Doujin Circle',
+    'about.exp.2.org': 'Freelance Brand Designer',
+    'about.exp.2.role': '',
+    'about.exp.3.org': 'N. Veslor Studio',
+    'about.exp.3.role': 'Founder',
+    'about.exp.4.org': 'BuzzDesign Studio',
+    'about.exp.4.role': 'Co-founder',
+    'about.exp.5.org': '星塵領域',
+    'about.exp.5.role': 'UI/UX Designer & Lead Game Artist',
+    'about.exp.6.org': 'Eggpop',
+    'about.exp.6.role': 'NFT Designer',
+    'about.exp.7.org': 'Eluvanor',
+    'about.exp.7.role': 'Game Designer',
 
     // Works list
     'about.works.eyebrow': 'Works List',
