@@ -288,7 +288,7 @@ const translations = {
     'photo.hero.eyebrow': '攝影作品',
     'photo.hero.title1': '用鏡頭凝結',
     'photo.hero.title2': '<em>每個瞬間</em>',
-    'photo.hero.tagline': '從活動紀實到人像、商品與影片，每張照片都是時間的切片',
+    'photo.hero.tagline': '從活動紀實到人像與商品，每張照片都是時間的切片',
 
     'photo.filter.all': '全部',
     'photo.filter.event': '活動攝影',
@@ -308,6 +308,16 @@ const translations = {
 
     'photo.cta.text': '需要<em>攝影服務</em>嗎？',
     'photo.cta.btn': '委託拍攝',
+
+    // 平面攝影／剪輯切換、剪輯頁
+    'media.photo': "平面攝影",
+    'media.video': "剪輯",
+    'video.hero.eyebrow': "剪輯作品",
+    'video.hero.title1': "讓畫面",
+    'video.hero.title2': "<em>開口說話</em>",
+    'video.hero.tagline': "從活動紀錄、訪談到微廣告與微電影，把一段時間剪成一個故事",
+    'video.cta.text': "需要<em>影片剪輯</em>嗎？",
+    'video.cta.btn': "委託剪輯",
 
     // 插畫頁面
     'illust.hero.eyebrow': '插畫作品',
@@ -645,7 +655,7 @@ const translations = {
     'photo.hero.eyebrow': 'Photography',
     'photo.hero.title1': 'Freezing',
     'photo.hero.title2': '<em>every moment</em>',
-    'photo.hero.tagline': 'From event documentary to portrait, product, and video — every photo is a slice of time.',
+    'photo.hero.tagline': 'From event documentary to portrait and product, every photo is a slice of time.',
 
     'photo.filter.all': 'All',
     'photo.filter.event': 'Event',
@@ -665,6 +675,16 @@ const translations = {
 
     'photo.cta.text': 'Need <em>photography services</em>?',
     'photo.cta.btn': 'Commission a Shoot',
+
+    // Photography / video switch, video page
+    'media.photo': "Photography",
+    'media.video': "Video",
+    'video.hero.eyebrow': "Video Editing",
+    'video.hero.title1': "Letting images",
+    'video.hero.title2': "<em>speak</em>",
+    'video.hero.tagline': "From event films and interviews to short ads and short films, turning a stretch of time into a story",
+    'video.cta.text': "Need <em>video editing</em>?",
+    'video.cta.btn': "Commission an Edit",
 
     // Illustration page
     'illust.hero.eyebrow': 'Illustration',

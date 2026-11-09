@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VKJH6SCYDP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VKJH6SCYDP');
+  </script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>剪輯 — Naomi｜活動紀錄、訪談、微廣告與微電影</title>
+  <meta name="description" content="Naomi 的影片剪輯作品：活動紀錄影片、動態攝影、訪談、微廣告、教學影片與微電影。">
+  <link rel="canonical" href="https://naomi-portfolio.github.io/Naomidesign/video.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="剪輯 — Naomi｜活動紀錄、訪談、微廣告與微電影">
+  <meta property="og:description" content="Naomi 的影片剪輯作品：活動紀錄影片、動態攝影、訪談、微廣告、教學影片與微電影。">
+  <meta property="og:url" content="https://naomi-portfolio.github.io/Naomidesign/video.html">
+  <meta property="og:image" content="https://naomi-portfolio.github.io/Naomidesign/images/antiscam-thumb.png">
+  <meta property="og:locale" content="zh_TW">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="剪輯 — Naomi｜活動紀錄、訪談、微廣告與微電影">
+  <meta name="twitter:description" content="Naomi 的影片剪輯作品：活動紀錄影片、動態攝影、訪談、微廣告、教學影片與微電影。">
+  <meta name="twitter:image" content="https://naomi-portfolio.github.io/Naomidesign/images/antiscam-thumb.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.21/dist/lenis.css">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <div class="scroll-progress"></div>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      Naomi<span class="accent">.</span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav.home">首頁</a></li>
+        <li><a href="about.html" data-i18n="nav.about">關於我</a></li>
+        <li><a href="portfolio.html" data-i18n="nav.portfolio">設計</a></li>
+        <li><a href="photography.html" data-i18n="nav.photography">攝影</a></li>
+        <li><a href="illustration.html" data-i18n="nav.illustration">創作</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">聯繫方式</a></li>
+      </ul>
+
+      <div class="lang-switch">
+        <button data-lang="zh-TW" class="active">中</button>
+        <button data-lang="en">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ 1. 頁首大標題區 ============ -->
+  <section class="portfolio-hero">
+    <div class="portfolio-hero-bg"></div>
+    <div class="container">
+      <div class="portfolio-hero-content">
+        <p class="portfolio-hero-eyebrow" data-i18n="video.hero.eyebrow">剪輯作品</p>
+
+        <h1 class="portfolio-hero-title">
+          <span class="title-wrapper">
+            <span class="title-line title-line-1" data-i18n="video.hero.title1">讓畫面</span>
+          </span>
+          <span class="title-wrapper">
+            <span class="title-line title-line-2" data-i18n="video.hero.title2"><em>開口說話</em></span>
+          </span>
+        </h1>
+
+        <p class="portfolio-hero-tagline" data-i18n="video.hero.tagline">
+          從活動紀錄、訪談到微廣告與微電影，把一段時間剪成一個故事。
+        </p>
+
+        <nav class="media-switch" aria-label="攝影與剪輯">
+          <a href="photography.html" data-i18n="media.photo">平面攝影</a>
+          <a href="video.html" class="active" aria-current="page" data-i18n="media.video">剪輯</a>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2. 篩選器 ============ -->
+  <section class="filter-section">
+    <div class="container">
+      <div class="filter-bar">
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all" data-i18n="photo.filter.all">全部</button>
+          <button class="filter-btn" data-filter="video" data-i18n="photo.filter.video">影片</button>
+          <button class="filter-btn" data-filter="short-film" data-i18n="photo.filter.shortfilm">微電影</button>
+        </div>
+
+        <div class="filter-count">
+          <span data-i18n="portfolio.count.label">展示作品</span>
+          <span class="count-num">11</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3. 工整三欄作品網格 ============ -->
+  <section class="works-grid-section">
+    <div class="container">
+      <div class="works-grid">
+        <!-- 1. SHORT FILM_基隆市警察局反詐微電影 -->
+        <a href="work-detail.html?id=video-keelung-police" class="work-card" data-category="short-film">
+          <div class="work-card-image"><img src="images/antiscam-thumb.png" alt="基隆市警察局反詐微電影 — 與基隆市警察局、吳怡霈合作，拍攝反詐微電影" loading="lazy" decoding="async"></div>
+          <div class="work-card-overlay"></div>
+          <span class="work-card-number">01</span>
+          <div class="work-card-content">
+            <div class="work-card-meta">
+              <span class="work-card-category">微電影</span>
+              <span class="work-card-year">2024</span>
+            </div>
+            <h3 class="work-card-title">基隆市警察局反詐微電影</h3>
+            <p class="work-card-description">與基隆市警察局、吳怡霈合作，拍攝反詐微電影</p>
+          </div>
+        </a>
+
+        <!-- 2. CLIP_眾青雲集造浪營 -->
+        <a href="work-detail.html?id=clip-zhongqing" class="work-card" data-category="video">
+          <div class="work-card-image"><img src="images/wave-cover.png" alt="眾青雲集造浪營 — 眾青雲集造浪營活動短影片剪輯" loading="lazy" decoding="async"></div>
+          <div class="work-card-overlay"></div>
+          <span class="work-card-number">02</span>
+          <div class="work-card-content">
+            <div class="work-card-meta">
+              <span class="work-card-category">攝影剪輯</span>
+              <span class="work-card-year">2023</span>
+            </div>
+            <h3 class="work-card-title">眾青雲集造浪營</h3>
+            <p class="work-card-description">眾青雲集造浪營活動短影片剪輯</p>
+          </div>
+        </a>
+
+        <!-- 3. 鏟子超人周年感恩會 紀錄片（新增）-->
+        <a href="work-detail.html?id=video-shovelmuseum-anniversary" class="work-card" data-category="video">
+          <div class="work-card-image"><img src="images/rotary3490-shovelmuseum-anniversary-cover.jpg" alt="鏟子超人周年感恩會 紀錄片 — 國際扶輪3490地區26-27年度 鏟子超人周年感恩會紀錄片" loading="lazy" decoding="async"></div>
+          <div class="work-card-overlay"></div>
+          <span class="work-card-number">03</span>
+          <div class="work-card-content">
+            <div class="work-card-meta">
+              <span class="work-card-category">攝影剪輯</span>
+              <span class="work-card-year">2026</span>
+            </div>
+            <h3 class="work-card-title">鏟子超人周年感恩會 紀錄片</h3>
+            <p class="work-card-description">國際扶輪3490地區26-27年度 鏟子超人周年感恩會紀錄片</p>
+          </div>
+        </a>
+
+        <!-- 4. 國際扶輪3490地區感恩餐會（新增）-->
+        <a href="work-detail.html?id=clip-rotary3490-thanksgiving" class="work-card" data-category="video">
+          <div class="work-card-image"><img src="images/rotary3490-thanksgiving-cover.jpg" alt="國際扶輪3490地區感恩餐會 — 主題曲創作與活動影片剪輯" loading="lazy" decoding="async"></div>
+          <div class="work-card-overlay"></div>
+          <span class="work-card-number">04</span>
+          <div class="work-card-content">
+            <div class="work-card-meta">
+              <span class="work-card-category">攝影剪輯</span>
+              <span class="work-card-year">2026</span>
+            </div>
+            <h3 class="work-card-title">國際扶輪3490地區感恩餐會</h3>
+            <p class="work-card-description">主題曲創作與活動影片剪輯</p>
+          </div>
+        </a>
+
+        <!-- 5. 國際扶輪3490地區扶少團 台日聯合參訪活動（新增）-->
+        <a href="work-detail.html?id=clip-rotary3490-interact" class="work-card" data-category="video">
+          <div class="work-card-image"><img src="images/rotary3490-interact-cover.jpg" alt="國際扶輪3490地區扶少團 台日聯合參訪活動 — 活動主題曲與影片剪輯" loading="lazy" decoding="async"></div>
+          <div class="work-card-overlay"></div>
+          <span class="work-card-number">05</span>
+          <div class="work-card-content">
+            <div class="work-card-meta">
+              <span class="work-card-category">攝影剪輯</span>
+              <span class="work-card-year">2026</span>
+            </div>
+            <h3 class="work-card-title">國際扶輪3490地區扶少團 台日聯合參訪活動</h3>
+            <p class="work-card-description">活動主題曲與影片剪輯</p>
+          </div>
+        </a>
+
+        <!-- 6. 國際扶輪3490地區 25-26 扶少團領袖營 蘇澳海事場（從嗡嗡設計網站搬入）-->
+        <a href="work-detail.html?id=clip-rotary3490-leadership" class="work-card" data-category="video">
+          <div class="work-card-image"><img src="images/rotary-leadership-cover.jpg" alt="國際扶輪3490地區 25-26 扶少團領袖營 蘇澳海事場 — 攝影剪輯" loading="lazy" decoding="async"></div>
+          <div class="work-card-overlay"></div>
+          <span class="work-card-number">06</span>
+          <div class="work-card-content">
+            <div class="work-card-meta">
+              <span class="work-card-category">攝影剪輯</span>
+              <span class="work-card-year"></span>
+            </div>
+            <h3 class="work-card-title">國際扶輪3490地區 25-26 扶少團領袖營 蘇澳海事場</h3>
+            <p class="work-card-description"></p>
+          </div>
+        </a>
+
+        <!-- 7. 國際扶輪3490地區 畫我家鄉暨板橋我家 繪畫比賽影片（從嗡嗡設計網站搬入）-->
+        <a href="work-detail.html?id=clip-rotary3490-drawing" class="work-card" data-category="video">
+          <div class="work-card-image"><img src="images/rotary-drawing-cover.jpg" alt="國際扶輪3490地區 畫我家鄉暨板橋我家 繪畫比賽影片 — 攝影剪輯" loading="lazy" decoding="async"></div>
+          <div class="work-card-overlay"></div>
+          <span class="work-card-number">07</span>
+          <div class="work-card-content">
+            <div class="work-card-meta">
+              <span class="work-card-category">攝影剪輯</span>
+              <span class="work-card-year"></span>
+            </div>
+            <h3 class="work-card-title">國際扶輪3490地區 畫我家鄉暨板橋我家 繪畫比賽影片</h3>
+            <p class="work-card-description"></p>
+          </div>
+        </a>
+
+        <!-- 8. 國際扶輪3490地區 WCS 服務計畫 訪談及影片剪輯（從嗡嗡設計網站搬入）-->
+        <a href="work-detail.html?id=clip-rotary3490-wcs" class="work-card" data-category="video">
+          <div class="work-card-image"><img src="images/rotary-wcs-cover.jpg" alt="國際扶輪3490地區 WCS 服務計畫 訪談及影片剪輯 — 攝影剪輯" loading="lazy" decoding="async"></div>
+          <div class="work-card-overlay"></div>
+          <span class="work-card-number">08</span>
+          <div class="work-card-content">
+            <div class="work-card-meta">
+              <span class="work-card-category">攝影剪輯</span>
+              <span class="work-card-year"></span>
+            </div>
+            <h3 class="work-card-title">國際扶輪3490地區 WCS 服務計畫 訪談及影片剪輯</h3>
+            <p class="work-card-description"></p>
+          </div>
+        </a>
+
+        <!-- 9. 吳怡霈 × 銀寶善存 微廣告（從嗡嗡設計網站搬入）-->
+        <a href="work-detail.html?id=clip-yinbao" class="work-card" data-category="video">
+          <div class="work-card-image"><img src="images/yinbao-cover.jpg" alt="吳怡霈 × 銀寶善存 微廣告 — 攝影剪輯" loading="lazy" decoding="async"></div>
+          <div class="work-card-overlay"></div>
+          <span class="work-card-number">09</span>
+          <div class="work-card-content">
+            <div class="work-card-meta">
+              <span class="work-card-category">攝影剪輯</span>
+              <span class="work-card-year"></span>
+            </div>
+            <h3 class="work-card-title">吳怡霈 × 銀寶善存 微廣告</h3>
+            <p class="work-card-description"></p>
+          </div>
+        </a>
+
+        <!-- 10. 吳怡霈 × LUUP 使用教學影片（從嗡嗡設計網站搬入）-->
+        <a href="work-detail.html?id=clip-luup" class="work-card" data-category="video">
+          <div class="work-card-image"><img src="images/luup-cover.jpg" alt="吳怡霈 × LUUP 使用教學影片 — 攝影剪輯" loading="lazy" decoding="async"></div>
+          <div class="work-card-overlay"></div>
+          <span class="work-card-number">10</span>
+          <div class="work-card-content">
+            <div class="work-card-meta">
+              <span class="work-card-category">攝影剪輯</span>
+              <span class="work-card-year"></span>
+            </div>
+            <h3 class="work-card-title">吳怡霈 × LUUP 使用教學影片</h3>
+            <p class="work-card-description"></p>
+          </div>
+        </a>
+
+        <!-- 11. 午宴 動態攝影（從嗡嗡設計網站搬入）-->
+        <a href="work-detail.html?id=clip-luncheon" class="work-card" data-category="video">
+          <div class="work-card-image"><img src="images/luncheon-cover.jpg" alt="午宴 動態攝影 — 攝影剪輯" loading="lazy" decoding="async"></div>
+          <div class="work-card-overlay"></div>
+          <span class="work-card-number">11</span>
+          <div class="work-card-content">
+            <div class="work-card-meta">
+              <span class="work-card-category">攝影剪輯</span>
+              <span class="work-card-year"></span>
+            </div>
+            <h3 class="work-card-title">午宴 動態攝影</h3>
+            <p class="work-card-description"></p>
+          </div>
+        </a>
+
+        <div class="empty-state">
+          <div class="empty-state-icon">∅</div>
+          <p class="empty-state-text" data-i18n="portfolio.empty">此分類暫無作品</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 4. CTA 區 ============ -->
+  <section class="portfolio-cta">
+    <div class="container">
+      <h2 class="portfolio-cta-text reveal" data-i18n="video.cta.text">需要<em>影片剪輯</em>嗎？</h2>
+      <div class="magnetic reveal">
+        <a href="contact.html" class="contact-cta-button magnetic-inner">
+          <span data-i18n="video.cta.btn">委託剪輯</span>
+          <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 頁尾 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3 data-i18n="footer.brand">設計師姓名</h3>
+          <p data-i18n="footer.tagline">UI/UX 設計師、視覺創作者，專注於打造令人記憶深刻的數位體驗。</p>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer.col1.title">導覽</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">首頁</a></li>
+            <li><a href="about.html" data-i18n="nav.about">關於我</a></li>
+            <li><a href="portfolio.html" data-i18n="nav.portfolio">設計</a></li>
+            <li><a href="photography.html" data-i18n="nav.photography">攝影</a></li>
+            <li><a href="illustration.html" data-i18n="nav.illustration">創作</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer.col2.title">聯絡</h4>
+          <ul>
+            <li><a href="mailto:buzzdesign2023@gmail.com">buzzdesign2023@gmail.com</a></li>
+            <li><a href="#" target="_blank">Instagram</a></li>
+            <li><a href="#" target="_blank">Behance</a></li>
+            <li><a href="https://www.linkedin.com/in/%E7%AD%B1%E7%92%87-%E9%99%B3-86a71436a/" target="_blank">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span data-i18n="footer.copyright">© 2026 設計師姓名. 版權所有。</span>
+        <span data-i18n="footer.location">Made in Taipei</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lenis@1.3.21/dist/lenis.min.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/about-decorations.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/portfolio.js"></script>
+</body>
+</html>
