@@ -1498,11 +1498,11 @@ const WORKS_DATA = {
   'food-yuanqi': {
     id: 'food-yuanqi',
     category: 'branding',
-    categoryLabel: { 'zh-TW': '餐飲品牌設計', 'en': 'F&B Branding' },
+    categoryLabel: { 'zh-TW': '餐飲品牌全案設計', 'en': 'F&B Branding, End to End' },
     title: { 'zh-TW': '元氣十盅 日常料理小食堂', 'en': 'Yuan Qi Daily Kitchen' },
     tagline: {
-      'zh-TW': '餐飲品牌設計',
-      'en': 'F&B Brand Design'
+      'zh-TW': '品牌識別・菜單・招牌・美食印象製作',
+      'en': 'Brand Identity · Menu · Signage · Food Imagery'
     },
     featureImage: 'images/yuanqi-01.jpg',
     info: {
@@ -1552,11 +1552,11 @@ const WORKS_DATA = {
   'food-jiuzai': {
     id: 'food-jiuzai',
     category: 'branding',
-    categoryLabel: { 'zh-TW': '餐飲品牌設計', 'en': 'F&B Branding' },
+    categoryLabel: { 'zh-TW': '餐飲品牌全案設計', 'en': 'F&B Branding, End to End' },
     title: { 'zh-TW': '玖在一方 北方手做麵餃', 'en': 'Jiuzai Yifang — Northern Handmade Noodles & Dumplings' },
     tagline: {
-      'zh-TW': '餐飲品牌設計',
-      'en': 'F&B Brand Design'
+      'zh-TW': '品牌識別・菜單・招牌・空間設計',
+      'en': 'Brand Identity · Menu · Signage · Interior Space'
     },
     featureImage: 'images/jiuzai-01.jpg',
     info: {
@@ -1604,11 +1604,11 @@ const WORKS_DATA = {
   'food-zhengzheng': {
     id: 'food-zhengzheng',
     category: 'branding',
-    categoryLabel: { 'zh-TW': '餐飲品牌設計', 'en': 'F&B Branding' },
+    categoryLabel: { 'zh-TW': '餐飲品牌全案設計', 'en': 'F&B Branding, End to End' },
     title: { 'zh-TW': '蒸蒸日饗 地中海健康餐盒', 'en': 'Zheng Zheng Ri Xiang — Mediterranean Healthy Meals' },
     tagline: {
-      'zh-TW': '餐飲品牌設計',
-      'en': 'F&B Brand Design'
+      'zh-TW': '品牌識別・菜單・招牌・美食印象製作',
+      'en': 'Brand Identity · Menu · Signage · Food Imagery'
     },
     featureImage: 'images/zhengzheng-01.jpg',
     info: {
@@ -2535,10 +2535,6 @@ class WorkDetailRenderer {
     upsertMeta('name', 'twitter:description', seoDesc);
     upsertMeta('name', 'twitter:image', seoImage);
 
-    // 密碼保護的餐飲品牌案例（food-portfolio.html 底下的作品）不對外索引
-    if (w.id && w.id.startsWith('food-')) {
-      upsertMeta('name', 'robots', 'noindex, nofollow');
-    }
   }
 
   setText(selector, text) {

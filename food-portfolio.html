@@ -13,9 +13,8 @@
   </script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>餐飲品牌設計 — Naomi</title>
-  <meta name="description" content="Naomi 的餐飲品牌設計作品集（密碼保護頁面，僅供特定對象瀏覽）">
-  <meta name="robots" content="noindex, nofollow">
+  <title>餐飲品牌全案設計 — Naomi</title>
+  <meta name="description" content="Naomi 的餐飲品牌全案設計：品牌定位、識別系統、菜單、招牌、空間、美食印象與美食攝影">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -26,73 +25,99 @@
   <link rel="stylesheet" href="css/portfolio.css">
 
   <style>
-    /* ── 密碼畫面 ── */
-    #lock-screen {
-      position: fixed;
-      inset: 0;
-      z-index: 9999;
-      background: var(--color-bg, #0a0a0a);
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    .food-section { padding: 5rem 0; }
+    .food-section .section-title { margin-bottom: 3rem; }
+
+    /* 服務範圍 */
+    .food-steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--color-border);
+      border: 1px solid var(--color-border);
     }
-    .lock-inner { width: min(420px, 90vw); text-align: center; }
-    .lock-icon { font-size: 2.5rem; margin-bottom: 1.5rem; opacity: 0.5; }
-    .lock-inner h2 {
+    .food-step { background: var(--color-bg); padding: 2.25rem 2rem; }
+    .food-step-num {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      color: var(--color-accent);
+    }
+    .food-step h3 {
       font-family: 'Noto Serif TC', serif;
-      font-size: 1.4rem; font-weight: 500;
-      color: var(--color-text, #e8e8e8);
-      margin-bottom: 0.4rem;
+      font-size: 1.3rem;
+      font-weight: 500;
+      margin: 1rem 0 0.6rem;
     }
-    .lock-inner p {
+    .food-step p { font-size: 0.92rem; line-height: 1.75; color: var(--color-text-muted); }
+
+    /* 品牌案例 */
+    .food-cases { display: flex; flex-direction: column; gap: 5rem; }
+    .food-case {
+      display: grid;
+      grid-template-columns: 7fr 5fr;
+      gap: 3.5rem;
+      align-items: center;
+      color: inherit;
+      text-decoration: none;
+    }
+    .food-case:nth-child(even) { grid-template-columns: 5fr 7fr; }
+    .food-case:nth-child(even) .food-case-image { order: 2; }
+    .food-case-image { aspect-ratio: 4 / 3; overflow: hidden; background: var(--color-bg-soft); }
+    .food-case-image img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 1.2s var(--ease-out-expo);
+    }
+    .food-case:hover .food-case-image img { transform: scale(1.04); }
+    .food-case-num { font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.2em; color: var(--color-accent); }
+    .food-case-name {
+      font-family: 'Noto Serif TC', serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 500;
+      margin: 0.75rem 0 0.25rem;
+    }
+    .food-case-sub { color: var(--color-text-muted); font-size: 0.95rem; }
+    .food-case-story { margin: 1.5rem 0; font-size: 1rem; line-height: 1.85; }
+    .food-case-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .food-case-tags span {
+      font-size: 0.75rem;
+      letter-spacing: 0.05em;
+      color: var(--color-accent);
+      border: 1px solid var(--color-accent-soft);
+      padding: 0.3rem 0.75rem;
+      border-radius: 999px;
+    }
+    .food-case-more { display: inline-block; margin-top: 2rem; font-size: 0.85rem; letter-spacing: 0.1em; color: var(--color-text-muted); }
+    .food-case:hover .food-case-more { color: var(--color-accent); }
+
+    /* 美食攝影 */
+    .food-photos { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+    .food-photo { position: relative; aspect-ratio: 3 / 4; overflow: hidden; display: block; background: var(--color-bg-soft); }
+    .food-photo img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s var(--ease-out-expo); }
+    .food-photo:hover img { transform: scale(1.05); }
+    .food-photo span {
+      position: absolute; left: 0; right: 0; bottom: 0;
+      padding: 2.5rem 1rem 1rem;
       font-size: 0.85rem;
-      color: var(--color-text-muted, #666);
-      margin-bottom: 2rem; letter-spacing: 0.04em;
+      color: #fff;
+      background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
     }
-    .pw-field { display: flex; gap: 0.75rem; }
-    .pw-field input {
-      flex: 1;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.12);
-      border-radius: 8px;
-      color: var(--color-text, #e8e8e8);
-      font-size: 1rem; padding: 0.75rem 1rem;
-      outline: none; transition: border-color 0.2s; font-family: inherit;
-    }
-    .pw-field input:focus { border-color: var(--color-accent, #00d4a3); }
-    .pw-field button {
-      padding: 0.75rem 1.5rem;
-      background: var(--color-accent, #00d4a3);
-      color: #000; font-weight: 600; font-size: 0.9rem;
-      border: none; border-radius: 8px; cursor: pointer;
-      font-family: inherit; transition: opacity 0.2s; white-space: nowrap;
-    }
-    .pw-field button:hover { opacity: 0.85; }
-    .pw-error { margin-top: 0.75rem; font-size: 0.8rem; color: #e04050; min-height: 1.2em; }
 
-    body.locked .navbar,
-    body.locked #page-content,
-    body.locked .footer { visibility: hidden; }
-    body.unlocked #lock-screen { display: none; }
-
-    .food-works-section { padding: 2rem 0 6rem; }
+    @media (max-width: 1024px) {
+      .food-steps { grid-template-columns: repeat(2, 1fr); }
+      .food-photos { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 768px) {
+      .food-section { padding: 3.5rem 0; }
+      .food-steps { grid-template-columns: 1fr; }
+      .food-case, .food-case:nth-child(even) { grid-template-columns: 1fr; gap: 1.5rem; }
+      .food-case:nth-child(even) .food-case-image { order: 0; }
+      .food-cases { gap: 3.5rem; }
+    }
   </style>
 </head>
-<body class="locked">
+<body>
 
-  <!-- 密碼畫面 -->
-  <div id="lock-screen">
-    <div class="lock-inner">
-      <div class="lock-icon">🔒</div>
-      <h2>此頁面受密碼保護</h2>
-      <p>請輸入密碼以進入餐飲品牌設計作品集</p>
-      <div class="pw-field">
-        <input type="password" id="pw-input" placeholder="輸入密碼" autocomplete="off">
-        <button id="pw-btn">進入</button>
-      </div>
-      <div class="pw-error" id="pw-error"></div>
-    </div>
-  </div>
 
   <!-- 主頁面 -->
   <div class="cursor-dot"></div>
@@ -124,84 +149,130 @@
 
   <div id="page-content">
 
-    <!-- 標題區（與設計頁一致） -->
+    <!-- 標題區 -->
     <section class="portfolio-hero">
       <div class="portfolio-hero-bg"></div>
       <div class="container">
         <div class="portfolio-hero-content">
-          <p class="portfolio-hero-eyebrow">餐飲品牌設計</p>
+          <p class="portfolio-hero-eyebrow" data-i18n="food.eyebrow">餐飲品牌全案設計</p>
           <h1 class="portfolio-hero-title">
             <span class="title-wrapper">
-              <span class="title-line title-line-1">以美食為靈感的</span>
+              <span class="title-line title-line-1" data-i18n="food.title.1">從品牌</span>
             </span>
             <span class="title-wrapper">
-              <span class="title-line title-line-2"><em>品牌</em>視覺</span>
+              <span class="title-line title-line-2" data-i18n="food.title.2">到<em>餐桌</em></span>
             </span>
           </h1>
-          <p class="portfolio-hero-tagline">
-            餐飲品牌識別、菜單設計、包裝與空間視覺，為每個品牌找到屬於它的味道。
-          </p>
+          <p class="portfolio-hero-tagline" data-i18n="food.tagline">從品牌定位、識別系統、菜單與招牌，到空間、美食印象與美食攝影，一家店需要的視覺由我一手串起</p>
         </div>
       </div>
     </section>
 
-    <!-- 作品網格 -->
-    <section class="food-works-section">
+    <!-- 服務範圍 -->
+    <section class="food-section">
       <div class="container">
-        <div class="works-grid" id="food-grid">
-
-          <!-- 元氣十盅 -->
-          <a href="work-detail.html?id=food-yuanqi" class="work-card" data-category="branding">
-            <div class="work-card-image"><img src="images/yuanqi-01.jpg" alt="元氣十盅 — 餐飲品牌設計" loading="lazy" decoding="async"></div>
-            <div class="work-card-overlay"></div>
-            <span class="work-card-number">01</span>
-            <div class="work-card-content">
-              <div class="work-card-meta">
-                <span class="work-card-category">品牌識別</span>
-                <span class="work-card-year">2026</span>
-              </div>
-              <h3 class="work-card-title">元氣十盅</h3>
-              <p class="work-card-description">餐飲品牌設計</p>
-            </div>
-          </a>
-
-          <!-- 玖在一方 -->
-          <a href="work-detail.html?id=food-jiuzai" class="work-card" data-category="branding">
-            <div class="work-card-image"><img src="images/jiuzai-01.jpg" alt="玖在一方 — 餐飲品牌設計" loading="lazy" decoding="async"></div>
-            <div class="work-card-overlay"></div>
-            <span class="work-card-number">02</span>
-            <div class="work-card-content">
-              <div class="work-card-meta">
-                <span class="work-card-category">品牌識別</span>
-                <span class="work-card-year">2026</span>
-              </div>
-              <h3 class="work-card-title">玖在一方</h3>
-              <p class="work-card-description">餐飲品牌設計</p>
-            </div>
-          </a>
-
-          <!-- 蒸蒸日饗 -->
-          <a href="work-detail.html?id=food-zhengzheng" class="work-card" data-category="branding">
-            <div class="work-card-image"><img src="images/zhengzheng-01.jpg" alt="蒸蒸日饗 — 餐飲品牌設計" loading="lazy" decoding="async"></div>
-            <div class="work-card-overlay"></div>
-            <span class="work-card-number">03</span>
-            <div class="work-card-content">
-              <div class="work-card-meta">
-                <span class="work-card-category">品牌識別</span>
-                <span class="work-card-year">2026</span>
-              </div>
-              <h3 class="work-card-title">蒸蒸日饗</h3>
-              <p class="work-card-description">餐飲品牌設計</p>
-            </div>
-          </a>
-
-          <!-- ★ 新增更多作品請在此複製上方格式 ★ -->
-
-          <div class="empty-state">
-            <div class="empty-state-icon">∅</div>
-            <p class="empty-state-text">此分類暫無作品</p>
+        <span class="section-eyebrow reveal" data-i18n="food.steps.eyebrow">服務範圍</span>
+        <h2 class="section-title reveal" data-i18n="food.steps.title">一家店需要的，<em>一次到位</em></h2>
+        <div class="food-steps">
+          <div class="food-step reveal">
+            <span class="food-step-num">01</span>
+            <h3 data-i18n="food.step.1.title">品牌定位</h3>
+            <p data-i18n="food.step.1.desc">品牌故事、定位與命名，先想清楚這家店要給客人什麼感覺</p>
           </div>
+          <div class="food-step reveal">
+            <span class="food-step-num">02</span>
+            <h3 data-i18n="food.step.2.title">識別系統</h3>
+            <p data-i18n="food.step.2.desc">LOGO、色彩、字體與應用規範，讓品牌在每個地方都認得出來</p>
+          </div>
+          <div class="food-step reveal">
+            <span class="food-step-num">03</span>
+            <h3 data-i18n="food.step.3.title">菜單設計</h3>
+            <p data-i18n="food.step.3.desc">菜單架構、品項分類與價格呈現，讓客人一眼點到想吃的</p>
+          </div>
+          <div class="food-step reveal">
+            <span class="food-step-num">04</span>
+            <h3 data-i18n="food.step.4.title">招牌設計</h3>
+            <p data-i18n="food.step.4.desc">門面招牌與店頭視覺，從街上就被看見</p>
+          </div>
+          <div class="food-step reveal">
+            <span class="food-step-num">05</span>
+            <h3 data-i18n="food.step.5.title">空間・美食印象</h3>
+            <p data-i18n="food.step.5.desc">店內空間規劃，或以美食印象製作營造店內氛圍</p>
+          </div>
+          <div class="food-step reveal">
+            <span class="food-step-num">06</span>
+            <h3 data-i18n="food.step.6.title">美食攝影</h3>
+            <p data-i18n="food.step.6.desc">餐點、商品與品牌形象拍攝，讓人看了就想吃</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- 品牌案例 -->
+    <section class="food-section">
+      <div class="container">
+        <span class="section-eyebrow reveal" data-i18n="food.cases.eyebrow">品牌案例</span>
+        <h2 class="section-title reveal" data-i18n="food.cases.title">為每家店，找到<em>它的味道</em></h2>
+        <div class="food-cases">
+          <a href="work-detail.html?id=food-yuanqi" class="food-case reveal">
+            <div class="food-case-image"><img src="images/yuanqi-01.jpg" alt="元氣十盅 日常料理小食堂" loading="lazy" decoding="async"></div>
+            <div class="food-case-body">
+              <span class="food-case-num">01</span>
+              <h3 class="food-case-name" data-i18n="food.case.1.name">元氣十盅</h3>
+              <p class="food-case-sub" data-i18n="food.case.1.sub">日常料理小食堂</p>
+              <p class="food-case-story" data-i18n="food.case.1.story">一盅熱湯、一碗拌麵、一碟家常小菜，如家一般的溫柔款待</p>
+              <div class="food-case-tags" data-i18n="food.case.1.tags"><span>品牌識別</span><span>菜單</span><span>招牌</span><span>美食印象製作</span></div>
+              <span class="food-case-more"><span data-i18n="food.case.more">看完整案例</span> →</span>
+            </div>
+          </a>
+          <a href="work-detail.html?id=food-jiuzai" class="food-case reveal">
+            <div class="food-case-image"><img src="images/jiuzai-01.jpg" alt="玖在一方 北方手做麵餃" loading="lazy" decoding="async"></div>
+            <div class="food-case-body">
+              <span class="food-case-num">02</span>
+              <h3 class="food-case-name" data-i18n="food.case.2.name">玖在一方</h3>
+              <p class="food-case-sub" data-i18n="food.case.2.sub">北方手做麵餃</p>
+              <p class="food-case-story" data-i18n="food.case.2.story">傳承佟記小北平近四十年的歲月火候，讓旅人與在地客都能安心歇腳</p>
+              <div class="food-case-tags" data-i18n="food.case.2.tags"><span>品牌識別</span><span>菜單</span><span>招牌</span><span>空間設計</span></div>
+              <span class="food-case-more"><span data-i18n="food.case.more">看完整案例</span> →</span>
+            </div>
+          </a>
+          <a href="work-detail.html?id=food-zhengzheng" class="food-case reveal">
+            <div class="food-case-image"><img src="images/zhengzheng-01.jpg" alt="蒸蒸日饗 地中海健康餐盒" loading="lazy" decoding="async"></div>
+            <div class="food-case-body">
+              <span class="food-case-num">03</span>
+              <h3 class="food-case-name" data-i18n="food.case.3.name">蒸蒸日饗</h3>
+              <p class="food-case-sub" data-i18n="food.case.3.sub">地中海健康餐盒</p>
+              <p class="food-case-story" data-i18n="food.case.3.story">捨去繁雜調味，以地中海均衡哲學，淬鍊食材最純粹的鮮甜</p>
+              <div class="food-case-tags" data-i18n="food.case.3.tags"><span>品牌識別</span><span>菜單</span><span>招牌</span><span>美食印象製作</span></div>
+              <span class="food-case-more"><span data-i18n="food.case.more">看完整案例</span> →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 美食攝影 -->
+    <section class="food-section">
+      <div class="container">
+        <span class="section-eyebrow reveal" data-i18n="food.photos.eyebrow">美食攝影</span>
+        <h2 class="section-title reveal" data-i18n="food.photos.title">讓人<em>想吃</em>的畫面</h2>
+        <div class="food-photos">
+          <a href="work-detail.html?id=photo-blackmoon-yikou" class="food-photo reveal">
+            <img src="images/blackmoon-yikou-cover.jpg" alt="黑月亮 一口幸福 美食攝影" loading="lazy" decoding="async">
+            <span data-i18n="food.photo.1">黑月亮 一口幸福</span>
+          </a>
+          <a href="work-detail.html?id=photo-blackmoon-toast" class="food-photo reveal">
+            <img src="images/blackmoon-toast-cover.jpg" alt="黑月亮 吐司 美食攝影" loading="lazy" decoding="async">
+            <span data-i18n="food.photo.2">黑月亮 吐司</span>
+          </a>
+          <a href="work-detail.html?id=photo-blackmoon-yolk" class="food-photo reveal">
+            <img src="images/blackmoon-yolk-cover.jpg" alt="黑月亮 蛋黃酥 美食攝影" loading="lazy" decoding="async">
+            <span data-i18n="food.photo.3">黑月亮 蛋黃酥</span>
+          </a>
+          <a href="work-detail.html?id=photo-shangweitai" class="food-photo reveal">
+            <img src="images/shangweitai-cover.jpg" alt="上味泰 美食攝影" loading="lazy" decoding="async">
+            <span data-i18n="food.photo.4">上味泰</span>
+          </a>
         </div>
       </div>
     </section>
@@ -209,10 +280,10 @@
     <!-- CTA -->
     <section class="portfolio-cta">
       <div class="container">
-        <h2 class="portfolio-cta-text reveal" data-i18n="portfolio.cta.text">對某個<em>專案</em>感興趣嗎？</h2>
+        <h2 class="portfolio-cta-text reveal" data-i18n="food.cta.text">準備好開一家<em>店</em>了嗎？</h2>
         <div class="magnetic reveal">
           <a href="contact.html" class="contact-cta-button magnetic-inner">
-            <span data-i18n="portfolio.cta.btn">聊聊合作</span>
+            <span data-i18n="food.cta.btn">聊聊你的餐飲品牌</span>
             <span class="arrow">→</span>
           </a>
         </div>
@@ -264,35 +335,5 @@
   <script src="js/common.js"></script>
   <script src="js/portfolio.js"></script>
 
-  <script>
-    const CORRECT_PW = 'gengyu0824';
-    const SESSION_KEY = 'food_portfolio_unlocked';
-
-    function unlock() {
-      document.body.classList.remove('locked');
-      document.body.classList.add('unlocked');
-      sessionStorage.setItem(SESSION_KEY, '1');
-    }
-
-    function tryUnlock() {
-      const val = document.getElementById('pw-input').value;
-      if (val === CORRECT_PW) {
-        unlock();
-      } else {
-        const err = document.getElementById('pw-error');
-        err.textContent = '密碼錯誤，請再試一次。';
-        document.getElementById('pw-input').value = '';
-        document.getElementById('pw-input').focus();
-        setTimeout(() => { err.textContent = ''; }, 3000);
-      }
-    }
-
-    document.getElementById('pw-btn').addEventListener('click', tryUnlock);
-    document.getElementById('pw-input').addEventListener('keydown', (e) => {
-      if (e.key === 'Enter') tryUnlock();
-    });
-
-    if (sessionStorage.getItem(SESSION_KEY) === '1') unlock();
-  </script>
 </body>
 </html>
