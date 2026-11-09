@@ -348,4 +348,8 @@
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://naomi-portfolio.github.io/Naomidesign/ai-video.html</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
 </urlset>
