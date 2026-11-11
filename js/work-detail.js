@@ -1264,26 +1264,27 @@ const WORKS_DATA = {
       { src: 'images/galaxy-04.jpg', caption: { 'zh-TW': '核心機制與互動邏輯', 'en': 'Core Loop & Mechanics' } },
       { src: 'images/galaxy-08.jpg', caption: { 'zh-TW': '資訊架構與導航策略', 'en': 'Information Architecture' } },
       { src: 'images/galaxy-09.jpg', caption: { 'zh-TW': '導航設計', 'en': 'Navigation Design' } },
+      { src: 'images/galaxy-10.jpg', caption: { 'zh-TW': '最終介面展示 — 角色設計', 'en': 'High-fidelity UI — Character Design' } },
+      { src: 'images/galaxy-11.jpg', caption: { 'zh-TW': '最終介面展示 — 星核中樞', 'en': 'High-fidelity UI — Star Hub' } },
       {
-        src: 'images/galaxy-10.jpg',
-        caption: { 'zh-TW': '最終介面展示 — 角色設計', 'en': 'High-fidelity UI — Character Design' },
+        src: 'images/galaxy-12.jpg',
+        caption: { 'zh-TW': '最終介面展示', 'en': 'High-fidelity UI' },
+        // 動圖要剛好蓋在圖上的黑色方框：位置是量黑框得到的（佔整張圖的百分比）
         overlays: [
-          { gif: 'images/galaxy-gif-walk.gif', top: 56.8, left: 5.8, width: 23.8, height: 7.8 },
-          { gif: 'images/galaxy-gif-wave.gif', top: 56.8, left: 33.9, width: 23.8, height: 7.8 },
-          { gif: 'images/galaxy-gif-idle.gif', top: 56.8, left: 62.1, width: 23.8, height: 7.8 }
+          { gif: 'images/galaxy-gif-walk.gif', top: 67.46, left: 6.29, width: 26.77, height: 20.01 },
+          { gif: 'images/galaxy-gif-wave.gif', top: 67.46, left: 36.61, width: 26.78, height: 20.01 },
+          { gif: 'images/galaxy-gif-idle.gif', top: 67.46, left: 66.94, width: 26.77, height: 20.01 }
         ]
       },
-      {
-        src: 'images/galaxy-11.jpg',
-        caption: { 'zh-TW': '最終介面展示 — 星核中樞', 'en': 'High-fidelity UI — Star Hub' },
-        overlays: [
-          { gif: 'images/galaxy-gif-hub.gif', top: 62.5, left: 12, width: 35, height: 12 },
-          { gif: 'images/galaxy-gif-noinput.gif', top: 62.5, left: 53, width: 35, height: 12 }
-        ]
-      },
-      { src: 'images/galaxy-12.jpg', caption: { 'zh-TW': '最終介面展示', 'en': 'High-fidelity UI' } },
       { src: 'images/galaxy-13.jpg', caption: { 'zh-TW': '後台管理系統', 'en': 'Admin Dashboard' } },
-      { src: 'images/galaxy-14.jpg', caption: { 'zh-TW': '後台管理系統', 'en': 'Admin Dashboard' } },
+      {
+        src: 'images/galaxy-14.jpg',
+        caption: { 'zh-TW': '後台管理系統', 'en': 'Admin Dashboard' },
+        overlays: [
+          { gif: 'images/galaxy-gif-noinput.gif', top: 2.79, left: 12.42, width: 33.23, height: 16.25 },
+          { gif: 'images/galaxy-gif-hub.gif', top: 2.79, left: 54.35, width: 33.23, height: 16.25 }
+        ]
+      },
       { src: 'images/galaxy-15.jpg', caption: { 'zh-TW': '後台管理系統', 'en': 'Admin Dashboard' } }
     ],
     galleryEndVideo: 'https://www.youtube.com/embed/a8-dP7L9G7E?si=9p_Xqz9LY81un5Jq',
