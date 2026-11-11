@@ -71,19 +71,36 @@ function speak(n, it) {
   else say(it.hire ? '想了解什麼都可以選' : '不確定的先不用選，沒關係');
 }
 
-/* ---- 第一頁：需求 ---- */
-const opts = $('#opts'), blank = $('#blank'); let hot = -1, tour = null, touring = true, blankTimer;
+/* ---- 第一頁：需求。作品斜著一層一層疊著，滾一下換一層，選到的那一層被抽出來 ---- */
+const opts = $('#opts'), blank = $('#blank'), N = INTENTS.length; let hot = -1, tour = null, touring = true, blankTimer, diving = false;
+function dive(b, it) {
+  if (diving) return;
+  const next = () => { go({ layer: 1, intent: it.id, work: 0, step: 0 }); setTimeout(() => { diving = false; b.classList.remove('dive'); $('.l0').classList.remove('diving'); }, 900); };
+  diving = true;
+  if (reduce) return next();
+  b.classList.add('dive'); $('.l0').classList.add('diving'); setTimeout(next, 420);   // 先往那張圖裡靠近，再換頁
+}
 INTENTS.forEach((it, i) => {
-  const li = el('li'), b = el('button', 'opt', `<span class="n">0${i + 1}</span><span><b>${it.label}</b><small>${it.sub}</small></span><span class="go" aria-hidden="true">→</span>`);
-  b.addEventListener('pointerenter', e => { if (e.pointerType === 'mouse') { touring = false; setHot(i); } });
+  const li = el('li'), b = el('button', 'opt', `<span class="pic"><img src="${IMG + it.bg}" alt=""></span><span class="tag">我想${it.label}：${it.sub}</span>`);
+  // 點最前面那張是進去看，點後面的是把它換到最前面
+  b.addEventListener('click', () => { touring = false; if (i === hot) dive(b, it); else setHot(i); });
   b.addEventListener('focus', () => { touring = false; setHot(i); });
-  b.addEventListener('click', () => go({ layer: 1, intent: it.id, work: 0, step: 0 }));
   li.append(b); opts.append(li);
 });
-opts.addEventListener('pointerleave', () => { touring = true; });
 function setHot(i) {
   if (i === hot) return; const first = hot < 0; hot = i;
-  opts.querySelectorAll('.opt').forEach((o, k) => o.classList.toggle('hot', k === i));
+  [...opts.children].forEach((li, k) => {
+    const d = k - i, a = Math.abs(d);   // 0 是被抽出來的那張，正的排在它後面，負的排在它前面
+    li.style.setProperty('--k', d < 0 ? d - .7 : d);   // 前面那幾張多讓開一點，被抽出來的才看得到
+    li.style.setProperty('--o', (d < 0 ? Math.max(0, .78 - a * .2) : Math.max(0, 1 - d * .18)).toFixed(2));
+    li.style.setProperty('--s', (d < 0 ? Math.min(1.12, .96 + a * .03) : d === 0 ? 1 : Math.max(.7, .93 - d * .03)).toFixed(3));
+    li.style.zIndex = N - k;   // 越前面的蓋在越上面
+    li.dataset.state = d < 0 ? 'front' : d === 0 ? 'sel' : 'back';
+    li.firstChild.classList.toggle('hot', d === 0);
+    li.firstChild.tabIndex = a > 3 ? -1 : 0; li.style.pointerEvents = a > 3 ? 'none' : '';
+  });
+  $('#nOf').textContent = `${String(i + 1).padStart(2, '0')} / ${String(N).padStart(2, '0')}`;
+  $('#prevN').disabled = i === 0; $('#nextN').disabled = i === N - 1;
   setBg(INTENTS[i].bg);
   // 標題的字先淡出、換字、再淡入
   clearTimeout(blankTimer);
@@ -91,11 +108,28 @@ function setHot(i) {
   blank.classList.add('out');
   blankTimer = setTimeout(() => { blank.textContent = INTENTS[hot].label; blank.classList.remove('out'); }, 400);
 }
-// 沒人動的時候自己慢慢輪，第一個畫面就是活的
+const move = d => { touring = false; const n = Math.min(N - 1, Math.max(0, hot + d)); if (n !== hot) setHot(n); };
+$('#prevN').addEventListener('click', () => move(-1));
+$('#nextN').addEventListener('click', () => move(1));
+// 滾輪滾一下換一層；觸控板會連發很多次，所以換完要等一下才接受下一次
+const L0 = document.querySelector('.layer[data-layer="0"]'); let wheelAt = 0, touchY = null;
+L0.addEventListener('wheel', e => {
+  e.preventDefault(); if (Math.abs(e.deltaY) < 8) return;
+  const t = Date.now(); if (t - wheelAt < 420) return; wheelAt = t; move(e.deltaY > 0 ? 1 : -1);
+}, { passive: false });
+addEventListener('keydown', e => {
+  if (S.layer !== 0 || e.altKey || e.ctrlKey || e.metaKey || (e.target.closest && e.target.closest('#guide, .player'))) return;
+  if (e.key === 'ArrowDown' || e.key === 'ArrowRight' || e.key === 'PageDown') { e.preventDefault(); move(1); }
+  else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); move(-1); }
+});
+// 手機：手指往上滑是下一層，往下滑是上一層
+L0.addEventListener('touchstart', e => { touchY = e.target.closest('#guide, .player') ? null : e.touches[0].clientY; }, { passive: true });
+L0.addEventListener('touchend', e => { if (touchY == null) return; const d = e.changedTouches[0].clientY - touchY; touchY = null; if (Math.abs(d) > 36) move(d < 0 ? 1 : -1); }, { passive: true });
+// 沒人動的時候自己慢慢翻，第一個畫面就是活的
 function startTour() {
   if (hot < 0) setHot(0); else setBg(INTENTS[hot].bg);
   if (tour || reduce) return;
-  tour = setInterval(() => { if (touring) setHot((hot + 1) % INTENTS.length); }, 3400);
+  tour = setInterval(() => { if (touring) setHot((hot + 1) % N); }, 3600);
 }
 function stopTour() { clearInterval(tour); tour = null; }
 
@@ -142,8 +176,8 @@ function buildWorks(it) {
     });
     head.append(bar);
   }
-  it.picks.forEach(([t, why, img], i) => {
-    const c = el('button', 'work', `<span class="shot"><img src="${IMG + img}" alt="" loading="lazy"></span><span class="cap"><b>${t}</b><span class="why">${why}</span><span class="open">點進去看 →</span></span>`);
+  it.picks.forEach(([t, why, img, , vid], i) => {
+    const c = el('button', 'work', `<span class="shot"><img src="${IMG + img}" alt="" loading="lazy">${vid ? `<video src="${IMG + vid}" muted loop playsinline preload="none"></video>` : ''}</span><span class="cap"><b>${t}</b><span class="why">${why}</span><span class="open">點進去看 →</span></span>`);
     c.addEventListener('click', () => go({ layer: 2, work: i }));
     list.append(c); seen.observe(c);
   });

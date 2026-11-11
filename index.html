@@ -46,10 +46,11 @@ gtag('config', 'G-VKJH6SCYDP');
 <main>
   <section class="layer" data-layer="0" aria-label="選擇需求">
     <div class="inner l0">
-      <div>
+      <div class="say">
         <span class="mono">接案中 · Made in Taipei</span>
         <h1>我想<em id="blank"></em></h1>
-        <p>選一個最接近的，我帶你慢慢看進去</p>
+        <p>滾一下換一個，點亮起來的那張就進去看</p>
+        <div class="pick"><button id="prevN" aria-label="上一個">↑</button><span class="mono" id="nOf" aria-live="polite"></span><button id="nextN" aria-label="下一個">↓</button></div>
       </div>
       <ol class="opts" id="opts"></ol>
     </div>
@@ -84,5 +85,6 @@ gtag('config', 'G-VKJH6SCYDP');
 
 <script src="js/journey-data.js"></script>
 <script src="js/journey.js"></script>
+<script src="js/journey-fx.js"></script>
 </body>
 </html>
