@@ -122,9 +122,18 @@ addEventListener('keydown', e => {
   if (e.key === 'ArrowDown' || e.key === 'ArrowRight' || e.key === 'PageDown') { e.preventDefault(); move(1); }
   else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); move(-1); }
 });
-// 手機：手指往上滑是下一層，往下滑是上一層
-L0.addEventListener('touchstart', e => { touchY = e.target.closest('#guide, .player') ? null : e.touches[0].clientY; }, { passive: true });
-L0.addEventListener('touchend', e => { if (touchY == null) return; const d = e.changedTouches[0].clientY - touchY; touchY = null; if (Math.abs(d) > 36) move(d < 0 ? 1 : -1); }, { passive: true });
+// 手機：整個畫面都能滑。那一疊跟著手指走：往下滑，上面（後面）那張下來；往上滑，下面（前面）那張上來。
+// 手指還沒放開就開始換，滑得遠就連續換好幾層
+const STEP = 46;
+document.addEventListener('touchstart', e => { touchY = S.layer !== 0 || e.target.closest('#guide, .player, .top') ? null : e.touches[0].clientY; }, { passive: true });
+document.addEventListener('touchmove', e => {
+  if (touchY == null || S.layer !== 0) return;
+  const y = e.touches[0].clientY, d = y - touchY;
+  if (Math.abs(d) >= STEP) { move(d > 0 ? 1 : -1); touchY = y; }
+}, { passive: true });
+const endTouch = () => { touchY = null; };
+document.addEventListener('touchend', endTouch, { passive: true });
+document.addEventListener('touchcancel', endTouch, { passive: true });
 // 沒人動的時候自己慢慢翻，第一個畫面就是活的
 function startTour() {
   if (hot < 0) setHot(0); else setBg(INTENTS[hot].bg);
