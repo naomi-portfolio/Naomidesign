@@ -100,7 +100,7 @@ function setHot(i) {
     li.firstChild.tabIndex = a > 3 ? -1 : 0; li.style.pointerEvents = a > 3 ? 'none' : '';
   });
   $('#nOf').textContent = `${String(i + 1).padStart(2, '0')} / ${String(N).padStart(2, '0')}`;
-  $('#prevN').disabled = i === 0; $('#nextN').disabled = i === N - 1;
+  $('#upN').disabled = i === N - 1; $('#downN').disabled = i === 0;
   setBg(INTENTS[i].bg);
   // 標題的字先淡出、換字、再淡入
   clearTimeout(blankTimer);
@@ -109,18 +109,19 @@ function setHot(i) {
   blankTimer = setTimeout(() => { blank.textContent = INTENTS[hot].label; blank.classList.remove('out'); }, 400);
 }
 const move = d => { touring = false; const n = Math.min(N - 1, Math.max(0, hot + d)); if (n !== hot) setHot(n); };
-$('#prevN').addEventListener('click', () => move(-1));
-$('#nextN').addEventListener('click', () => move(1));
+// 上面的那張排在後面（右上），所以「上」是往後一張
+$('#upN').addEventListener('click', () => move(1));
+$('#downN').addEventListener('click', () => move(-1));
 // 滾輪滾一下換一層；觸控板會連發很多次，所以換完要等一下才接受下一次
 const L0 = document.querySelector('.layer[data-layer="0"]'); let wheelAt = 0, touchY = null;
 L0.addEventListener('wheel', e => {
   e.preventDefault(); if (Math.abs(e.deltaY) < 8) return;
-  const t = Date.now(); if (t - wheelAt < 420) return; wheelAt = t; move(e.deltaY > 0 ? 1 : -1);
+  const t = Date.now(); if (t - wheelAt < 420) return; wheelAt = t; move(e.deltaY < 0 ? 1 : -1);   // 往上滾，選上面那張
 }, { passive: false });
 addEventListener('keydown', e => {
   if (S.layer !== 0 || e.altKey || e.ctrlKey || e.metaKey || (e.target.closest && e.target.closest('#guide, .player'))) return;
-  if (e.key === 'ArrowDown' || e.key === 'ArrowRight' || e.key === 'PageDown') { e.preventDefault(); move(1); }
-  else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); move(-1); }
+  if (e.key === 'ArrowUp' || e.key === 'ArrowRight' || e.key === 'PageUp') { e.preventDefault(); move(1); }
+  else if (e.key === 'ArrowDown' || e.key === 'ArrowLeft' || e.key === 'PageDown') { e.preventDefault(); move(-1); }
 });
 // 手機：整個畫面都能滑。那一疊跟著手指走：往下滑，上面（後面）那張下來；往上滑，下面（前面）那張上來。
 // 手指還沒放開就開始換，滑得遠就連續換好幾層
