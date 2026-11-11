@@ -184,7 +184,8 @@ h2 { font-size: clamp(1.8rem, 4.4vw, 3.2rem); line-height: 1.18; margin: 8px 0; 
 .pic .over { position: absolute; object-fit: contain; }
 .gallery.spaced .pic, .gallery.masonry .pic { cursor: zoom-in; }
 /* 設計類：一長條，圖與圖之間不留任何縫 */
-.gallery.seamless { gap: 0; border-radius: 14px; overflow: hidden; border: 1px solid var(--line); }
+.layer[data-layer="2"] { container-type: inline-size; }
+.gallery.seamless { gap: 0; overflow: hidden; width: calc(100cqw + var(--gutter) * 2); margin-left: calc(50% - 50cqw - var(--gutter)); }   /* 滿版：左右貼齊畫面邊緣 */
 .gallery.seamless .pic { border: 0; border-radius: 0; }
 .l2 .ending .stack { margin-inline: auto; text-align: left; }
 .ending .stack .btn + .btn { margin-left: 0; }
