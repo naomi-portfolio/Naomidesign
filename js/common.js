@@ -7,6 +7,7 @@ const translations = {
     'nav.photography': '攝影',
     'nav.illustration': '創作',
     'nav.contact': '聯繫方式',
+    'nav.newsite': '新版網站',
 
     'hero.eyebrow': 'UI / UX 設計師',
     'hero.title1': '用設計',
@@ -156,8 +157,6 @@ const translations = {
     'contact.info.title': '其他<em>聯絡方式</em>',
     'contact.info.email.label': 'Email',
     'contact.info.email.value': 'buzzdesign2023@gmail.com',
-    'contact.info.phone.label': '電話',
-    'contact.info.phone.value': '請透過 Email 聯繫',
     'contact.info.location.label': '工作地點',
     'contact.info.location.value': '台北，台灣',
     'contact.info.hours.label': '工作時間',
@@ -375,6 +374,7 @@ const translations = {
     'nav.photography': 'Photography',
     'nav.illustration': 'Illustration',
     'nav.contact': 'Contact',
+    'nav.newsite': 'New site',
 
     'hero.eyebrow': 'UI / UX Designer',
     'hero.title1': 'Designing with',
@@ -523,8 +523,6 @@ const translations = {
     'contact.info.title': 'Other <em>ways to reach me</em>',
     'contact.info.email.label': 'Email',
     'contact.info.email.value': 'buzzdesign2023@gmail.com',
-    'contact.info.phone.label': 'Phone',
-    'contact.info.phone.value': 'Please contact via Email',
     'contact.info.location.label': 'Location',
     'contact.info.location.value': 'Taipei, Taiwan',
     'contact.info.hours.label': 'Working Hours',
@@ -1147,8 +1145,8 @@ class HomeLinkBehavior {
     this.smoothScroll = smoothScrollInstance;
     // 判斷目前是否在首頁
     const path = window.location.pathname;
-    const filename = path.split('/').pop() || 'index.html';
-    this.isHomePage = (filename === '' || filename === 'index.html' || filename === '/');
+    const filename = path.split('/').pop();
+    this.isHomePage = (filename === 'classic.html');
 
     this.init();
   }
@@ -1156,7 +1154,7 @@ class HomeLinkBehavior {
   init() {
     // 抓取所有指向 index.html 或根目錄的連結（包含 logo 與首頁導覽連結）
     const homeLinks = document.querySelectorAll(
-      'a[href="index.html"], a[href="/"], a[href="./"], a[href="./index.html"]'
+      'a[href="classic.html"]'
     );
 
     homeLinks.forEach(link => {

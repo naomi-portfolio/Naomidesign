@@ -1,325 +1,88 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VKJH6SCYDP"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-VKJH6SCYDP');
-  </script>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Naomi — UI/UX 與品牌設計師｜跨平台體驗設計</title>
-  <meta name="description" content="Naomi，UI/UX 與品牌設計師，專精資訊架構、User Flow、Wireframe 到 Prototype 的跨平台體驗設計，並具備完整專案管理與活動規劃執行經驗。">
-  <link rel="canonical" href="https://naomi-portfolio.github.io/Naomidesign/">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Naomi — UI/UX 與品牌設計師｜跨平台體驗設計">
-  <meta property="og:description" content="Naomi，UI/UX 與品牌設計師，專精資訊架構、User Flow、Wireframe 到 Prototype 的跨平台體驗設計，並具備完整專案管理與活動規劃執行經驗。">
-  <meta property="og:url" content="https://naomi-portfolio.github.io/Naomidesign/">
-  <meta property="og:image" content="https://naomi-portfolio.github.io/Naomidesign/images/naomi-portrait.jpg">
-  <meta property="og:locale" content="zh_TW">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Naomi — UI/UX 與品牌設計師｜跨平台體驗設計">
-  <meta name="twitter:description" content="Naomi，UI/UX 與品牌設計師，專精資訊架構、User Flow、Wireframe 到 Prototype 的跨平台體驗設計，並具備完整專案管理與活動規劃執行經驗。">
-  <meta name="twitter:image" content="https://naomi-portfolio.github.io/Naomidesign/images/naomi-portrait.jpg">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-  <!-- Lenis 平滑滾動函式庫 CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.21/dist/lenis.css">
-
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/pages.css">
-<!-- VERSION: v36 -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VKJH6SCYDP"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-VKJH6SCYDP');
+</script>
+<title>Naomi — UI/UX 與品牌設計師｜跨平台體驗設計</title>
+<meta name="description" content="Naomi，UI/UX 與品牌設計師，專精資訊架構、User Flow、Wireframe 到 Prototype 的跨平台體驗設計，並具備完整專案管理與活動規劃執行經驗。">
+<link rel="canonical" href="https://naomi-portfolio.github.io/Naomidesign/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Naomi — UI/UX 與品牌設計師｜跨平台體驗設計">
+<meta property="og:description" content="Naomi，UI/UX 與品牌設計師，專精資訊架構、User Flow、Wireframe 到 Prototype 的跨平台體驗設計，並具備完整專案管理與活動規劃執行經驗。">
+<meta property="og:url" content="https://naomi-portfolio.github.io/Naomidesign/">
+<meta property="og:image" content="https://naomi-portfolio.github.io/Naomidesign/images/naomi-portrait.jpg">
+<meta property="og:locale" content="zh_TW">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Naomi — UI/UX 與品牌設計師｜跨平台體驗設計">
+<meta name="twitter:description" content="Naomi，UI/UX 與品牌設計師，專精資訊架構、User Flow、Wireframe 到 Prototype 的跨平台體驗設計，並具備完整專案管理與活動規劃執行經驗。">
+<meta name="twitter:image" content="https://naomi-portfolio.github.io/Naomidesign/images/naomi-portrait.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+TC:wght@500;600&family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/about.css">
+<link rel="stylesheet" href="css/journey.css">
 </head>
 <body>
 
-  <!-- ============ 自訂游標 ============ -->
-  <div class="cursor-dot"></div>
-  <div class="cursor-ring"></div>
+<!-- 背景：跟著你正在看的東西慢慢換 -->
+<div class="bg" id="bg" aria-hidden="true"><img alt=""><img alt=""><div class="motes" id="motes"></div></div>
 
-  <!-- ============ 滾動進度條 ============ -->
-  <div class="scroll-progress"></div>
+<header class="top">
+  <a class="logo" id="home" href="./" aria-label="回到第一頁">Naomi<i>.</i></a>
+  <button class="back" id="back" aria-label="上一頁" hidden>←<span> 上一頁</span></button>
+  <ol class="depth" id="depth" aria-label="目前位置"></ol>
+  <a class="skip" id="skip" href="portfolio.html"><span>直接看</span>全部作品</a>
+  <a class="skip old" href="classic.html">舊版</a>
+</header>
 
-  <!-- ============ 導覽列 ============ -->
-  <nav class="navbar">
-    <a href="index.html" class="nav-logo">
-      Naomi<span class="accent">.</span>
-    </a>
+<main>
+  <section class="layer" data-layer="0" aria-label="選擇需求">
+    <div class="inner l0">
+      <div>
+        <span class="mono">接案中 · Made in Taipei</span>
+        <h1>我想<em id="blank"></em></h1>
+        <p>選一個最接近的，我帶你慢慢看進去</p>
+      </div>
+      <ol class="opts" id="opts"></ol>
+    </div>
+  </section>
+  <section class="layer" data-layer="1" aria-label="相關作品"><div class="inner l1" id="L1"></div></section>
+  <section class="layer" data-layer="2" aria-label="案例"><div class="inner l2" id="L2"></div></section>
+  <section class="layer" data-layer="3" aria-label="委託"><div class="inner l3" id="L3"></div></section>
+</main>
 
-    <button class="menu-toggle" aria-label="Toggle menu">
-      <span></span>
-      <span></span>
-      <span></span>
+<div class="player">
+  <div class="player-frame" id="pframe" hidden></div>
+  <div class="player-bar">
+    <button class="pbtn main" id="pplay" aria-label="播放">
+      <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path id="picon" d="M3 1.5v11l9-5.5z" fill="currentColor"/></svg>
     </button>
+    <div class="pmeta"><span class="mono">Naomi 的原創音樂</span><b id="ptitle"></b></div>
+    <button class="pbtn" id="pnext" aria-label="下一首">
+      <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M2 1.5v11l7-5.5zM10.5 1.5h1.8v11h-1.8z" fill="currentColor"/></svg>
+    </button>
+  </div>
+  <label class="pvol">
+    <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M1 5h2.5L7 2v10L3.5 9H1z" fill="currentColor"/><path d="M9.2 4.6c1 .7 1.5 1.5 1.5 2.4s-.5 1.700-1.500 2.400" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+    <input type="range" id="pvol" min="0" max="100" step="1" aria-label="音量">
+  </label>
+</div>
 
-    <div class="nav-right">
-      <ul class="nav-links">
-        <li><a href="index.html" data-i18n="nav.home">首頁</a></li>
-        <li><a href="about.html" data-i18n="nav.about">關於我</a></li>
-        <li><a href="portfolio.html" data-i18n="nav.portfolio">設計</a></li>
-        <li><a href="photography.html" data-i18n="nav.photography">攝影</a></li>
-        <li><a href="illustration.html" data-i18n="nav.illustration">創作</a></li>
-        <li><a href="contact.html" data-i18n="nav.contact">聯繫方式</a></li>
-      </ul>
+<!-- 兔兔：可以拖到任何地方放著 -->
+<div class="guide" id="guide">
+  <div class="bubble hide" id="bubble" role="status"></div>
+  <button class="bunny" id="bunny" aria-label="兔兔，可以拖曳移動，也可以用方向鍵"><img id="bunnyImg" src="images/galaxy-gif-idle.gif" alt="" draggable="false"></button>
+</div>
 
-      <div class="lang-switch">
-        <button data-lang="zh-TW" class="active">中</button>
-        <button data-lang="en">EN</button>
-      </div>
-    </div>
-  </nav>
-
-  <!-- ============ 1. 英雄區塊 ============ -->
-  <section class="hero" id="home">
-    <div class="hero-bg"></div>
-    <div class="hero-overlay"></div>
-    <div class="glow" id="glow"></div>
-
-    <div class="hero-content">
-      <p class="hero-eyebrow" data-i18n="hero.eyebrow">UI / UX 設計師</p>
-
-      <h1>
-        <span class="title-wrapper">
-          <span class="title" data-i18n="hero.title1">以設計</span>
-        </span>
-        <span class="title-wrapper">
-          <span class="title title-line-2" data-i18n="hero.title2">驅動<em>創新</em></span>
-        </span>
-      </h1>
-
-      <p class="hero-tagline" data-i18n="hero.tagline">
-        專注於使用者經驗與視覺美學的平衡<br>在理性與感性之間打造令人停下腳步的設計
-      </p>
-
-      <div class="magnetic">
-        <a href="portfolio.html" class="hero-cta magnetic-inner">
-          <span data-i18n="hero.cta">探索作品</span>
-          <span class="arrow">→</span>
-        </a>
-      </div>
-    </div>
-
-    <div class="scroll-indicator">
-      <span data-i18n="hero.scroll">向下捲動</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
-
-  <!-- ============ 2. 關於我簡介區 ============ -->
-  <section class="section" id="about-preview">
-    <div class="container">
-      <div class="about-preview">
-        <div class="about-text reveal">
-          <span class="section-eyebrow" data-i18n="about.eyebrow">關於設計師</span>
-          <h2 data-i18n="about.title">我是<em>設計師姓名</em>，相信好設計能改變世界</h2>
-          <p data-i18n="about.p1">擁有五年以上的 UI/UX 設計經驗，專精於品牌識別、數位產品設計與視覺敘事，<a class="studio-link" href="https://tp6vul3vm06.wixsite.com/buzzdesign" target="_blank" rel="noopener">嗡嗡設計 BuzzDesign Studio</a> 創辦人、<a class="studio-link" href="https://www.instagram.com/nveslor.studio/" target="_blank" rel="noopener">N. Veslor Studio</a> 創辦人</p>
-          <p data-i18n="about.p2">我的設計理念是讓複雜的事情變簡單，讓平凡的事物變得不凡。</p>
-
-          <div class="about-skills">
-            <span class="skill-tag">UI Design</span>
-            <span class="skill-tag">UX Research</span>
-            <span class="skill-tag">Branding</span>
-            <span class="skill-tag">Figma</span>
-            <span class="skill-tag">Prototyping</span>
-            <span class="skill-tag">Design System</span>
-          </div>
-
-          <a href="about.html" class="section-link" style="margin-top: 2.5rem;">
-            <span data-i18n="about.cta">更認識我</span>
-            <span class="arrow">→</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ 3. 精選作品區 ============ -->
-  <section class="section" id="works">
-    <div class="container">
-      <div class="section-header reveal">
-        <div>
-          <span class="section-eyebrow" data-i18n="works.eyebrow">精選作品</span>
-          <h2 class="section-title" data-i18n="works.title">近期<em>專案</em></h2>
-        </div>
-        <a href="portfolio.html" class="section-link">
-          <span data-i18n="works.link">查看全部作品</span>
-          <span class="arrow">→</span>
-        </a>
-      </div>
-
-      <div class="works-grid">
-        <!-- 餐飲品牌全案設計 -->
-        <a href="food-portfolio.html" class="work-card reveal">
-          <div class="work-card-image"><img src="images/food-cover.jpg" alt="餐飲品牌全案設計" loading="lazy" decoding="async"></div>
-          <div class="work-card-overlay"></div>
-          <div class="work-card-content">
-            <span class="work-card-category">餐飲品牌</span>
-            <h3 class="work-card-title">餐飲品牌全案設計</h3>
-          </div>
-        </a>
-
-        <!-- 星塵領域 Galaxy Domain -->
-        <a href="work-detail.html?id=galaxy-domain" class="work-card reveal">
-          <div class="work-card-image"><img src="images/galaxy-cover.jpg" alt="星塵領域 Galaxy Domain — UI / UX" loading="lazy" decoding="async"></div>
-          <div class="work-card-overlay"></div>
-          <div class="work-card-content">
-            <span class="work-card-category">UI / UX</span>
-            <h3 class="work-card-title">星塵領域 Galaxy Domain</h3>
-          </div>
-        </a>
-
-        <!-- 永佳捷 x 林書豪 -->
-        <a href="work-detail.html?id=photo-masada" class="work-card reveal">
-          <div class="work-card-image"><img src="images/masada-01.jpg" alt="永佳捷x林書豪 記者會攝影 — 活動攝影" loading="lazy" decoding="async"></div>
-          <div class="work-card-overlay"></div>
-          <div class="work-card-content">
-            <span class="work-card-category">活動攝影</span>
-            <h3 class="work-card-title">永佳捷x林書豪 記者會攝影</h3>
-          </div>
-        </a>
-
-        <!-- 基隆市警察局反詐微電影 -->
-        <a href="work-detail.html?id=video-keelung-police" class="work-card reveal">
-          <div class="work-card-image"><img src="images/antiscam-thumb.png" alt="基隆市警察局反詐微電影 — 微電影" loading="lazy" decoding="async"></div>
-          <div class="work-card-overlay"></div>
-          <div class="work-card-content">
-            <span class="work-card-category">微電影</span>
-            <h3 class="work-card-title">基隆市警察局反詐微電影</h3>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ 4. 服務項目區 ============ -->
-  <section class="section services-section" id="services">
-    <div class="container">
-      <div class="section-header reveal" style="flex-direction: column; align-items: flex-start;">
-        <span class="section-eyebrow" data-i18n="services.eyebrow">提供服務</span>
-        <h2 class="section-title" data-i18n="services.title">我能<em>幫您做什麼</em></h2>
-        <p class="services-tagline" data-i18n="services.tagline">整合品牌策略、視覺設計、影像製作、活動行銷與數位創意，提供從概念發想、企劃規劃到實際執行的跨領域整合服務</p>
-        <p class="services-intro" data-i18n="services.intro.1">不同於單純的專案轉包模式，我們具備第一線的設計與製作實務能力，能直接參與創意發展、設計決策及品質控管，確保專案從構想到成果，維持一致的品牌語言與美學品質</p>
-        <p class="services-intro" data-i18n="services.intro.2">同時，結合長期合作的設計、攝影與專業製作夥伴，依據專案規模與需求靈活配置資源，兼顧創意表現、執行效率與整體品質</p>
-      </div>
-
-      <div class="services-grid">
-        <div class="service-card reveal">
-          <div class="service-number">01</div>
-          <h3 class="service-title" data-i18n="services.1.title">品牌策略與創意整合</h3>
-          <p class="service-desc" data-i18n="services.1.desc">從品牌定位、創意策略到視覺識別與傳播素材，整合品牌發展所需的設計與製作資源，建立一致且具有辨識度的品牌形象</p>
-          <div class="service-tags" data-i18n="services.1.tags"><span>品牌定位</span><span>識別系統</span><span>創意企劃</span><span>整合設計</span></div>
-        </div>
-
-        <div class="service-card reveal">
-          <div class="service-number">02</div>
-          <h3 class="service-title" data-i18n="services.2.title">影視企劃與影像製作</h3>
-          <p class="service-desc" data-i18n="services.2.desc">涵蓋微電影、紀錄片、品牌形象影片與商業短影音，整合前期企劃、腳本開發、攝影、剪輯與後期製作，依作品需求結合實拍及 AI 生成影像技術</p>
-          <div class="service-tags" data-i18n="services.2.tags"><span>微電影</span><span>紀錄片</span><span>品牌形象影片</span><span>AI 影像</span><span>後期製作</span></div>
-        </div>
-
-        <div class="service-card reveal">
-          <div class="service-number">03</div>
-          <h3 class="service-title" data-i18n="services.3.title">商業攝影與視覺內容製作</h3>
-          <p class="service-desc" data-i18n="services.3.desc">以品牌傳播與商業應用為核心，提供人物、商品、餐飲及活動紀實攝影，從拍攝構思、畫面規劃到影像後製，建立符合品牌需求的視覺內容</p>
-          <div class="service-tags" data-i18n="services.3.tags"><span>商業攝影</span><span>產品攝影</span><span>人物形象</span><span>活動紀實</span></div>
-        </div>
-
-        <div class="service-card reveal">
-          <div class="service-number">04</div>
-          <h3 class="service-title" data-i18n="services.4.title">整合行銷與活動企劃</h3>
-          <p class="service-desc" data-i18n="services.4.desc">從行銷概念、活動主題、視覺規劃到現場執行與紀錄，結合設計、影像及合作廠商資源，提供跨環節的企劃與執行整合服務</p>
-          <div class="service-tags" data-i18n="services.4.tags"><span>活動企劃</span><span>整合行銷</span><span>記者會</span><span>現場執行</span><span>廠商協調</span></div>
-        </div>
-
-        <div class="service-card reveal">
-          <div class="service-number">05</div>
-          <h3 class="service-title" data-i18n="services.5.title">數位產品與體驗設計</h3>
-          <p class="service-desc" data-i18n="services.5.desc">結合使用者研究、資訊架構與互動設計，規劃網站、應用程式及數位服務體驗，從需求分析、介面設計到互動原型，兼顧使用需求與品牌表現</p>
-          <div class="service-tags" data-i18n="services.5.tags"><span>UI/UX</span><span>網站設計</span><span>APP 設計</span><span>互動原型</span><span>使用者研究</span></div>
-        </div>
-
-        <div class="service-card reveal">
-          <div class="service-number">06</div>
-          <h3 class="service-title" data-i18n="services.6.title">商業插畫與原創視覺開發</h3>
-          <p class="service-desc" data-i18n="services.6.desc">透過插畫敘事、角色設計與原創美術，為品牌、出版及數位內容建立獨特的視覺風格，延伸應用於商業宣傳、品牌角色及創意內容製作</p>
-          <div class="service-tags" data-i18n="services.6.tags"><span>商業插畫</span><span>角色設計</span><span>IP 視覺</span><span>出版插畫</span><span>原創美術</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ 5. 聯繫我區塊 ============ -->
-  <section class="section" id="contact-cta">
-    <div class="container">
-      <div class="contact-cta">
-        <span class="contact-cta-eyebrow reveal" data-i18n="contact.eyebrow">一起合作</span>
-        <h2 class="contact-cta-title reveal" data-i18n="contact.title">有想法？<em>聊聊吧</em></h2>
-        <p class="contact-cta-text reveal" data-i18n="contact.text">
-          不論是商業合作、專案邀約或單純交流，都歡迎透過下方按鈕與我聯繫。
-        </p>
-
-        <div class="magnetic reveal">
-          <a href="contact.html" class="contact-cta-button magnetic-inner">
-            <span data-i18n="contact.cta">聯繫我</span>
-            <span class="arrow">→</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ 6. 頁尾 ============ -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <h3 data-i18n="footer.brand">設計師姓名</h3>
-          <p data-i18n="footer.tagline">UI/UX 設計師、視覺創作者，專注於打造令人記憶深刻的數位體驗。</p>
-        </div>
-
-        <div class="footer-col">
-          <h4 data-i18n="footer.col1.title">導覽</h4>
-          <ul>
-            <li><a href="index.html" data-i18n="nav.home">首頁</a></li>
-            <li><a href="about.html" data-i18n="nav.about">關於我</a></li>
-            <li><a href="portfolio.html" data-i18n="nav.portfolio">設計</a></li>
-            <li><a href="photography.html" data-i18n="nav.photography">攝影</a></li>
-            <li><a href="illustration.html" data-i18n="nav.illustration">創作</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4 data-i18n="footer.col2.title">聯絡</h4>
-          <ul>
-            <li><a href="mailto:buzzdesign2023@gmail.com">buzzdesign2023@gmail.com</a></li>
-            <li><a href="#" target="_blank">Instagram</a></li>
-            <li><a href="#" target="_blank">Behance</a></li>
-            <li><a href="https://www.linkedin.com/in/%E7%AD%B1%E7%92%87-%E9%99%B3-86a71436a/" target="_blank">LinkedIn</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <span data-i18n="footer.copyright">© 2026 設計師姓名. 版權所有。</span>
-        <span data-i18n="footer.location">Made in Taipei</span>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Lenis 平滑滾動函式庫 -->
-  <script src="https://unpkg.com/lenis@1.3.21/dist/lenis.min.js"></script>
-
-  <script src="js/particles.js"></script>
-  <script src="js/about-decorations.js"></script>
-  <script src="js/common.js"></script>
-  <script src="js/hero.js"></script>
+<script src="js/journey-data.js"></script>
+<script src="js/journey.js"></script>
 </body>
 </html>
